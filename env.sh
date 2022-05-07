@@ -17,7 +17,7 @@ test -f "$HOME/Library/Preferences/com.runningwithcrayons.Alfred.plist" || {
 
 # Expected by ExampleNew
 export alfred_workflow_version="0.1.0"
-export alfred_workflow_name="<your-workflow-name>""
+export alfred_workflow_name="<your-workflow-name>"
 export alfred_workflow_package="github.com/<your-github-account>/<your-go-package>"
 # export alfred_workflow_category="Tools" // Internet/Tools/Productivity or empty
 export alfred_workflow_description="<your-workflow-description>"

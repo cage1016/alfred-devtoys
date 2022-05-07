@@ -13,8 +13,6 @@ import (
 	"errors"
 
 	aw "github.com/deanishe/awgo"
-
-	"${alfred_workflow_package}/pi/handler"
 )
 
 var wf *aw.Workflow
