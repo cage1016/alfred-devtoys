@@ -46,6 +46,7 @@ func main() {
 	wf.Run(run)
 }
 EOF
+go get github.com/deanishe/awgo
 fi
 
 virtualenv -p ~/.pyenv/versions/3.10.0/bin/python venv
