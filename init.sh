@@ -5,6 +5,7 @@ go mod init ${alfred_workflow_package}
 
 if [[ "$enabledCobra" == "YES" ]]; then
 	cobra init
+	go get github.com/spf13/cobra
 else
 cat > main.go <<EOF
 package main
@@ -46,10 +47,12 @@ func main() {
 	wf.Run(run)
 }
 EOF
-go get github.com/deanishe/awgo
 fi
 
-virtualenv -p ~/.pyenv/versions/3.10.0/bin/python venv
+# prepare go mod package
+go get github.com/deanishe/awgo
+
+virtualenv -p ~/.pyenv/versions/$(<.python-version)/bin/python venv
 source venv/bin/activate
 pip install -r requirements.txt
 
@@ -78,7 +81,7 @@ cat > info.plist.template << EOF
 	<key>uidata</key>
 	<dict/>
 	<key>version</key>
-	<string>\${VERSION}</string>
+	<string></string>
 	<key>webaddress</key>
 	<string>${alfred_workflow_website}</string>
 </dict>
