@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [ -s diff.txt ]; then
+if [ -s .workflow/info.plist ]; then
     cp .workflow/info.plist info.plist.template
 fi
 plutil -replace version -string '${VERSION}' info.plist.template
