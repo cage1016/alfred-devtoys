@@ -1,4 +1,5 @@
 {
     "python.pythonPath": "${workspaceFolder}/venv/bin/python",
     "envsubst.path": "/usr/local/bin/envsubst",
+    "go.goPath": "/Users/$HOME/.gvm/gos/go1.17/bin/go",
 }
