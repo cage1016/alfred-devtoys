@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.kaichu.devtoys</string>
+	<key>connections</key>
+	<dict/>
+	<key>createdby</key>
+	<string>KAI CHU CHUNG</string>
+	<key>description</key>
+	<string>A Swiss Army knife for Alfred</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>DevToys</string>
+	<key>objects</key>
+	<array/>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict/>
+	<key>version</key>
+	<string>${alfred_workflow_version}</string>
+	<key>webaddress</key>
+	<string>https://kaichu.io</string>
+</dict>
+</plist>
