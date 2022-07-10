@@ -59,6 +59,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>DDD47046-7EF3-4848-8113-8FD1B91455E6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E690A4C0-D545-4EAD-9146-0AD0A54DA3B8</key>
 		<array>
 			<dict>
@@ -300,6 +313,55 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>jwt</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe jwt $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>JWT</string>
+				<key>title</key>
+				<string>JWT</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DDD47046-7EF3-4848-8113-8FD1B91455E6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -332,6 +394,13 @@
 			<integer>805</integer>
 			<key>ypos</key>
 			<integer>230</integer>
+		</dict>
+		<key>DDD47046-7EF3-4848-8113-8FD1B91455E6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>215</integer>
+			<key>ypos</key>
+			<integer>560</integer>
 		</dict>
 		<key>E377B5E7-7041-4785-A436-0EE645D6591D</key>
 		<dict>
