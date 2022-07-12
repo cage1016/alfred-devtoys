@@ -5,36 +5,68 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"fmt"
+	"regexp"
+	"strings"
 
+	aw "github.com/deanishe/awgo"
+	changecase "github.com/ku/go-change-case"
 	"github.com/spf13/cobra"
+	"golang.design/x/clipboard"
 )
+
+var M = map[string]struct {
+	Fn       func(string) string
+	Subtitle string
+}{
+	"camel":    {changecase.Camel, "Convert to a string with the separators denoted by having the next letter capitalized"},
+	"constant": {changecase.Constant, "Convert to an upper case, underscore separated string"},
+	"dot":      {changecase.Dot, "Convert to a lower case, period separated string"},
+	"lower":    {changecase.Lower, "Convert to a string in lower case"},
+	"lcfirst":  {changecase.LcFirst, "Convert to a string with the first character lower cased"},
+	"no":       {changecase.No, "Convert the string without any casing (lower case, space separated)"},
+	"param":    {changecase.Param, "Convert to a lower case, dash separated string"},
+	"pascal":   {changecase.Pascal, "Convert to a string denoted in the same fashion as camelCase, but with the first letter also capitalized"},
+	"path":     {changecase.Path, "Convert to a lower case, slash separated string"},
+	"sentence": {changecase.Sentence, "Convert to a lower case, space separated string"},
+	"snake":    {changecase.Snake, "Convert to a lower case, underscore separated string"},
+	"swap":     {changecase.Swap, "Convert to a string with every character case reversed"},
+	"title":    {changecase.Title, "Convert to a space separated string with the first character of every word upper cased"},
+	"upper":    {changecase.Upper, "Convert to a string in upper case"},
+	"ucfirst":  {changecase.UcFirst, "Convert to a string with the first character upper cased"},
+	"hashtag": {func(s string) string {
+		array := regexp.MustCompile(" +").Split(s, -1)
+		for i := 0; i < len(array); i++ {
+			if len(array[i]) > 0 && array[i][0:1] != "#" {
+				array[i] = "#" + strings.ToLower(array[i])
+			}
+		}
+		return strings.Join(array, " ")
+	}, "Convert to a string, space separated string with hashtag symbols"},
+}
 
 // caseCmd represents the case command
 var caseCmd = &cobra.Command{
 	Use:   "case",
 	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("case called")
+		t, _ := cmd.Flags().GetString("type")
+
+		query := strings.Join(args, " ")
+		if strings.TrimSpace(query) == "" {
+			query = string(clipboard.Read(clipboard.FmtText))
+		}
+
+		if m, ok := M[t]; ok {
+			str := m.Fn(query)
+			wf.NewItem(str).Subtitle(m.Subtitle).Valid(true).Arg(str).Icon(&aw.Icon{Value: "text-change-case.pdf"})
+		}
+
+		wf.SendFeedback()
 	},
 }
 
 func init() {
 	rootCmd.AddCommand(caseCmd)
 
-	// Here you will define your flags and configuration settings.
-
-	// Cobra supports Persistent Flags which will work for this command
-	// and all subcommands, e.g.:
-	// caseCmd.PersistentFlags().String("foo", "", "A help for foo")
-
-	// Cobra supports local flags which will only run when this command
-	// is called directly, e.g.:
-	// caseCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
+	caseCmd.PersistentFlags().StringP("type", "t", "", "type of case")
 }
