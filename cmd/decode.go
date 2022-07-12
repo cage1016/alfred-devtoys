@@ -7,9 +7,11 @@ package cmd
 import (
 	"strings"
 
-	"github.com/cage1016/alfred-devtoys/lib"
+	aw "github.com/deanishe/awgo"
 	"github.com/spf13/cobra"
 	"golang.design/x/clipboard"
+
+	"github.com/cage1016/alfred-devtoys/lib"
 )
 
 // decodeCmd represents the decode command
@@ -27,13 +29,13 @@ func decodeRun(cmd *cobra.Command, args []string) {
 	}
 
 	b64DecodeStr := coder.Base64(str)
-	wf.NewItem(b64DecodeStr).Subtitle("Base64 Decode").Valid(true).Arg(b64DecodeStr).Var("action", "copy")
+	wf.NewItem(b64DecodeStr).Subtitle("Base64 Decode").Valid(true).Arg(b64DecodeStr).Icon(&aw.Icon{Value: "base64.pdf"}).Var("action", "copy")
 
 	urlDecodeStr := coder.URL(str)
-	wf.NewItem(urlDecodeStr).Subtitle("URL Decode").Valid(true).Arg(urlDecodeStr).Var("action", "copy")
+	wf.NewItem(urlDecodeStr).Subtitle("URL Decode").Valid(true).Arg(urlDecodeStr).Icon(&aw.Icon{Value: "url.pdf"}).Var("action", "copy")
 
 	htmlDecodeStr := coder.HTML(str)
-	wf.NewItem(htmlDecodeStr).Subtitle("HTML Decode").Valid(true).Arg(htmlDecodeStr).Var("action", "copy")
+	wf.NewItem(htmlDecodeStr).Subtitle("HTML Decode").Valid(true).Arg(htmlDecodeStr).Icon(&aw.Icon{Value: "html.pdf"}).Var("action", "copy")
 
 	wf.SendFeedback()
 }

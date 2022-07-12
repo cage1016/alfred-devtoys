@@ -43,7 +43,7 @@ var rootCmd = &cobra.Command{
 				Subtitle("⇥ or ↩ to install update").
 				Valid(false).
 				Autocomplete("workflow:update").
-				Icon(&aw.Icon{Value: "update-available.png"})
+				Icon(&aw.Icon{Value: "download.pdf"})
 		}
 	},
 }

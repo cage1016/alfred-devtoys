@@ -7,6 +7,7 @@ package cmd
 import (
 	"strings"
 
+	aw "github.com/deanishe/awgo"
 	"github.com/spf13/cobra"
 	"golang.design/x/clipboard"
 
@@ -28,13 +29,13 @@ func encodeRun(cmd *cobra.Command, args []string) {
 	}
 
 	b64EncodeStr := coder.Base64(str)
-	wf.NewItem(b64EncodeStr).Subtitle("Base64 Encode").Valid(true).Arg(b64EncodeStr).Var("action", "copy")
+	wf.NewItem(b64EncodeStr).Subtitle("Base64 Encode").Valid(true).Icon(&aw.Icon{Value: "base64.pdf"}).Arg(b64EncodeStr).Var("action", "copy")
 
 	urlEncodeStr := coder.URL(str)
-	wf.NewItem(urlEncodeStr).Subtitle("URL Encode").Valid(true).Arg(urlEncodeStr).Var("action", "copy")
+	wf.NewItem(urlEncodeStr).Subtitle("URL Encode").Valid(true).Icon(&aw.Icon{Value: "url.pdf"}).Arg(urlEncodeStr).Var("action", "copy")
 
 	htmlEncodeStr := coder.HTML(str)
-	wf.NewItem(htmlEncodeStr).Subtitle("HTML Encode").Valid(true).Arg(htmlEncodeStr).Var("action", "copy")
+	wf.NewItem(htmlEncodeStr).Subtitle("HTML Encode").Valid(true).Arg(htmlEncodeStr).Icon(&aw.Icon{Value: "html.pdf"}).Var("action", "copy")
 
 	wf.SendFeedback()
 }

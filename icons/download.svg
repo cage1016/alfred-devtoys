@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<svg width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.2">
+ <title>download-svg</title>
+ <style>.s0 { fill: #682fa0 } 
+		.s1 { fill: none;stroke: #ffffff;stroke-linecap: round;stroke-linejoin: round;stroke-width: 42 }</style>
+ <g class="layer">
+  <title>Layer 1</title>
+  <g id="Layer">
+   <path class="s0" d="m499.1,92.39l0,315.63c0,50.51 -41.16,91.39 -91.55,91.39l-316.2,0c-50.39,0 -91.45,-41.08 -91.45,-91.39l0,-315.63c0,-50.51 40.96,-91.39 91.45,-91.39l316.2,0c50.39,0 91.55,40.98 91.55,91.39z" id="svg_5"/>
+   <path class="s1" d="m299.89,280.52l-50.39,50.8l-50.39,-50.8" id="svg_3"/>
+   <g id="svg_6">
+    <path class="s1" d="m173.96,344.12l-100.78,-89.1l100.78,-89.1" id="svg_1" stroke-width="2" transform="matrix(1 0 0 1 0 0)"/>
+    <path class="s1" d="m325.04,166.01l100.78,89l-100.78,89" id="svg_2" stroke-width="2"/>
+    <path class="s1" d="m249.5,178.71l-0.5,139.91" id="svg_4"/>
+    <line fill="none" id="svg_7" x1="93.5" x2="299.5" y1="124" y2="129"/>
+   </g>
+  </g>
+ </g>
+</svg>

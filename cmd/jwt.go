@@ -8,9 +8,11 @@ import (
 	"encoding/json"
 	"strings"
 
-	"github.com/cage1016/alfred-devtoys/lib"
+	aw "github.com/deanishe/awgo"
 	"github.com/spf13/cobra"
 	"golang.design/x/clipboard"
+
+	"github.com/cage1016/alfred-devtoys/lib"
 )
 
 // jwtCmd represents the jwt command
@@ -31,10 +33,10 @@ func runJwt(c *cobra.Command, args []string) {
 		a, _ := json.Marshal(token.Header)
 		b, _ := json.Marshal(token.Claims)
 
-		wf.NewItem(string(a)).Subtitle("Header").Valid(true).Arg(string(a)).Var("action", "copy")
-		wf.NewItem(string(b)).Subtitle("Payload").Valid(true).Arg(string(b)).Var("action", "copy")
+		wf.NewItem(string(a)).Subtitle("Header").Valid(true).Arg(string(a)).Icon(&aw.Icon{Value: "jwt.pdf"}).Var("action", "copy")
+		wf.NewItem(string(b)).Subtitle("Payload").Valid(true).Arg(string(b)).Icon(&aw.Icon{Value: "jwt.pdf"}).Var("action", "copy")
 	} else {
-		wf.WarnEmpty("Invalid token", err.Error())
+		wf.NewItem(err.Error()).Subtitle("JSON").Valid(false).Icon(aw.IconError)
 	}
 
 	wf.SendFeedback()
