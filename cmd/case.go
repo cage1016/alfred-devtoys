@@ -5,6 +5,7 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
+	"fmt"
 	"regexp"
 	"strings"
 
@@ -59,6 +60,15 @@ var caseCmd = &cobra.Command{
 		if m, ok := M[t]; ok {
 			str := m.Fn(query)
 			wf.NewItem(str).Subtitle(m.Subtitle).Valid(true).Arg(str).Icon(&aw.Icon{Value: "text-change-case.pdf"})
+		}
+
+		if t == "list" {
+			for k, v := range M {
+				wf.NewItem(fmt.Sprintf("Change Case %s", changecase.UcFirst(k))).Subtitle(v.Subtitle).Valid(true).Icon(&aw.Icon{Value: "text-change-case.pdf"}).Var("action", k)
+			}
+
+			wf.Filter(args[0])
+			wf.WarnEmpty("No matching items", "Try a different query?")
 		}
 
 		wf.SendFeedback()
