@@ -22,13 +22,11 @@ var uuidCmd = &cobra.Command{
 }
 
 func runUuid(cmd *cobra.Command, args []string) {
-	if len(args) >= 1 {
-		query := strings.Join(args, " ")
-		c, err := strconv.ParseInt(query, 10, 64)
-		if err != nil {
-			wf.NewItem(err.Error()).Subtitle("Invalid integer").Valid(false).Icon(aw.IconError)
-		}
-
+	query := strings.Join(args, " ")
+	c, err := strconv.ParseInt(query, 10, 64)
+	if err != nil {
+		wf.NewItem(err.Error()).Subtitle("Invalid integer").Valid(false).Icon(aw.IconError)
+	} else {
 		buf := make([]string, c)
 		for i := int64(0); i < c; i++ {
 			buf[i] = uuid.New().String()
@@ -39,7 +37,6 @@ func runUuid(cmd *cobra.Command, args []string) {
 		}
 	}
 
-	wf.WarnEmpty("No matching items", "Try how many UUID you want to generate")
 	wf.SendFeedback()
 }
 
