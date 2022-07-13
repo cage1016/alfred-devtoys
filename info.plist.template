@@ -6,6 +6,19 @@
 	<string>com.kaichu.devtoys</string>
 	<key>connections</key>
 	<dict>
+		<key>0020866E-4F61-447D-994C-6812E4D86C84</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0EB15901-2570-4322-97EC-DB3AF20A980B</key>
 		<array>
 			<dict>
@@ -355,7 +368,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -404,7 +417,105 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>uuid</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
 				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe uuid $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Generate UUID</string>
+				<key>title</key>
+				<string>UUID</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>803E6FCC-E33B-47AC-A8C4-D3D4496025EA</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>li</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe li $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Generate Lorem Ipsum</string>
+				<key>title</key>
+				<string>Lorem Ipsum</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0020866E-4F61-447D-994C-6812E4D86C84</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -472,7 +583,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -572,7 +683,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -621,7 +732,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -670,56 +781,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>uuid</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
 				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe uuid $1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Generate UUID</string>
-				<key>title</key>
-				<string>UUID</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>803E6FCC-E33B-47AC-A8C4-D3D4496025EA</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -768,7 +830,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -817,7 +879,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -866,7 +928,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -915,7 +977,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -964,7 +1026,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1013,7 +1075,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1062,7 +1124,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1131,7 +1193,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1180,7 +1242,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1229,7 +1291,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1278,7 +1340,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1327,7 +1389,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1376,7 +1438,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1425,7 +1487,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1474,7 +1536,7 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>1</integer>
+				<integer>0</integer>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
@@ -1516,6 +1578,13 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0020866E-4F61-447D-994C-6812E4D86C84</key>
+		<dict>
+			<key>xpos</key>
+			<integer>185</integer>
+			<key>ypos</key>
+			<integer>135</integer>
+		</dict>
 		<key>0EB15901-2570-4322-97EC-DB3AF20A980B</key>
 		<dict>
 			<key>xpos</key>
@@ -1535,7 +1604,7 @@
 			<key>xpos</key>
 			<integer>435</integer>
 			<key>ypos</key>
-			<integer>1040</integer>
+			<integer>935</integer>
 		</dict>
 		<key>1D435D66-501B-49F4-B0A0-45F81C6E9D40</key>
 		<dict>
@@ -1549,7 +1618,7 @@
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>830</integer>
+			<integer>725</integer>
 		</dict>
 		<key>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</key>
 		<dict>
@@ -1563,30 +1632,30 @@
 			<key>note</key>
 			<string>clear {query}</string>
 			<key>xpos</key>
-			<integer>770</integer>
+			<integer>755</integer>
 			<key>ypos</key>
-			<integer>905</integer>
+			<integer>805</integer>
 		</dict>
 		<key>3758D1AA-7A87-480F-A18A-A12709A29BA7</key>
 		<dict>
 			<key>xpos</key>
 			<integer>310</integer>
 			<key>ypos</key>
-			<integer>725</integer>
+			<integer>620</integer>
 		</dict>
 		<key>3D36CEA1-A3F0-448F-AAD0-791F521A3B62</key>
 		<dict>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>1040</integer>
+			<integer>935</integer>
 		</dict>
 		<key>51F38119-0AB1-4E3B-9F9D-8EB42C485078</key>
 		<dict>
 			<key>xpos</key>
 			<integer>310</integer>
 			<key>ypos</key>
-			<integer>1040</integer>
+			<integer>935</integer>
 		</dict>
 		<key>54185D5A-A90D-43D6-8911-882FCBFD4CA4</key>
 		<dict>
@@ -1600,70 +1669,70 @@
 			<key>xpos</key>
 			<integer>60</integer>
 			<key>ypos</key>
-			<integer>1040</integer>
+			<integer>935</integer>
 		</dict>
 		<key>6C2E2EC0-D6A1-4C54-9C7E-091136E8BB01</key>
 		<dict>
 			<key>xpos</key>
 			<integer>435</integer>
 			<key>ypos</key>
-			<integer>725</integer>
+			<integer>620</integer>
 		</dict>
 		<key>7E6059B2-3514-488A-A7B3-183767BD2C3A</key>
 		<dict>
 			<key>xpos</key>
 			<integer>435</integer>
 			<key>ypos</key>
-			<integer>830</integer>
+			<integer>725</integer>
 		</dict>
 		<key>803E6FCC-E33B-47AC-A8C4-D3D4496025EA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>185</integer>
 			<key>ypos</key>
-			<integer>555</integer>
+			<integer>30</integer>
 		</dict>
 		<key>85D8B4B1-9395-42D5-9E5C-AEF309181BFC</key>
 		<dict>
 			<key>xpos</key>
 			<integer>60</integer>
 			<key>ypos</key>
-			<integer>935</integer>
+			<integer>830</integer>
 		</dict>
 		<key>8649359F-4493-4F4C-BAA2-A63C8CD0473A</key>
 		<dict>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>935</integer>
+			<integer>830</integer>
 		</dict>
 		<key>90A2BF29-C6BA-44CB-A577-21A73F8FBA46</key>
 		<dict>
 			<key>xpos</key>
 			<integer>60</integer>
 			<key>ypos</key>
-			<integer>830</integer>
+			<integer>725</integer>
 		</dict>
 		<key>C8CEF9B8-8427-45EF-95EF-2C56C5EE738C</key>
 		<dict>
 			<key>xpos</key>
 			<integer>310</integer>
 			<key>ypos</key>
-			<integer>935</integer>
+			<integer>830</integer>
 		</dict>
 		<key>D238AE44-A74F-44B1-92DE-8EA2D52DA89C</key>
 		<dict>
 			<key>xpos</key>
 			<integer>185</integer>
 			<key>ypos</key>
-			<integer>725</integer>
+			<integer>620</integer>
 		</dict>
 		<key>D70D8FA9-239C-4AA6-A867-583907597EC5</key>
 		<dict>
 			<key>xpos</key>
 			<integer>435</integer>
 			<key>ypos</key>
-			<integer>935</integer>
+			<integer>830</integer>
 		</dict>
 		<key>D9190DC4-F5B4-41EC-B2E4-71D549C35DEC</key>
 		<dict>
@@ -1677,7 +1746,7 @@
 			<key>xpos</key>
 			<integer>60</integer>
 			<key>ypos</key>
-			<integer>725</integer>
+			<integer>620</integer>
 		</dict>
 		<key>E377B5E7-7041-4785-A436-0EE645D6591D</key>
 		<dict>
@@ -1698,7 +1767,7 @@
 			<key>xpos</key>
 			<integer>310</integer>
 			<key>ypos</key>
-			<integer>830</integer>
+			<integer>725</integer>
 		</dict>
 	</dict>
 	<key>version</key>

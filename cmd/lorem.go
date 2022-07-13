@@ -1,0 +1,49 @@
+/*
+Copyright © 2022 NAME HERE <EMAIL ADDRESS>
+
+*/
+package cmd
+
+import (
+	"fmt"
+	"strconv"
+	"strings"
+
+	aw "github.com/deanishe/awgo"
+	"github.com/spf13/cobra"
+	"gopkg.in/loremipsum.v1"
+)
+
+// loremCmd represents the lorem command
+var loremCmd = &cobra.Command{
+	Use:   "li",
+	Short: "lorem ipsum is a dummy text generator",
+	Run:   runLorem,
+}
+
+func runLorem(cmd *cobra.Command, args []string) {
+	if len(args) >= 1 {
+		query := strings.Join(args, " ")
+		c, err := strconv.ParseInt(query, 10, 64)
+		if err != nil {
+			wf.NewItem(err.Error()).Subtitle("Invalid integer").Valid(false).Icon(aw.IconError)
+		} else {
+			loremIpsumGeneratoe := loremipsum.New()
+			words := loremIpsumGeneratoe.Words(int(c))
+			wf.NewItem(words).Subtitle(fmt.Sprintf("%d Words", c)).Valid(true).Arg(words).Icon(&aw.Icon{Value: "LoremIpsum.pdf"}).Var("action", "copy").Valid(true)
+
+			sentences := loremIpsumGeneratoe.Sentences(int(c))
+			wf.NewItem(sentences).Subtitle(fmt.Sprintf("%d Sentences", c)).Valid(true).Arg(sentences).Icon(&aw.Icon{Value: "loremipsum.pdf"}).Var("action", "copy")
+
+			paragraphs := strings.Join(strings.Split(loremIpsumGeneratoe.Paragraphs(int(c)), `\n`), "\n\n")
+			wf.NewItem(paragraphs).Subtitle(fmt.Sprintf("%d Paragraphs", c)).Valid(true).Arg(paragraphs).Icon(&aw.Icon{Value: "loremipsum.pdf"}).Var("action", "copy")
+		}
+	}
+
+	wf.WarnEmpty("No matching items", "Try how many lorem you want to generate")
+	wf.SendFeedback()
+}
+
+func init() {
+	rootCmd.AddCommand(loremCmd)
+}

@@ -10,4 +10,5 @@ require (
 	github.com/ku/go-change-case v0.0.1 // indirect
 	github.com/spf13/cobra v1.5.0
 	golang.design/x/clipboard v0.6.2 // indirect
+	gopkg.in/loremipsum.v1 v1.1.0 // indirect
 )
