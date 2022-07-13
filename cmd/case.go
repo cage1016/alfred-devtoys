@@ -7,6 +7,7 @@ package cmd
 import (
 	"fmt"
 	"regexp"
+	"sort"
 	"strings"
 
 	changecase "github.com/ku/go-change-case"
@@ -58,16 +59,20 @@ var caseCmd = &cobra.Command{
 
 		if m, ok := M[t]; ok {
 			str := m.Fn(query)
-			wf.NewItem(str).Subtitle(m.Subtitle).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
+			wf.NewItem(str).Subtitle(fmt.Sprintf("%s → %s", t, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
 		}
 
-		if t == "list" {
-			for k, v := range M {
-				wf.NewItem(fmt.Sprintf("Change Case %s", changecase.UcFirst(k))).Subtitle(v.Subtitle).Valid(true).Icon(TextChangeCaseIcon).Var("action", k)
+		if t == "command" {
+			keys := make([]string, 0, len(M))
+			for k := range M {
+				keys = append(keys, k)
 			}
-
-			wf.Filter(args[0])
-			wf.WarnEmpty("No matching items", "Try a different query?")
+			sort.Strings(keys)
+			for _, k := range keys {
+				m := M[k]
+				str := m.Fn(query)
+				wf.NewItem(str).Subtitle(fmt.Sprintf("%s → %s", k, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
+			}
 		}
 
 		wf.SendFeedback()
