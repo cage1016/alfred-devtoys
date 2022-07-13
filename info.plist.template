@@ -527,6 +527,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F79CD6E7-50C9-45F4-A615-67B810787BF3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>FA64E015-CFB7-4BFE-B8F8-57995BAAE32C</key>
 		<array>
 			<dict>
@@ -825,6 +838,55 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>0F529BB7-CB3B-486D-9DE1-AFB1B6D05EFE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>qrcode</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe qrcode $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>qrcode generator</string>
+				<key>title</key>
+				<string>QRCode Generator</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F79CD6E7-50C9-45F4-A615-67B810787BF3</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -2266,6 +2328,13 @@
 			<key>ypos</key>
 			<integer>300</integer>
 		</dict>
+		<key>F79CD6E7-50C9-45F4-A615-67B810787BF3</key>
+		<dict>
+			<key>xpos</key>
+			<integer>180</integer>
+			<key>ypos</key>
+			<integer>230</integer>
+		</dict>
 		<key>FA64E015-CFB7-4BFE-B8F8-57995BAAE32C</key>
 		<dict>
 			<key>xpos</key>
@@ -2280,6 +2349,11 @@
 			<key>ypos</key>
 			<integer>725</integer>
 		</dict>
+	</dict>
+	<key>variables</key>
+	<dict>
+		<key>QRCODE_SIZE</key>
+		<string>512</string>
 	</dict>
 	<key>version</key>
 	<string>${alfred_workflow_version}</string>
