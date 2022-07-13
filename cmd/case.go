@@ -9,7 +9,6 @@ import (
 	"regexp"
 	"strings"
 
-	aw "github.com/deanishe/awgo"
 	changecase "github.com/ku/go-change-case"
 	"github.com/spf13/cobra"
 	"golang.design/x/clipboard"
@@ -59,12 +58,12 @@ var caseCmd = &cobra.Command{
 
 		if m, ok := M[t]; ok {
 			str := m.Fn(query)
-			wf.NewItem(str).Subtitle(m.Subtitle).Valid(true).Arg(str).Icon(&aw.Icon{Value: "text-change-case.pdf"})
+			wf.NewItem(str).Subtitle(m.Subtitle).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
 		}
 
 		if t == "list" {
 			for k, v := range M {
-				wf.NewItem(fmt.Sprintf("Change Case %s", changecase.UcFirst(k))).Subtitle(v.Subtitle).Valid(true).Icon(&aw.Icon{Value: "text-change-case.pdf"}).Var("action", k)
+				wf.NewItem(fmt.Sprintf("Change Case %s", changecase.UcFirst(k))).Subtitle(v.Subtitle).Valid(true).Icon(TextChangeCaseIcon).Var("action", k)
 			}
 
 			wf.Filter(args[0])

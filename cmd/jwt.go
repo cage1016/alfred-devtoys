@@ -33,8 +33,8 @@ func runJwt(c *cobra.Command, args []string) {
 		a, _ := json.Marshal(token.Header)
 		b, _ := json.Marshal(token.Claims)
 
-		wf.NewItem(string(a)).Subtitle("Header").Valid(true).Arg(string(a)).Icon(&aw.Icon{Value: "jwt.pdf"}).Var("action", "copy")
-		wf.NewItem(string(b)).Subtitle("Payload").Valid(true).Arg(string(b)).Icon(&aw.Icon{Value: "jwt.pdf"}).Var("action", "copy")
+		wf.NewItem(string(a)).Subtitle("Header").Valid(true).Arg(string(a)).Icon(JwtIcon).Var("action", "copy")
+		wf.NewItem(string(b)).Subtitle("Payload").Valid(true).Arg(string(b)).Icon(JwtIcon).Var("action", "copy")
 	} else {
 		wf.NewItem(err.Error()).Subtitle("JSON").Valid(false).Icon(aw.IconError)
 	}

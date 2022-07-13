@@ -34,7 +34,7 @@ func runUuid(cmd *cobra.Command, args []string) {
 			buf[i] = uuid.New().String()
 		}
 		for _, v := range buf {
-			wf.NewItem(v).Subtitle("UUID, ⌥ to copy all").Valid(true).Arg(v).Icon(&aw.Icon{Value: "uuid.pdf"}).Var("action", "copy").Valid(true).
+			wf.NewItem(v).Subtitle("UUID, ⌥ to copy all").Valid(true).Arg(v).Icon(UuidIcon).Var("action", "copy").Valid(true).
 				Opt().Subtitle(fmt.Sprintf("UUID, copy all of %d", c)).Arg(strings.Join(buf, "\n")).Var("action", "copy")
 		}
 	}

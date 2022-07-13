@@ -30,13 +30,13 @@ func runLorem(cmd *cobra.Command, args []string) {
 		} else {
 			loremIpsumGeneratoe := loremipsum.New()
 			words := loremIpsumGeneratoe.Words(int(c))
-			wf.NewItem(words).Subtitle(fmt.Sprintf("%d Words", c)).Valid(true).Arg(words).Icon(&aw.Icon{Value: "LoremIpsum.pdf"}).Var("action", "copy").Valid(true)
+			wf.NewItem(words).Subtitle(fmt.Sprintf("%d Words", c)).Valid(true).Arg(words).Icon(LoremIpsumIcon).Var("action", "copy").Valid(true)
 
 			sentences := loremIpsumGeneratoe.Sentences(int(c))
-			wf.NewItem(sentences).Subtitle(fmt.Sprintf("%d Sentences", c)).Valid(true).Arg(sentences).Icon(&aw.Icon{Value: "loremipsum.pdf"}).Var("action", "copy")
+			wf.NewItem(sentences).Subtitle(fmt.Sprintf("%d Sentences", c)).Valid(true).Arg(sentences).Icon(LoremIpsumIcon).Var("action", "copy")
 
 			paragraphs := strings.Join(strings.Split(loremIpsumGeneratoe.Paragraphs(int(c)), `\n`), "\n\n")
-			wf.NewItem(paragraphs).Subtitle(fmt.Sprintf("%d Paragraphs", c)).Valid(true).Arg(paragraphs).Icon(&aw.Icon{Value: "loremipsum.pdf"}).Var("action", "copy")
+			wf.NewItem(paragraphs).Subtitle(fmt.Sprintf("%d Paragraphs", c)).Valid(true).Arg(paragraphs).Icon(LoremIpsumIcon).Var("action", "copy")
 		}
 	}
 
