@@ -150,6 +150,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4EE4E0AD-A4A7-47E0-8D37-3B95EC3522E0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>51F38119-0AB1-4E3B-9F9D-8EB42C485078</key>
 		<array>
 			<dict>
@@ -254,7 +267,97 @@
 				<false/>
 			</dict>
 		</array>
+		<key>AB5C9DE0-0756-4329-BEEA-0F9783C3621B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DF6397E1-782C-493E-8337-BAE814409210</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>DF3A8CCD-6DC9-4155-B70F-6934448C1628</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B1F2B9A2-3F02-4D1A-BF6B-7F165D678C1B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>727E37A9-FC7C-4871-BA8C-C994AF13F8BF</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4EE4E0AD-A4A7-47E0-8D37-3B95EC3522E0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>BC25219D-6F8E-4C23-BBA2-E09E8B6C608F</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>C1A6092E-C049-44EF-9E18-D13C9173B65A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>FE558D84-8850-4CE0-A098-67DEEF75F8F6</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B1F2B9A2-3F02-4D1A-BF6B-7F165D678C1B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B42BF457-B823-4475-BB9B-412D9A0080A1</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>BB249334-2E71-4818-8715-F266340F6207</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AB5C9DE0-0756-4329-BEEA-0F9783C3621B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C1A6092E-C049-44EF-9E18-D13C9173B65A</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
@@ -342,6 +445,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>DF6397E1-782C-493E-8337-BAE814409210</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F79CD6E7-50C9-45F4-A615-67B810787BF3</key>
 		<array>
 			<dict>
@@ -395,6 +511,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>54185D5A-A90D-43D6-8911-882FCBFD4CA4</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -420,7 +555,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe encode $1</string>
+				<string>./exe encode "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -493,6 +628,108 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<true/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>copy</string>
+						<key>outputlabel</key>
+						<string>copy</string>
+						<key>uid</key>
+						<string>4D96CDF8-BDC6-41A4-B274-67CA02B1DE03</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query} Copied</string>
+				<key>title</key>
+				<string>DevToys</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>E377B5E7-7041-4785-A436-0EE645D6591D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>decode</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe decode $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Decode string</string>
+				<key>title</key>
+				<string>Decode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0EB15901-2570-4322-97EC-DB3AF20A980B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -555,7 +792,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>decode</string>
+				<string>qrcode</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -567,15 +804,15 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe decode $1</string>
+				<string>./exe qrcode $1</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Decode string</string>
+				<string>qrcode generator</string>
 				<key>title</key>
-				<string>Decode</string>
+				<string>QRCode Generator</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -584,26 +821,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>0EB15901-2570-4322-97EC-DB3AF20A980B</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>54185D5A-A90D-43D6-8911-882FCBFD4CA4</string>
+			<string>F79CD6E7-50C9-45F4-A615-67B810787BF3</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -655,106 +873,6 @@
 			<string>0F529BB7-CB3B-486D-9DE1-AFB1B6D05EFE</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>qrcode</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe qrcode $1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>qrcode generator</string>
-				<key>title</key>
-				<string>QRCode Generator</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>F79CD6E7-50C9-45F4-A615-67B810787BF3</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:action}</string>
-						<key>matchcasesensitive</key>
-						<true/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>copy</string>
-						<key>outputlabel</key>
-						<string>copy</string>
-						<key>uid</key>
-						<string>4D96CDF8-BDC6-41A4-B274-67CA02B1DE03</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query} Copied</string>
-				<key>title</key>
-				<string>DevToys</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>E377B5E7-7041-4785-A436-0EE645D6591D</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -968,55 +1086,6 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>cc camel</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t camel</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a string with the separators denoted by having the next letter capitalised</string>
-				<key>title</key>
-				<string>Change Case Camel</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>DD1AF965-E047-415E-BC12-5C2DBAB4AC55</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
 				<string>cc path</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
@@ -1102,6 +1171,55 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc camel</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t camel</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a string with the separators denoted by having the next letter capitalised</string>
+				<key>title</key>
+				<string>Change Case Camel</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DD1AF965-E047-415E-BC12-5C2DBAB4AC55</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>passthroughargument</key>
@@ -1135,7 +1253,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>cc sentence</string>
+				<string>cc no</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1147,15 +1265,15 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe case "$1" -t sentence</string>
+				<string>./exe case "$1" -t no</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Convert to a lower case, space separated string</string>
+				<string>Convert the string without any casing (lower case, space separated)</string>
 				<key>title</key>
-				<string>Change Case Sentence</string>
+				<string>Change Case No</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -1164,56 +1282,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>FF072746-D0AA-40A3-85FB-9315CEE9DD64</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc constant</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t constant</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to an upper case, underscore separated string</string>
-				<key>title</key>
-				<string>Change Case Constant</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>90A2BF29-C6BA-44CB-A577-21A73F8FBA46</string>
+			<string>1F2BD1D7-0A68-49C6-88DE-43E0A91477DB</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1282,7 +1351,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>cc no</string>
+				<string>cc constant</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1294,15 +1363,15 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe case "$1" -t no</string>
+				<string>./exe case "$1" -t constant</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Convert the string without any casing (lower case, space separated)</string>
+				<string>Convert to an upper case, underscore separated string</string>
 				<key>title</key>
-				<string>Change Case No</string>
+				<string>Change Case Constant</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -1311,7 +1380,56 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>1F2BD1D7-0A68-49C6-88DE-43E0A91477DB</string>
+			<string>90A2BF29-C6BA-44CB-A577-21A73F8FBA46</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc sentence</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t sentence</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a lower case, space separated string</string>
+				<key>title</key>
+				<string>Change Case Sentence</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FF072746-D0AA-40A3-85FB-9315CEE9DD64</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1361,55 +1479,6 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>C8CEF9B8-8427-45EF-95EF-2C56C5EE738C</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc dot</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t dot</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a lower case, period separated string</string>
-				<key>title</key>
-				<string>Change Case Dot</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>85D8B4B1-9395-42D5-9E5C-AEF309181BFC</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1527,7 +1596,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>cc pascal</string>
+				<string>cc dot</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1539,15 +1608,15 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe case "$1" -t pascal</string>
+				<string>./exe case "$1" -t dot</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Convert to a string denoted in the same fashion as camelCase, but with the first letter also capitalised</string>
+				<string>Convert to a lower case, period separated string</string>
 				<key>title</key>
-				<string>Change Case Pascal</string>
+				<string>Change Case Dot</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -1556,7 +1625,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>3D36CEA1-A3F0-448F-AAD0-791F521A3B62</string>
+			<string>85D8B4B1-9395-42D5-9E5C-AEF309181BFC</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1625,6 +1694,55 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
+				<string>cc lower</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t lower</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a string in lower case</string>
+				<key>title</key>
+				<string>Change Case Lower</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>60AD413A-80C1-486B-B448-F0161FBAE954</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
 				<string>cc hashtag</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
@@ -1674,7 +1792,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>cc lower</string>
+				<string>cc pascal</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1686,15 +1804,15 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe case "$1" -t lower</string>
+				<string>./exe case "$1" -t pascal</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Convert to a string in lower case</string>
+				<string>Convert to a string denoted in the same fashion as camelCase, but with the first letter also capitalised</string>
 				<key>title</key>
-				<string>Change Case Lower</string>
+				<string>Change Case Pascal</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -1703,7 +1821,326 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>60AD413A-80C1-486B-B448-F0161FBAE954</string>
+			<string>3D36CEA1-A3F0-448F-AAD0-791F521A3B62</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ns decimal</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe ns "$1" -t decimal</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>➜ Decimal to</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DF6397E1-782C-493E-8337-BAE814409210</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ns hexadecimal</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe ns "$1" -t hexadecimal</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>➜ Hexadecimal to</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>B1F2B9A2-3F02-4D1A-BF6B-7F165D678C1B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:type}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>decimal</string>
+						<key>outputlabel</key>
+						<string>decimal</string>
+						<key>uid</key>
+						<string>DF3A8CCD-6DC9-4155-B70F-6934448C1628</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:type}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>hexadecimal</string>
+						<key>outputlabel</key>
+						<string>hexadecimal</string>
+						<key>uid</key>
+						<string>727E37A9-FC7C-4871-BA8C-C994AF13F8BF</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:type}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>octal</string>
+						<key>outputlabel</key>
+						<string>octal</string>
+						<key>uid</key>
+						<string>BC25219D-6F8E-4C23-BBA2-E09E8B6C608F</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:type}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>binary</string>
+						<key>outputlabel</key>
+						<string>binary</string>
+						<key>uid</key>
+						<string>FE558D84-8850-4CE0-A098-67DEEF75F8F6</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>AB5C9DE0-0756-4329-BEEA-0F9783C3621B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ns command</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe ns "$1" -t command</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Number System Command</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>BB249334-2E71-4818-8715-F266340F6207</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ns octal</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe ns "$1" -t octal</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>➜ Octal to</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4EE4E0AD-A4A7-47E0-8D37-3B95EC3522E0</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ns binary</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe ns "$1" -t binary</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>➜ Binary to</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C1A6092E-C049-44EF-9E18-D13C9173B65A</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1715,209 +2152,253 @@
 		<key>0020866E-4F61-447D-994C-6812E4D86C84</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<real>180</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>0EB15901-2570-4322-97EC-DB3AF20A980B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>130</integer>
+			<real>130</real>
 		</dict>
 		<key>0F529BB7-CB3B-486D-9DE1-AFB1B6D05EFE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>230</integer>
+			<real>230</real>
 		</dict>
 		<key>1BC73F6D-19FB-4032-9632-78CC08B1E422</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
+			<real>420</real>
 			<key>ypos</key>
-			<integer>940</integer>
+			<real>855</real>
 		</dict>
 		<key>1D435D66-501B-49F4-B0A0-45F81C6E9D40</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>330</integer>
+			<real>330</real>
 		</dict>
 		<key>1F2BD1D7-0A68-49C6-88DE-43E0A91477DB</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<real>180</real>
 			<key>ypos</key>
-			<integer>740</integer>
+			<real>655</real>
 		</dict>
 		<key>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>640</integer>
+			<real>635</real>
 			<key>ypos</key>
-			<integer>295</integer>
+			<real>50</real>
 		</dict>
 		<key>2190908E-CE13-43D3-8C8C-A880648445DD</key>
 		<dict>
 			<key>note</key>
 			<string>clear {query}</string>
 			<key>xpos</key>
-			<integer>800</integer>
+			<real>800</real>
 			<key>ypos</key>
-			<integer>670</integer>
+			<real>585</real>
 		</dict>
 		<key>3758D1AA-7A87-480F-A18A-A12709A29BA7</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>640</integer>
+			<real>555</real>
 		</dict>
 		<key>3D36CEA1-A3F0-448F-AAD0-791F521A3B62</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<real>180</real>
 			<key>ypos</key>
-			<integer>940</integer>
+			<real>855</real>
+		</dict>
+		<key>4EE4E0AD-A4A7-47E0-8D37-3B95EC3522E0</key>
+		<dict>
+			<key>xpos</key>
+			<real>340</real>
+			<key>ypos</key>
+			<real>1095</real>
 		</dict>
 		<key>51F38119-0AB1-4E3B-9F9D-8EB42C485078</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>940</integer>
+			<real>855</real>
 		</dict>
 		<key>54185D5A-A90D-43D6-8911-882FCBFD4CA4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>815</integer>
+			<real>875</real>
 			<key>ypos</key>
-			<integer>195</integer>
+			<real>15</real>
 		</dict>
 		<key>60AD413A-80C1-486B-B448-F0161FBAE954</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>940</integer>
+			<real>855</real>
 		</dict>
 		<key>6C2E2EC0-D6A1-4C54-9C7E-091136E8BB01</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
+			<real>420</real>
 			<key>ypos</key>
-			<integer>640</integer>
+			<real>555</real>
 		</dict>
 		<key>7E6059B2-3514-488A-A7B3-183767BD2C3A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
+			<real>420</real>
 			<key>ypos</key>
-			<integer>740</integer>
+			<real>655</real>
 		</dict>
 		<key>803E6FCC-E33B-47AC-A8C4-D3D4496025EA</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<real>180</real>
 			<key>ypos</key>
-			<integer>30</integer>
+			<real>30</real>
 		</dict>
 		<key>85D8B4B1-9395-42D5-9E5C-AEF309181BFC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>840</integer>
+			<real>755</real>
 		</dict>
 		<key>8649359F-4493-4F4C-BAA2-A63C8CD0473A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<real>180</real>
 			<key>ypos</key>
-			<integer>840</integer>
+			<real>755</real>
 		</dict>
 		<key>90A2BF29-C6BA-44CB-A577-21A73F8FBA46</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>740</integer>
+			<real>655</real>
+		</dict>
+		<key>AB5C9DE0-0756-4329-BEEA-0F9783C3621B</key>
+		<dict>
+			<key>xpos</key>
+			<real>215</real>
+			<key>ypos</key>
+			<real>1020</real>
+		</dict>
+		<key>B1F2B9A2-3F02-4D1A-BF6B-7F165D678C1B</key>
+		<dict>
+			<key>xpos</key>
+			<real>460</real>
+			<key>ypos</key>
+			<real>995</real>
 		</dict>
 		<key>B42BF457-B823-4475-BB9B-412D9A0080A1</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
+			<real>420</real>
 			<key>ypos</key>
-			<integer>540</integer>
+			<real>455</real>
+		</dict>
+		<key>BB249334-2E71-4818-8715-F266340F6207</key>
+		<dict>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>1045</real>
+		</dict>
+		<key>C1A6092E-C049-44EF-9E18-D13C9173B65A</key>
+		<dict>
+			<key>xpos</key>
+			<real>460</real>
+			<key>ypos</key>
+			<real>1095</real>
 		</dict>
 		<key>C8CEF9B8-8427-45EF-95EF-2C56C5EE738C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>840</integer>
+			<real>755</real>
 		</dict>
 		<key>D238AE44-A74F-44B1-92DE-8EA2D52DA89C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<real>180</real>
 			<key>ypos</key>
-			<integer>640</integer>
+			<real>555</real>
 		</dict>
 		<key>D70D8FA9-239C-4AA6-A867-583907597EC5</key>
 		<dict>
 			<key>xpos</key>
-			<integer>420</integer>
+			<real>420</real>
 			<key>ypos</key>
-			<integer>840</integer>
+			<real>755</real>
 		</dict>
 		<key>D9190DC4-F5B4-41EC-B2E4-71D549C35DEC</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>30</integer>
+			<real>30</real>
 		</dict>
 		<key>DD1AF965-E047-415E-BC12-5C2DBAB4AC55</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>640</integer>
+			<real>555</real>
+		</dict>
+		<key>DF6397E1-782C-493E-8337-BAE814409210</key>
+		<dict>
+			<key>xpos</key>
+			<real>340</real>
+			<key>ypos</key>
+			<real>995</real>
 		</dict>
 		<key>E377B5E7-7041-4785-A436-0EE645D6591D</key>
 		<dict>
 			<key>xpos</key>
-			<integer>815</integer>
+			<real>875</real>
 			<key>ypos</key>
-			<integer>300</integer>
+			<real>115</real>
 		</dict>
 		<key>F79CD6E7-50C9-45F4-A615-67B810787BF3</key>
 		<dict>
 			<key>xpos</key>
-			<integer>180</integer>
+			<real>180</real>
 			<key>ypos</key>
-			<integer>230</integer>
+			<real>230</real>
 		</dict>
 		<key>FA64E015-CFB7-4BFE-B8F8-57995BAAE32C</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<real>60</real>
 			<key>ypos</key>
-			<integer>430</integer>
+			<real>430</real>
 		</dict>
 		<key>FF072746-D0AA-40A3-85FB-9315CEE9DD64</key>
 		<dict>
 			<key>xpos</key>
-			<integer>300</integer>
+			<real>300</real>
 			<key>ypos</key>
-			<integer>740</integer>
+			<real>655</real>
 		</dict>
 	</dict>
+	<key>userconfigurationconfig</key>
+	<array/>
 	<key>variables</key>
 	<dict>
 		<key>QRCODE_SIZE</key>

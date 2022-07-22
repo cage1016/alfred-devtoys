@@ -5,6 +5,7 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
+	"log"
 	"strings"
 
 	"github.com/spf13/cobra"
@@ -22,18 +23,19 @@ var decodeCmd = &cobra.Command{
 
 func decodeRun(cmd *cobra.Command, args []string) {
 	coder := lib.NewDecoder()
-	str := strings.Join(args, " ")
-	if strings.TrimSpace(str) == "" {
-		str = string(clipboard.Read(clipboard.FmtText))
+	query := strings.Join(args, " ")
+	if strings.TrimSpace(query) == "" {
+		query = string(clipboard.Read(clipboard.FmtText))
 	}
+	log.Println(query)
 
-	b64DecodeStr := coder.Base64(str)
+	b64DecodeStr := coder.Base64(query)
 	wf.NewItem(b64DecodeStr).Subtitle("Base64 Decode").Valid(true).Arg(b64DecodeStr).Icon(Base64Icon).Var("action", "copy")
 
-	urlDecodeStr := coder.URL(str)
+	urlDecodeStr := coder.URL(query)
 	wf.NewItem(urlDecodeStr).Subtitle("URL Decode").Valid(true).Arg(urlDecodeStr).Icon(UrlIcon).Var("action", "copy")
 
-	htmlDecodeStr := coder.HTML(str)
+	htmlDecodeStr := coder.HTML(query)
 	wf.NewItem(htmlDecodeStr).Subtitle("HTML Decode").Valid(true).Arg(htmlDecodeStr).Icon(HtmlIcon).Var("action", "copy")
 
 	wf.SendFeedback()

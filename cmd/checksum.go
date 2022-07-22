@@ -5,9 +5,10 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
+	"fmt"
+	"log"
 	"strings"
 
-	aw "github.com/deanishe/awgo"
 	"github.com/spf13/cobra"
 	"golang.design/x/clipboard"
 
@@ -22,14 +23,15 @@ var checksumCmd = &cobra.Command{
 }
 
 func runChecksum(cmd *cobra.Command, args []string) {
-	str := strings.Join(args, " ")
-	if strings.TrimSpace(str) == "" {
-		str = string(clipboard.Read(clipboard.FmtText))
+	query := strings.Join(args, " ")
+	if strings.TrimSpace(query) == "" {
+		query = string(clipboard.Read(clipboard.FmtText))
 	}
+	log.Println(query)
 
-	s, err := lib.NewCheckSum(str)
+	s, err := lib.NewCheckSum(query)
 	if err != nil {
-		wf.NewItem(err.Error()).Subtitle("File CheckSum Fail").Valid(false).Icon(aw.IconError)
+		wf.NewItem(fmt.Sprintf("`%s` is invalid file", query)).Subtitle("Try a different query?").Icon(HashGrayIcon)
 	} else {
 		wf.NewItem(s.MD5()).Subtitle("MD5 CheckSum").Valid(true).Icon(HashIcon).Arg(s.MD5()).Var("action", "copy")
 		wf.NewItem(s.SHA1()).Subtitle("SHA1 CheckSum").Valid(true).Icon(HashIcon).Arg(s.SHA1()).Var("action", "copy")

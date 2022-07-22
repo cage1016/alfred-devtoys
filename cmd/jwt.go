@@ -6,9 +6,10 @@ package cmd
 
 import (
 	"encoding/json"
+	"fmt"
+	"log"
 	"strings"
 
-	aw "github.com/deanishe/awgo"
 	"github.com/spf13/cobra"
 	"golang.design/x/clipboard"
 
@@ -23,12 +24,13 @@ var jwtCmd = &cobra.Command{
 }
 
 func runJwt(c *cobra.Command, args []string) {
-	str := strings.Join(args, " ")
-	if strings.TrimSpace(str) == "" {
-		str = string(clipboard.Read(clipboard.FmtText))
+	query := strings.Join(args, " ")
+	if strings.TrimSpace(query) == "" {
+		query = string(clipboard.Read(clipboard.FmtText))
 	}
+	log.Println(query)
 
-	token, err := lib.JWTdecode(str)
+	token, err := lib.JWTdecode(query)
 	if err == nil {
 		a, _ := json.Marshal(token.Header)
 		b, _ := json.Marshal(token.Claims)
@@ -36,7 +38,7 @@ func runJwt(c *cobra.Command, args []string) {
 		wf.NewItem(string(a)).Subtitle("Header").Valid(true).Arg(string(a)).Icon(JwtIcon).Var("action", "copy")
 		wf.NewItem(string(b)).Subtitle("Payload").Valid(true).Arg(string(b)).Icon(JwtIcon).Var("action", "copy")
 	} else {
-		wf.NewItem(err.Error()).Subtitle("JSON").Valid(false).Icon(aw.IconError)
+		wf.NewItem(fmt.Sprintf("`%s` is invalid jwt", query)).Subtitle("Try a different query?").Icon(JwtGrayIcon)
 	}
 
 	wf.SendFeedback()

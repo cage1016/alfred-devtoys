@@ -6,11 +6,12 @@ package cmd
 
 import (
 	"fmt"
+	"log"
 	"strconv"
 	"strings"
 
-	aw "github.com/deanishe/awgo"
 	"github.com/spf13/cobra"
+	"golang.design/x/clipboard"
 	"gopkg.in/loremipsum.v1"
 )
 
@@ -23,9 +24,14 @@ var loremCmd = &cobra.Command{
 
 func runLorem(cmd *cobra.Command, args []string) {
 	query := strings.Join(args, " ")
+	if strings.TrimSpace(query) == "" {
+		query = string(clipboard.Read(clipboard.FmtText))
+	}
+	log.Println(query)
+
 	c, err := strconv.ParseInt(query, 10, 64)
 	if err != nil {
-		wf.NewItem(err.Error()).Subtitle("Invalid integer").Valid(false).Icon(aw.IconError)
+		wf.NewItem(fmt.Sprintf("`%s` is invalid integer", query)).Subtitle("Try a different query?").Icon(LoremIpsumGrayIcon)
 	} else {
 		loremIpsumGeneratoe := loremipsum.New()
 		words := loremIpsumGeneratoe.Words(int(c))

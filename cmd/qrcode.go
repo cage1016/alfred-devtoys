@@ -7,6 +7,7 @@ package cmd
 import (
 	"fmt"
 	"image/png"
+	"log"
 	"os"
 	"strconv"
 	"strings"
@@ -57,6 +58,7 @@ func runQrcode(cmd *cobra.Command, args []string) {
 	if strings.TrimSpace(query) == "" {
 		query = string(clipboard.Read(clipboard.FmtText))
 	}
+	log.Println(query)
 
 	path := fmt.Sprintf("%s/qr.png", wf.DataDir())
 	s, err := strconv.Atoi(alfred.GetQrcodeSize(wf))

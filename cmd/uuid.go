@@ -6,12 +6,13 @@ package cmd
 
 import (
 	"fmt"
+	"log"
 	"strconv"
 	"strings"
 
-	aw "github.com/deanishe/awgo"
 	"github.com/google/uuid"
 	"github.com/spf13/cobra"
+	"golang.design/x/clipboard"
 )
 
 // uuidCmd represents the uuid command
@@ -23,9 +24,14 @@ var uuidCmd = &cobra.Command{
 
 func runUuid(cmd *cobra.Command, args []string) {
 	query := strings.Join(args, " ")
+	if strings.TrimSpace(query) == "" {
+		query = string(clipboard.Read(clipboard.FmtText))
+	}
+	log.Println(query)
+
 	c, err := strconv.ParseInt(query, 10, 64)
 	if err != nil {
-		wf.NewItem(err.Error()).Subtitle("Invalid integer").Valid(false).Icon(aw.IconError)
+		wf.NewItem(fmt.Sprintf("`%s` is invalid integer", query)).Subtitle("Try a different query?").Icon(UuidGrayIcon)
 	} else {
 		buf := make([]string, c)
 		for i := int64(0); i < c; i++ {

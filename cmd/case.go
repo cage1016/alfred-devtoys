@@ -57,11 +57,6 @@ var caseCmd = &cobra.Command{
 			query = string(clipboard.Read(clipboard.FmtText))
 		}
 
-		if m, ok := M[t]; ok {
-			str := m.Fn(query)
-			wf.NewItem(str).Subtitle(fmt.Sprintf("%s → %s", t, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
-		}
-
 		if t == "command" {
 			keys := make([]string, 0, len(M))
 			for k := range M {
@@ -71,7 +66,12 @@ var caseCmd = &cobra.Command{
 			for _, k := range keys {
 				m := M[k]
 				str := m.Fn(query)
-				wf.NewItem(str).Subtitle(fmt.Sprintf("%s → %s", k, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
+				wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", k, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
+			}
+		} else {
+			if m, ok := M[t]; ok {
+				str := m.Fn(query)
+				wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", t, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
 			}
 		}
 
