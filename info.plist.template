@@ -1853,13 +1853,13 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe ns "$1" -t decimal</string>
+				<string>./exe ns decimal -- "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>Binary, Octal, Hexadecimal</string>
 				<key>title</key>
 				<string>➜ Decimal to</string>
 				<key>type</key>
@@ -1902,13 +1902,13 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe ns "$1" -t hexadecimal</string>
+				<string>./exe ns hexadecimal -- "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>Binary, Octal, Decimal</string>
 				<key>title</key>
 				<string>➜ Hexadecimal to</string>
 				<key>type</key>
@@ -2025,7 +2025,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe ns "$1" -t command</string>
+				<string>./exe ns command "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2074,13 +2074,13 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe ns "$1" -t octal</string>
+				<string>./exe ns octal -- "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>Binary, Decimal, Hexadecimal</string>
 				<key>title</key>
 				<string>➜ Octal to</string>
 				<key>type</key>
@@ -2123,13 +2123,13 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./exe ns "$1" -t binary</string>
+				<string>./exe ns binary -- "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string></string>
+				<string>Decimal, Octal, Hexadecimal</string>
 				<key>title</key>
 				<string>➜ Binary to</string>
 				<key>type</key>

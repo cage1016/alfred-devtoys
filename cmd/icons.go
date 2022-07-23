@@ -20,4 +20,6 @@ var (
 	UrlIcon            = &aw.Icon{Value: "url.pdf"}
 	UuidIcon           = &aw.Icon{Value: "uuid.pdf"}
 	UuidGrayIcon       = &aw.Icon{Value: "uuid-gray.pdf"}
+	NumberIcon         = &aw.Icon{Value: "number.pdf"}
+	NumberGrayIcon     = &aw.Icon{Value: "number-gray.pdf"}
 )
