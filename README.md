@@ -2,3 +2,70 @@
 
 ![](.workflow/icon.png)
 
+- [x] **Encode**
+  - [x] Base64
+  - [x] URL 
+  - [x] HTML
+- [x]  **Decode**
+  - [x] Base64
+  - [x] URL 
+  - [x] HTML
+- [x]  **Hash**
+  - [x] MD5
+  - [x] SHA1
+  - [x] SHA256
+  - [x] SHA512
+- [x] **JWT** Decode
+  - [x] Header
+  - [x] Payload
+- [x]  File **CheckSum**
+  - [x] MD5
+  - [x] SHA1
+  - [x] SHA256
+  - [x] SHA512
+- [x]  **UUID**
+  - [x] UUID
+- [x]  **Lorem Ipsum**
+  - [x] Words
+  - [x] Sentences
+  - [x] Paragraphs
+- [x]  **QR Code**
+  - [x] QR Code
+- [x] Case
+  - [x] Commands
+  - [x] camel
+  - [x] constant
+  - [x] dot
+  - [x] lower
+  - [x] lcfirst
+  - [x] no
+  - [x] param
+  - [x] pascal
+  - [x] path
+  - [x] sentence
+  - [x] snake
+  - [x] swap
+  - [x] title
+  - [x] upper
+  - [x] ucfirst
+  - [x] hashtag
+- [x] Number Base
+  - [x] Binary
+    - [x] To Decimal
+    - [x] To Octal
+    - [x] To Hexadecimal
+  - [x] Octal
+    - [x] To Decimal
+    - [x] To Binary
+    - [x] To Hexadecimal
+  - [x] Decimal
+    - [x] To Binary
+    - [x] To Octal
+    - [x] To Hexadecimal
+  - [x] Hexadecimal
+    - [x] To Decimal
+    - [x] To Binary
+    - [x] To Octal
+- [ ] Format
+  - [ ] JSON
+  - [ ] XML
