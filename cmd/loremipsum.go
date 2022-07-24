@@ -18,7 +18,7 @@ import (
 // loremCmd represents the lorem command
 var loremCmd = &cobra.Command{
 	Use:   "li",
-	Short: "lorem ipsum is a dummy text generator",
+	Short: "Lorem ipsum is a dummy text generator",
 	Run:   runLorem,
 }
 

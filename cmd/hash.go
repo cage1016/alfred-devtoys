@@ -17,7 +17,7 @@ import (
 // hashCmd represents the hash command
 var hashCmd = &cobra.Command{
 	Use:   "hash",
-	Short: "hash string",
+	Short: "Hash string",
 	Run:   runHash,
 }
 

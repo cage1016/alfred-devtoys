@@ -56,7 +56,7 @@ func HexFormat(in string) string {
 // nsCmd represents the nbc command
 var nsCmd = &cobra.Command{
 	Use:   "ns",
-	Short: "number system convert",
+	Short: "Number system convert",
 }
 
 func init() {

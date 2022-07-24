@@ -17,7 +17,7 @@ import (
 // encodeCmd represents the encode command
 var encodeCmd = &cobra.Command{
 	Use:   "encode",
-	Short: "encode string",
+	Short: "Encode string",
 	Run:   encodeRun,
 }
 

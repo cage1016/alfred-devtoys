@@ -17,7 +17,7 @@ import (
 // decodeCmd represents the decode command
 var decodeCmd = &cobra.Command{
 	Use:   "decode",
-	Short: "decode string",
+	Short: "Decode string",
 	Run:   decodeRun,
 }
 

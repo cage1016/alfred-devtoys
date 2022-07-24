@@ -18,7 +18,7 @@ import (
 // uuidCmd represents the uuid command
 var uuidCmd = &cobra.Command{
 	Use:   "uuid",
-	Short: "uuid string",
+	Short: "UUID string",
 	Run:   runUuid,
 }
 

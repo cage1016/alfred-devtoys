@@ -19,7 +19,7 @@ import (
 // jwtCmd represents the jwt command
 var jwtCmd = &cobra.Command{
 	Use:   "jwt",
-	Short: "jwt decode",
+	Short: "Jwt decode",
 	Run:   runJwt,
 }
 

@@ -18,7 +18,7 @@ import (
 // checksumCmd represents the checksum command
 var checksumCmd = &cobra.Command{
 	Use:   "checksum",
-	Short: "file checksum",
+	Short: "File checksum",
 	Run:   runChecksum,
 }
 
