@@ -29,6 +29,8 @@ func decodeRun(cmd *cobra.Command, args []string) {
 	}
 	log.Println(query)
 
+	CheckForUpdate()
+
 	b64DecodeStr := coder.Base64(query)
 	wf.NewItem(b64DecodeStr).Subtitle("Base64 Decode").Valid(true).Arg(b64DecodeStr).Icon(Base64Icon).Var("action", "copy")
 

@@ -6,6 +6,7 @@ package cmd
 
 import (
 	"fmt"
+	"log"
 	"regexp"
 	"sort"
 	"strings"
@@ -48,35 +49,39 @@ var M = map[string]struct {
 // caseCmd represents the case command
 var caseCmd = &cobra.Command{
 	Use:   "case",
-	Short: "A brief description of your command",
-	Run: func(cmd *cobra.Command, args []string) {
-		t, _ := cmd.Flags().GetString("type")
+	Short: "Change string case",
+	Run:   runCase,
+}
 
-		query := strings.Join(args, " ")
-		if strings.TrimSpace(query) == "" {
-			query = string(clipboard.Read(clipboard.FmtText))
+func runCase(cmd *cobra.Command, args []string) {
+	query := strings.Join(args, " ")
+	if strings.TrimSpace(query) == "" {
+		query = string(clipboard.Read(clipboard.FmtText))
+	}
+	log.Println(query)
+
+	CheckForUpdate()
+
+	t, _ := cmd.Flags().GetString("type")
+	if t == "command" {
+		keys := make([]string, 0, len(M))
+		for k := range M {
+			keys = append(keys, k)
 		}
-
-		if t == "command" {
-			keys := make([]string, 0, len(M))
-			for k := range M {
-				keys = append(keys, k)
-			}
-			sort.Strings(keys)
-			for _, k := range keys {
-				m := M[k]
-				str := m.Fn(query)
-				wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", k, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
-			}
-		} else {
-			if m, ok := M[t]; ok {
-				str := m.Fn(query)
-				wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", t, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
-			}
+		sort.Strings(keys)
+		for _, k := range keys {
+			m := M[k]
+			str := m.Fn(query)
+			wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", k, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
 		}
+	} else {
+		if m, ok := M[t]; ok {
+			str := m.Fn(query)
+			wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", t, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
+		}
+	}
 
-		wf.SendFeedback()
-	},
+	wf.SendFeedback()
 }
 
 func init() {

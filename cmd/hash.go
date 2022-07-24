@@ -28,6 +28,8 @@ func runHash(cmd *cobra.Command, args []string) {
 	}
 	log.Println(query)
 
+	CheckForUpdate()
+
 	md5Str := lib.MD5(query)
 	wf.NewItem(md5Str).Subtitle("MD5").Valid(true).Arg(md5Str).Icon(HashIcon).Var("action", "copy")
 

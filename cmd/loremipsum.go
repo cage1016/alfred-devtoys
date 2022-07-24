@@ -29,6 +29,8 @@ func runLorem(cmd *cobra.Command, args []string) {
 	}
 	log.Println(query)
 
+	CheckForUpdate()
+
 	c, err := strconv.ParseInt(query, 10, 64)
 	if err != nil {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid integer", query)).Subtitle("Try a different query?").Icon(LoremIpsumGrayIcon)

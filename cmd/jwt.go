@@ -30,6 +30,8 @@ func runJwt(c *cobra.Command, args []string) {
 	}
 	log.Println(query)
 
+	CheckForUpdate()
+
 	token, err := lib.JWTdecode(query)
 	if err == nil {
 		a, _ := json.Marshal(token.Header)

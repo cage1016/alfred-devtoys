@@ -29,6 +29,8 @@ func runBinary(cmd *cobra.Command, args []string) {
 	}
 	log.Println(query)
 
+	CheckForUpdate()
+
 	_, err := strconv.ParseUint(query, 2, 64)
 	if err != nil {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid binary", query)).Subtitle("Try a different query?").Icon(NumberGrayIcon)

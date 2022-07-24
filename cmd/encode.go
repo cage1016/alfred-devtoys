@@ -29,6 +29,8 @@ func encodeRun(cmd *cobra.Command, args []string) {
 	}
 	log.Println(query)
 
+	CheckForUpdate()
+
 	b64EncodeStr := coder.Base64(query)
 	wf.NewItem(b64EncodeStr).Subtitle("Base64 Encode").Valid(true).Icon(Base64Icon).Arg(b64EncodeStr).Var("action", "copy")
 

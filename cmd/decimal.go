@@ -31,6 +31,8 @@ func runDecimal(cmd *cobra.Command, args []string) {
 	}
 	log.Println(query)
 
+	CheckForUpdate()
+
 	c, err := strconv.ParseUint(query, 10, 64)
 	if err != nil {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid decimal", query)).Subtitle("Try a different query?").Icon(NumberGrayIcon)

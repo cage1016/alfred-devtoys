@@ -21,31 +21,30 @@ var (
 	wf   *aw.Workflow
 )
 
+func CheckForUpdate() {
+	if wf.UpdateCheckDue() && !wf.IsRunning(updateJobName) {
+		log.Println("Running update check in background...")
+
+		cmd := exec.Command(os.Args[0], "update")
+		if err := wf.RunInBackground(updateJobName, cmd); err != nil {
+			log.Printf("Error starting update check: %s", err)
+		}
+	}
+
+	// if wf.UpdateAvailable() {
+	wf.Configure(aw.SuppressUIDs(true))
+	wf.NewItem("An update is available!").
+		Subtitle("⇥ or ↩ to install update").
+		Valid(false).
+		Autocomplete("workflow:update").
+		Icon(&aw.Icon{Value: "download.pdf"})
+	// }
+}
+
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "alfred-devtoys",
 	Short: "A Swiss Army knife for Alfred",
-	Run: func(cmd *cobra.Command, args []string) {
-
-		if wf.UpdateCheckDue() && !wf.IsRunning(updateJobName) {
-			log.Println("Running update check in background...")
-
-			cmd := exec.Command(os.Args[0], "update")
-			if err := wf.RunInBackground(updateJobName, cmd); err != nil {
-				log.Printf("Error starting update check: %s", err)
-			}
-		}
-
-		if wf.UpdateAvailable() {
-			wf.Configure(aw.SuppressUIDs(true))
-			log.Println("Update available!")
-			wf.NewItem("An update is available!").
-				Subtitle("⇥ or ↩ to install update").
-				Valid(false).
-				Autocomplete("workflow:update").
-				Icon(&aw.Icon{Value: "download.pdf"})
-		}
-	},
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -61,6 +60,4 @@ func Execute() {
 
 func init() {
 	wf = aw.New(update.GitHub(repo), aw.HelpURL(repo+"/issues"))
-
-	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
