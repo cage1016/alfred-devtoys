@@ -2398,12 +2398,29 @@
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
-	<key>variables</key>
-	<dict>
-		<key>QRCODE_SIZE</key>
-		<string>512</string>
-	</dict>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>512</string>
+				<key>placeholder</key>
+				<string>512</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>QRCode image size</string>
+			<key>label</key>
+			<string>QRCode Size</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>QRCODE_SIZE</string>
+		</dict>
+	</array>
 	<key>version</key>
 	<string>${alfred_workflow_version}</string>
 	<key>webaddress</key>
