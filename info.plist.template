@@ -1841,7 +1841,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>ns decimal</string>
+				<string>nb decimal</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1890,7 +1890,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>ns hexadecimal</string>
+				<string>nb hexadecimal</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -2013,7 +2013,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>ns command</string>
+				<string>nb command</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -2033,7 +2033,7 @@
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string>Number System Command</string>
+				<string>Number Base Command</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -2062,7 +2062,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>ns octal</string>
+				<string>nb octal</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -2111,7 +2111,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>keyword</key>
-				<string>ns binary</string>
+				<string>nb binary</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -2146,7 +2146,30 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string># alfred-devtoys
+
+A Swiss Army knife for developers for Alfred
+
+## Features
+
+- **Encode** - Encode string to `Base64`, `URL` and `HTML`
+- **Decode** - Decode string from `Base64`, `URL` and `HTML`
+- **Hash** - Hash string as `MD5`, `SHA1`, `SHA256`, `SHA512`
+- **JWT** - JWT Decoder for `Header`, `Payload`
+- **CheckSum** - `MD5`, `SHA1`, `SHA256`, `SHA512` file checksum
+- **UUID** - Generate `UUID`
+- **Lorem Ipsum** - Generate `Lorem Ipsum` text (words, sentences, paragraphs)
+- **QR Code** - Create QR code
+- **Case** - Convert string to `camel`, `constant`, `dot`, `lower`, `lcfirst`, `no`, `param`, `pascal`, `path`, `sentence`, `snake`, `swap`, `title`, `upper`, `ucfirst` and `hashtag` case
+- **Number Base** - Base conversion between `decimal`, `hex`, `octal` and `binary`
+
+## Requires
+- Preferably Alfred 5
+
+## Configuration
+- QR Code Image size
+
+https://github.com/cage1016/alfred-devtoys</string>
 	<key>uidata</key>
 	<dict>
 		<key>0020866E-4F61-447D-994C-6812E4D86C84</key>
