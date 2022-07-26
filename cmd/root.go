@@ -43,7 +43,7 @@ func CheckForUpdate() {
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "alfred-devtoys",
-	Short: "A Swiss Army knife for Alfred",
+	Short: "A Swiss Army knife for developers for Alfred",
 	Run: func(cmd *cobra.Command, args []string) {
 		CheckForUpdate()
 		wf.SendFeedback()
