@@ -112,25 +112,13 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>E377B5E7-7041-4785-A436-0EE645D6591D</string>
+				<string>4C3AA443-3696-4DA1-BE97-18252F520E01</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
 				<key>sourceoutputuid</key>
-				<string>A07B8E04-21D9-4AD2-8061-E7FE419BA623</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>93C8A95A-CBD6-40CD-9317-ADE31897F8F1</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>A07B8E04-21D9-4AD2-8061-E7FE419BA623</string>
+				<string>623A4F44-A078-4672-8975-14041E57A33B</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -676,17 +664,17 @@
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>copy file</string>
+						<string>browse in alfred</string>
 						<key>outputlabel</key>
-						<string>copy file</string>
+						<string>browse in alfred</string>
 						<key>uid</key>
-						<string>A07B8E04-21D9-4AD2-8061-E7FE419BA623</string>
+						<string>623A4F44-A078-4672-8975-14041E57A33B</string>
 					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
 				<key>hideelse</key>
-				<false/>
+				<true/>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.conditional</string>
@@ -817,27 +805,25 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
+				<key>path</key>
+				<string>{query}</string>
+				<key>sortBy</key>
+				<integer>0</integer>
+				<key>sortDirection</key>
+				<integer>0</integer>
+				<key>sortFoldersAtTop</key>
 				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>on run (argv)
-    set the clipboard to POSIX file (POSIX path of ((POSIX file (first item of argv)) as alias))
-end run</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>6</integer>
+				<key>sortOverride</key>
+				<false/>
+				<key>stackBrowserView</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.action.browseinalfred</string>
 			<key>uid</key>
-			<string>93C8A95A-CBD6-40CD-9317-ADE31897F8F1</string>
+			<string>4C3AA443-3696-4DA1-BE97-18252F520E01</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2230,7 +2216,19 @@ A Swiss Army knife for developers for Alfred
 - Preferably Alfred 5
 
 ## Configuration
-- QR Code Image size
+- QR Code image size
+
+## Change Log
+
+### 1.1.0
+- Revised `qrcode` keyword default action as Browse in Alfred
+
+### 1.0.1
+- Fix `qrcode` hit enter does not copy file to clipboard
+- Revised workflow description
+
+### 1.0.0
+- Initial release
 
 https://github.com/cage1016/alfred-devtoys</string>
 	<key>uidata</key>
@@ -2282,7 +2280,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<key>xpos</key>
 			<real>635</real>
 			<key>ypos</key>
-			<real>35</real>
+			<real>50</real>
 		</dict>
 		<key>2190908E-CE13-43D3-8C8C-A880648445DD</key>
 		<dict>
@@ -2306,6 +2304,13 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<real>180</real>
 			<key>ypos</key>
 			<real>855</real>
+		</dict>
+		<key>4C3AA443-3696-4DA1-BE97-18252F520E01</key>
+		<dict>
+			<key>xpos</key>
+			<real>875</real>
+			<key>ypos</key>
+			<real>215</real>
 		</dict>
 		<key>4EE4E0AD-A4A7-47E0-8D37-3B95EC3522E0</key>
 		<dict>
@@ -2376,13 +2381,6 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<real>60</real>
 			<key>ypos</key>
 			<real>655</real>
-		</dict>
-		<key>93C8A95A-CBD6-40CD-9317-ADE31897F8F1</key>
-		<dict>
-			<key>xpos</key>
-			<real>875</real>
-			<key>ypos</key>
-			<real>215</real>
 		</dict>
 		<key>AB5C9DE0-0756-4329-BEEA-0F9783C3621B</key>
 		<dict>
@@ -2507,7 +2505,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<key>description</key>
 			<string>QRCode image size</string>
 			<key>label</key>
-			<string>QRCode Size</string>
+			<string>QRCode</string>
 			<key>type</key>
 			<string>textfield</string>
 			<key>variable</key>

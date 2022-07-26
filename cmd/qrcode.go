@@ -70,7 +70,7 @@ func runQrcode(cmd *cobra.Command, args []string) {
 		if err != createQRCodeByBoombuler(query, qr.M, s, path) {
 			wf.NewItem(err.Error()).Subtitle("QR Code").Valid(false).Icon(aw.IconError)
 		} else {
-			wf.NewItem(query).Subtitle("QR code").Valid(true).Arg(path).Icon(&aw.Icon{Value: path}).Var("action", "copy file")
+			wf.NewItem(query).Subtitle("QR code").Valid(true).Arg(path).Icon(&aw.Icon{Value: path}).Var("action", "browse in alfred")
 		}
 	}
 	wf.SendFeedback()
