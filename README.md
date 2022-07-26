@@ -133,6 +133,9 @@ use `nb command` or `nb <pattern>` keyword to convert number to other base
 </p>
 
 ## Change Log
+### 1.0.0
+
+- Initial release
 
 ## License
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
