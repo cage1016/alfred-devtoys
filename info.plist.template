@@ -110,6 +110,30 @@
 				<key>vitoclose</key>
 				<false/>
 			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E377B5E7-7041-4785-A436-0EE645D6591D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>A07B8E04-21D9-4AD2-8061-E7FE419BA623</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>93C8A95A-CBD6-40CD-9317-ADE31897F8F1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>A07B8E04-21D9-4AD2-8061-E7FE419BA623</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
 		</array>
 		<key>2190908E-CE13-43D3-8C8C-A880648445DD</key>
 		<array>
@@ -501,7 +525,7 @@
 	<key>createdby</key>
 	<string>KAI CHU CHUNG</string>
 	<key>description</key>
-	<string>A Swiss Army knife for Alfred</string>
+	<string>A Swiss Army knife for developers for Alfred</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -644,6 +668,20 @@
 						<key>uid</key>
 						<string>4D96CDF8-BDC6-41A4-B274-67CA02B1DE03</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>copy file</string>
+						<key>outputlabel</key>
+						<string>copy file</string>
+						<key>uid</key>
+						<string>A07B8E04-21D9-4AD2-8061-E7FE419BA623</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -667,7 +705,7 @@
 				<key>removeextension</key>
 				<false/>
 				<key>text</key>
-				<string>{query} Copied</string>
+				<string>{var:action} {query} Copied</string>
 				<key>title</key>
 				<string>DevToys</string>
 			</dict>
@@ -775,6 +813,31 @@
 			<string>0020866E-4F61-447D-994C-6812E4D86C84</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run (argv)
+    set the clipboard to POSIX file (POSIX path of ((POSIX file (first item of argv)) as alias))
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>93C8A95A-CBD6-40CD-9317-ADE31897F8F1</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2219,7 +2282,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<key>xpos</key>
 			<real>635</real>
 			<key>ypos</key>
-			<real>50</real>
+			<real>35</real>
 		</dict>
 		<key>2190908E-CE13-43D3-8C8C-A880648445DD</key>
 		<dict>
@@ -2313,6 +2376,13 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<real>60</real>
 			<key>ypos</key>
 			<real>655</real>
+		</dict>
+		<key>93C8A95A-CBD6-40CD-9317-ADE31897F8F1</key>
+		<dict>
+			<key>xpos</key>
+			<real>875</real>
+			<key>ypos</key>
+			<real>215</real>
 		</dict>
 		<key>AB5C9DE0-0756-4329-BEEA-0F9783C3621B</key>
 		<dict>
