@@ -133,6 +133,11 @@ use `nb command` or `nb <pattern>` keyword to convert number to other base
 </p>
 
 ## Change Log
+
+### 1.0.1
+- Fix `qrcode` hit enter does not copy file to clipboard
+- Revised workflow description
+
 ### 1.0.0
 
 - Initial release
