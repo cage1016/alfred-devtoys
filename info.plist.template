@@ -2447,6 +2447,6 @@ https://github.com/cage1016/alfred-devtoys</string>
 	<key>version</key>
 	<string>${alfred_workflow_version}</string>
 	<key>webaddress</key>
-	<string>https://kaichu.io</string>
+	<string>https://github.com/cage1016/alfred-devtoys</string>
 </dict>
 </plist>
