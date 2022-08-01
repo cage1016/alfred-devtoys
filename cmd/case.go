@@ -69,15 +69,23 @@ func runCase(cmd *cobra.Command, args []string) {
 			keys = append(keys, k)
 		}
 		sort.Strings(keys)
-		for _, k := range keys {
-			m := M[k]
-			str := m.Fn(query)
-			wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", k, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
+		for _, v := range keys {
+			m := M[v]
+			if len(query) == 0 {
+				wf.NewItem(fmt.Sprintf("`%s` is invalid input", query)).Subtitle(fmt.Sprintf("Try a different query for %s?", v)).Icon(TextChangeCaseGrayIcon)
+			} else {
+				str := m.Fn(query)
+				wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", t, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon).Var("action", "copy")
+			}
 		}
 	} else {
 		if m, ok := M[t]; ok {
-			str := m.Fn(query)
-			wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", t, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon)
+			if len(query) == 0 {
+				wf.NewItem(fmt.Sprintf("`%s` is invalid input", query)).Subtitle(fmt.Sprintf("Try a different query for %s?", t)).Icon(TextChangeCaseGrayIcon)
+			} else {
+				str := m.Fn(query)
+				wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", t, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon).Var("action", "copy")
+			}
 		}
 	}
 

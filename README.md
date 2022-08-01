@@ -24,6 +24,7 @@ A Swiss Army knife for developers for Alfred
 - **QR Code** - Create QR code
 - **Case** - Convert string to `camel`, `constant`, `dot`, `lower`, `lcfirst`, `no`, `param`, `pascal`, `path`, `sentence`, `snake`, `swap`, `title`, `upper`, `ucfirst` and `hashtag` case
 - **Number Base** - Base conversion between `decimal`, `hex`, `octal` and `binary`
+- **JSON** - JSON formatting as `tab`,  `2 spaces`, `4 spaces` indents and `minify`
 
 ## Download
 Make sure to download the latest released directly from the releases page. [Download here](https://github.com/cage1016/alfred-devtoys/releases).
@@ -132,7 +133,26 @@ use `nb command` or `nb <pattern>` keyword to convert number to other base
 <img src="/screenshots/nb.gif?raw=true">
 </p>
 
+## JSON
+
+use `json format` keyword to format JSON as `tab`,  `2 spaces` `4 spaces` indents and `minify`
+
+<p align="center">
+<img src="/screenshots/json.gif?raw=true">
+</p>
+
+## Third Party Libraries
+
+- [ku/go-change-case: a golang port of npm package change-case](https://github.com/ku/go-change-case)
+- [go-loremipsum/loremipsum: A lorem ipsum generator for Go](https://github.com/go-loremipsum/loremipsum)
+- [boombuler/barcode: a barcode creation lib for golang](https://github.com/boombuler/barcode)
+- [tidwall/pretty: Efficient JSON beautifier and compactor for Go](https://github.com/tidwall/pretty)
+
 ## Change Log
+
+### 1.2.0
+- Add JSON format as `tab`,  `2 spaces`, `4 spaces` indents and `minify` functions
+- Revised `info.plist` items
 
 ### 1.1.0
 - Revised `qrcode` keyword default action as Browse in Alfred
