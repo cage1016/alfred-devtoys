@@ -2334,6 +2334,8 @@
 
 A Swiss Army knife for developers for Alfred
 
+![](./alfred-devtoys.png)
+
 ## Features
 
 - **Encode** - Encode string to `Base64`, `URL` and `HTML`
