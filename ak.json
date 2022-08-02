@@ -1,0 +1,23 @@
+{
+    "go_mod_package": "github.com/cage1016/alfred-devtoys",
+    "workflow": {
+        "folder": ".workflow",
+        "name": "DevToys",
+        "description": "A Swiss Army knife for developers for Alfred",
+        "category_comment": "category: Tools, Internet, Productivity, Uncategorised",
+        "category": "Tools",
+        "bundle_id": "com.kaichu.devtoys",
+        "created_by": "KAI CHU CHUNG",
+        "web_address": "https://github.com/cage1016/alfred-devtoys",
+        "version": "0.2.0"
+    },
+    "update": {
+        "github_repo": "https://github.com/cage1016/alfred-devtoys"
+    },
+    "license": {
+        "type_comment": "support license https://github.com/nishanths/license",
+        "type": "mit",
+        "year": "2022",
+        "name": "KAI CHU CHUNG <cage.chung@gmail.com> (https://kaichu.io)"
+    }
+}
