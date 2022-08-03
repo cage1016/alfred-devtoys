@@ -75,7 +75,7 @@ func runCase(cmd *cobra.Command, args []string) {
 				wf.NewItem(fmt.Sprintf("`%s` is invalid input", query)).Subtitle(fmt.Sprintf("Try a different query for %s?", v)).Icon(TextChangeCaseGrayIcon)
 			} else {
 				str := m.Fn(query)
-				wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", t, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon).Var("action", "copy")
+				wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", v, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon).Var("action", "copy")
 			}
 		}
 	} else {
