@@ -12,25 +12,36 @@ jobs:
         platform: [macOS-latest]
     runs-on: ${{ matrix.platform }}
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Go
-      if: success()
-      uses: actions/setup-go@v2
-      with:
-        go-version: ${{ matrix.go-version }}
-    - name: Run unit tests
-      run: go test -v ./...
-    - name: Parse Event
-      id: event
-      run: |
-        echo "::set-output name=tag::$(jq -r '.release.tag_name' "${GITHUB_EVENT_PATH}" | sed s/^v//)"
-    - name: Build golang build
-      id: build
-      run: |
-        sed -i -e "s|export alfred_workflow_version=\"0.1.0\"|export alfred_workflow_version=\"${{ steps.event.outputs.tag }}\"|g" env.sh
-        ./release.sh
-        echo "::set-output name=artifact::$(echo "DevToys-${{ steps.event.outputs.tag }}.alfredworkflow" | sed "s/ //g")"
-    - uses: shogo82148/actions-upload-release-asset@v1
-      with:
-        upload_url: ${{ github.event.release.upload_url }}
-        asset_path: "${{ steps.build.outputs.artifact }}"
+      - uses: actions/checkout@v2
+      - name: Install Go
+        if: success()
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go-version }}
+      - name: Run unit tests
+        run: go test -v ./...
+      - name: Parse Event
+        id: event
+        run: |
+          echo "::set-output name=tag::$(jq -r '.release.tag_name' "${GITHUB_EVENT_PATH}" | sed s/^v//)"
+      - name: Build and pack
+        id: build
+        run: |
+          # build package
+          GOOS=darwin GOARCH=amd64 go build -ldflags "-s -w" -o exe_amd64
+          GOOS=darwin GOARCH=arm64 go build -ldflags "-s -w" -o exe_arm64
+          lipo -create -output .workflow/exe exe_amd64 exe_arm64
+          rm  exe_amd64
+          rm  exe_arm64
+
+          # pack
+          cd .workflow
+          plutil -replace version -string "${{ steps.event.outputs.tag }}" info.plist
+          zip -r ../"DevToys-${{ steps.event.outputs.tag }}.alfredworkflow" .
+          cd ..
+
+          echo "::set-output name=artifact::$(echo "DevToys-${{ steps.event.outputs.tag }}.alfredworkflow")"
+      - uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: "${{ steps.build.outputs.artifact }}"

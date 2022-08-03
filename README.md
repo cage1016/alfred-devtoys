@@ -150,6 +150,9 @@ use `json format` keyword to format JSON as `tab`,  `2 spaces` `4 spaces` indent
 
 ## Change Log
 
+### 1.3.0
+- Add `amd64` & `arm64` support
+
 ### 1.2.0
 - Add JSON format as `tab`,  `2 spaces`, `4 spaces` indents and `minify` functions
 - Revised `info.plist` items
