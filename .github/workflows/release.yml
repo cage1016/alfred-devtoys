@@ -19,7 +19,10 @@ jobs:
         with:
           go-version: ${{ matrix.go-version }}
       - name: Run unit tests
-        run: go test -v ./...
+        run: go test -v -race -cover -coverprofile coverage.txt -covermode=atomic ./...
+      - name: update codecov
+        run: |
+          CODECOV_TOKEN=${{ secrets.CODECOV_TOKEN }} bash <(curl -s https://codecov.io/bash)  
       - name: Parse Event
         id: event
         run: |

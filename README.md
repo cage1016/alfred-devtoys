@@ -5,6 +5,7 @@ A Swiss Army knife for developers for Alfred
 [![Release](https://github.com/cage1016/alfred-devtoys/actions/workflows/release.yml/badge.svg)](https://github.com/cage1016/alfred-devtoys/actions/workflows/release.yml)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 ![GitHub all releases](https://img.shields.io/github/downloads/cage1016/alfred-devtoys/total)
+[![codecov](https://codecov.io/gh/cage1016/alfred-devtoys/branch/master/graph/badge.svg)](https://codecov.io/gh/cage1016/alfred-devtoys)
 
 ![](screenshots/alfred-devtoys.png)
 
