@@ -10,6 +10,7 @@ require (
 	github.com/joho/godotenv v1.4.0
 	github.com/ku/go-change-case v0.0.1
 	github.com/spf13/cobra v1.5.0
+	github.com/stretchr/testify v1.8.0 // indirect
 	github.com/tidwall/pretty v1.2.0
 	golang.design/x/clipboard v0.6.2
 	gopkg.in/loremipsum.v1 v1.1.0

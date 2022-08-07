@@ -1,10 +1,10 @@
 package lib
 
 import (
-	"reflect"
+	"errors"
 	"testing"
 
-	"github.com/dgrijalva/jwt-go"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestJWTdecode(t *testing.T) {
@@ -12,22 +12,29 @@ func TestJWTdecode(t *testing.T) {
 		tokenString string
 	}
 	tests := []struct {
-		name string
-		args args
-		want *jwt.Token
+		name      string
+		args      args
+		wantError error
 	}{
 		{
 			name: "Decode",
 			args: args{
 				tokenString: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhIjoiYiJ9.9RfgR0OhCFw1pz-g9gLzDEuFSRe1sgsqedGz5e4MkWc",
 			},
-			want: nil,
+			wantError: nil,
+		},
+		{
+			name: "Decode",
+			args: args{
+				tokenString: "invalid-token-string",
+			},
+			wantError: errors.New("[jwt: invalid token string] Invalid token"),
 		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if got, err := JWTdecode(tt.args.tokenString); !reflect.DeepEqual(got, tt.want) && err != nil {
-				t.Errorf("JWTdecode() = %v, want %v", got, tt.want)
+			if _, err := JWTdecode(tt.args.tokenString); tt.wantError != nil {
+				assert.Error(t, err)
 			}
 		})
 	}
