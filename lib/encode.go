@@ -2,7 +2,6 @@ package lib
 
 import (
 	b64 "encoding/base64"
-	"fmt"
 	"html"
 	"net/url"
 )
@@ -26,14 +25,6 @@ func (e *Encode) URL(input string) string {
 
 func (e *Encode) HTML(input string) string {
 	return html.EscapeString(input)
-}
-
-func (e *Encode) Binary(input string) string {
-	res := ""
-	for _, c := range input {
-		res = fmt.Sprintf("%s%.8b", res, c)
-	}
-	return res
 }
 
 func NewEncoder() Encoder {
