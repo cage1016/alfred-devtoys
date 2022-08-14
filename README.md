@@ -65,7 +65,10 @@ use `jwt` keyword to decode JWT token for `Header`, `Payload`
 </p>
 
 ## CheckSum
-use `checksum` keyword to get `MD5`, `SHA1`, `SHA256`, `SHA512` file checksum
+use `checksumf` keyword to get `MD5`, `SHA1`, `SHA256`, `SHA512` file checksum
+
+- File Filter
+- File Action
 
 <p align="center">
 <img src="/screenshots/checksum.gif?raw=true">
