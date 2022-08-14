@@ -26,7 +26,7 @@ A Swiss Army knife for developers for Alfred
 - **Case** - Convert string to `camel`, `constant`, `dot`, `lower`, `lcfirst`, `no`, `param`, `pascal`, `path`, `sentence`, `snake`, `swap`, `title`, `upper`, `ucfirst` and `hashtag` case
 - **Number Base** - Base conversion between `decimal`, `hex`, `octal` and `binary`
 - **JSON** - JSON formatting as `tab`,  `2 spaces`, `4 spaces` indents and `minify`
-
+- **Base64 Image** - Imgage Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML <img> code` and `CSS Background Source`
 ## Download
 Make sure to download the latest released directly from the releases page. [Download here](https://github.com/cage1016/alfred-devtoys/releases).
 
@@ -142,6 +142,19 @@ use `json format` keyword to format JSON as `tab`,  `2 spaces` `4 spaces` indent
 <img src="/screenshots/json.gif?raw=true">
 </p>
 
+## Image Base64 Encoder
+
+use `imgbase64f` to find and open with Img Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML <img> code` and `CSS Background Source`
+
+- Support `png`, `bmp`, `gif`, `jpeg`, `webp`, `svg` and `tiff` image format
+- Universal Action
+- File Filter
+- File Action
+
+<p align="center">
+<img src="/screenshots/imgbase64.gif?raw=true">
+</p>
+
 ## Third Party Libraries
 
 - [ku/go-change-case: a golang port of npm package change-case](https://github.com/ku/go-change-case)
@@ -150,6 +163,9 @@ use `json format` keyword to format JSON as `tab`,  `2 spaces` `4 spaces` indent
 - [tidwall/pretty: Efficient JSON beautifier and compactor for Go](https://github.com/tidwall/pretty)
 
 ## Change Log
+
+### 1.4.0
+- Add image Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML <img> code` and `CSS Background Source`
 
 ### 1.3.0
 - Add `amd64` & `arm64` support

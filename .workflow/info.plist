@@ -174,6 +174,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>47326492-81AC-42E0-AC9D-91D6498125AE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9464C7BA-0AAA-4084-B1E0-35CBA8319399</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4EE4E0AD-A4A7-47E0-8D37-3B95EC3522E0</key>
 		<array>
 			<dict>
@@ -291,6 +304,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9464C7BA-0AAA-4084-B1E0-35CBA8319399</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>98633F2E-5761-4974-90CC-FE30450B5A2F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9464C7BA-0AAA-4084-B1E0-35CBA8319399</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A86ABF57-CB9C-46B0-80DC-D6468E5D89C5</key>
 		<array>
 			<dict>
@@ -360,6 +399,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>C5532483-9440-4531-A816-671E47CD6F2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B41982C1-252F-4151-8A0B-EC3512926930</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9464C7BA-0AAA-4084-B1E0-35CBA8319399</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -571,6 +623,185 @@
 	<string>DevToys</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<false/>
+				<key>acceptsurls</key>
+				<true/>
+				<key>name</key>
+				<string>Open with Img Base64 Encode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>B41982C1-252F-4151-8A0B-EC3512926930</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>./exe imageB64 "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Img Base64 Encode</string>
+				<key>title</key>
+				<string>Img Base64 Encode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>9464C7BA-0AAA-4084-B1E0-35CBA8319399</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>imgbase64f</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Find and Open with Img Base64 Encode</string>
+				<key>title</key>
+				<string>Find and Open with Img Base64 Encode</string>
+				<key>types</key>
+				<array>
+					<string>com.compuserve.gif</string>
+					<string>com.microsoft.bmp</string>
+					<string>org.webmproject.webp</string>
+					<string>public.jpeg</string>
+					<string>public.png</string>
+					<string>public.svg-image</string>
+					<string>public.tiff</string>
+				</array>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>98633F2E-5761-4974-90CC-FE30450B5A2F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.compuserve.gif</string>
+					<string>com.microsoft.bmp</string>
+					<string>org.webmproject.webp</string>
+					<string>public.jpeg</string>
+					<string>public.png</string>
+					<string>public.svg-image</string>
+					<string>public.tiff</string>
+				</array>
+				<key>name</key>
+				<string>Open With Img Base64 Encode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>47326492-81AC-42E0-AC9D-91D6498125AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -2383,280 +2614,308 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>230</real>
+			<real>595</real>
 		</dict>
 		<key>0EB15901-2570-4322-97EC-DB3AF20A980B</key>
 		<dict>
 			<key>xpos</key>
 			<real>60</real>
 			<key>ypos</key>
-			<real>130</real>
+			<real>495</real>
 		</dict>
 		<key>0F529BB7-CB3B-486D-9DE1-AFB1B6D05EFE</key>
 		<dict>
 			<key>xpos</key>
 			<real>60</real>
 			<key>ypos</key>
-			<real>230</real>
+			<real>595</real>
 		</dict>
 		<key>1BC73F6D-19FB-4032-9632-78CC08B1E422</key>
 		<dict>
 			<key>xpos</key>
 			<real>420</real>
 			<key>ypos</key>
-			<real>855</real>
+			<real>1220</real>
 		</dict>
 		<key>1D435D66-501B-49F4-B0A0-45F81C6E9D40</key>
 		<dict>
 			<key>xpos</key>
 			<real>60</real>
 			<key>ypos</key>
-			<real>330</real>
+			<real>695</real>
 		</dict>
 		<key>1F2BD1D7-0A68-49C6-88DE-43E0A91477DB</key>
 		<dict>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>655</real>
+			<real>1020</real>
 		</dict>
 		<key>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</key>
 		<dict>
 			<key>xpos</key>
 			<real>950</real>
 			<key>ypos</key>
-			<real>660</real>
+			<real>1025</real>
 		</dict>
 		<key>2190908E-CE13-43D3-8C8C-A880648445DD</key>
 		<dict>
 			<key>xpos</key>
 			<real>750</real>
 			<key>ypos</key>
-			<real>685</real>
+			<real>1050</real>
 		</dict>
 		<key>3758D1AA-7A87-480F-A18A-A12709A29BA7</key>
 		<dict>
 			<key>xpos</key>
 			<real>300</real>
 			<key>ypos</key>
-			<real>555</real>
+			<real>920</real>
 		</dict>
 		<key>3D36CEA1-A3F0-448F-AAD0-791F521A3B62</key>
 		<dict>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>855</real>
+			<real>1220</real>
+		</dict>
+		<key>47326492-81AC-42E0-AC9D-91D6498125AE</key>
+		<dict>
+			<key>xpos</key>
+			<real>435</real>
+			<key>ypos</key>
+			<real>295</real>
 		</dict>
 		<key>4C3AA443-3696-4DA1-BE97-18252F520E01</key>
 		<dict>
 			<key>xpos</key>
 			<real>1185</real>
 			<key>ypos</key>
-			<real>655</real>
+			<real>1020</real>
 		</dict>
 		<key>4EE4E0AD-A4A7-47E0-8D37-3B95EC3522E0</key>
 		<dict>
 			<key>xpos</key>
 			<real>420</real>
 			<key>ypos</key>
-			<real>1190</real>
+			<real>1555</real>
 		</dict>
 		<key>50FCEAF1-2982-4F22-A6C4-7772EF3F958C</key>
 		<dict>
 			<key>xpos</key>
 			<real>1185</real>
 			<key>ypos</key>
-			<real>755</real>
+			<real>1120</real>
 		</dict>
 		<key>51F38119-0AB1-4E3B-9F9D-8EB42C485078</key>
 		<dict>
 			<key>xpos</key>
 			<real>300</real>
 			<key>ypos</key>
-			<real>855</real>
+			<real>1220</real>
 		</dict>
 		<key>54185D5A-A90D-43D6-8911-882FCBFD4CA4</key>
 		<dict>
 			<key>xpos</key>
 			<real>1185</real>
 			<key>ypos</key>
-			<real>555</real>
+			<real>920</real>
 		</dict>
 		<key>60AD413A-80C1-486B-B448-F0161FBAE954</key>
 		<dict>
 			<key>xpos</key>
 			<real>60</real>
 			<key>ypos</key>
-			<real>855</real>
+			<real>1220</real>
 		</dict>
 		<key>6C2E2EC0-D6A1-4C54-9C7E-091136E8BB01</key>
 		<dict>
 			<key>xpos</key>
 			<real>420</real>
 			<key>ypos</key>
-			<real>555</real>
+			<real>920</real>
 		</dict>
 		<key>7E6059B2-3514-488A-A7B3-183767BD2C3A</key>
 		<dict>
 			<key>xpos</key>
 			<real>420</real>
 			<key>ypos</key>
-			<real>655</real>
+			<real>1020</real>
 		</dict>
 		<key>803E6FCC-E33B-47AC-A8C4-D3D4496025EA</key>
 		<dict>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>130</real>
+			<real>495</real>
 		</dict>
 		<key>85D8B4B1-9395-42D5-9E5C-AEF309181BFC</key>
 		<dict>
 			<key>xpos</key>
 			<real>60</real>
 			<key>ypos</key>
-			<real>755</real>
+			<real>1120</real>
 		</dict>
 		<key>8649359F-4493-4F4C-BAA2-A63C8CD0473A</key>
 		<dict>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>755</real>
+			<real>1120</real>
 		</dict>
 		<key>90A2BF29-C6BA-44CB-A577-21A73F8FBA46</key>
 		<dict>
 			<key>xpos</key>
 			<real>60</real>
 			<key>ypos</key>
-			<real>655</real>
+			<real>1020</real>
+		</dict>
+		<key>9464C7BA-0AAA-4084-B1E0-35CBA8319399</key>
+		<dict>
+			<key>xpos</key>
+			<real>630</real>
+			<key>ypos</key>
+			<real>190</real>
+		</dict>
+		<key>98633F2E-5761-4974-90CC-FE30450B5A2F</key>
+		<dict>
+			<key>xpos</key>
+			<real>435</real>
+			<key>ypos</key>
+			<real>190</real>
 		</dict>
 		<key>A86ABF57-CB9C-46B0-80DC-D6468E5D89C5</key>
 		<dict>
 			<key>xpos</key>
 			<real>300</real>
 			<key>ypos</key>
-			<real>30</real>
+			<real>395</real>
 		</dict>
 		<key>AB5C9DE0-0756-4329-BEEA-0F9783C3621B</key>
 		<dict>
 			<key>xpos</key>
 			<real>245</real>
 			<key>ypos</key>
-			<real>1125</real>
+			<real>1490</real>
 		</dict>
 		<key>B1F2B9A2-3F02-4D1A-BF6B-7F165D678C1B</key>
 		<dict>
 			<key>xpos</key>
 			<real>420</real>
 			<key>ypos</key>
-			<real>1090</real>
+			<real>1455</real>
+		</dict>
+		<key>B41982C1-252F-4151-8A0B-EC3512926930</key>
+		<dict>
+			<key>xpos</key>
+			<real>435</real>
+			<key>ypos</key>
+			<real>85</real>
 		</dict>
 		<key>B42BF457-B823-4475-BB9B-412D9A0080A1</key>
 		<dict>
 			<key>xpos</key>
 			<real>420</real>
 			<key>ypos</key>
-			<real>455</real>
+			<real>820</real>
 		</dict>
 		<key>BB249334-2E71-4818-8715-F266340F6207</key>
 		<dict>
 			<key>xpos</key>
 			<real>65</real>
 			<key>ypos</key>
-			<real>1135</real>
+			<real>1500</real>
 		</dict>
 		<key>C1A6092E-C049-44EF-9E18-D13C9173B65A</key>
 		<dict>
 			<key>xpos</key>
 			<real>420</real>
 			<key>ypos</key>
-			<real>1290</real>
+			<real>1655</real>
 		</dict>
 		<key>C5532483-9440-4531-A816-671E47CD6F2D</key>
 		<dict>
 			<key>xpos</key>
 			<real>750</real>
 			<key>ypos</key>
-			<real>1165</real>
+			<real>1530</real>
 		</dict>
 		<key>C8CEF9B8-8427-45EF-95EF-2C56C5EE738C</key>
 		<dict>
 			<key>xpos</key>
 			<real>300</real>
 			<key>ypos</key>
-			<real>755</real>
+			<real>1120</real>
 		</dict>
 		<key>D238AE44-A74F-44B1-92DE-8EA2D52DA89C</key>
 		<dict>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>555</real>
+			<real>920</real>
 		</dict>
 		<key>D2D00E80-4891-40FF-9F52-AD4925066F25</key>
 		<dict>
 			<key>xpos</key>
-			<real>750</real>
+			<real>815</real>
 			<key>ypos</key>
-			<real>205</real>
+			<real>570</real>
 		</dict>
 		<key>D70D8FA9-239C-4AA6-A867-583907597EC5</key>
 		<dict>
 			<key>xpos</key>
 			<real>420</real>
 			<key>ypos</key>
-			<real>755</real>
+			<real>1120</real>
 		</dict>
 		<key>D9190DC4-F5B4-41EC-B2E4-71D549C35DEC</key>
 		<dict>
 			<key>xpos</key>
 			<real>60</real>
 			<key>ypos</key>
-			<real>30</real>
+			<real>395</real>
 		</dict>
 		<key>DD1AF965-E047-415E-BC12-5C2DBAB4AC55</key>
 		<dict>
 			<key>xpos</key>
 			<real>60</real>
 			<key>ypos</key>
-			<real>555</real>
+			<real>920</real>
 		</dict>
 		<key>DF6397E1-782C-493E-8337-BAE814409210</key>
 		<dict>
 			<key>xpos</key>
 			<real>420</real>
 			<key>ypos</key>
-			<real>990</real>
+			<real>1355</real>
 		</dict>
 		<key>E377B5E7-7041-4785-A436-0EE645D6591D</key>
 		<dict>
 			<key>xpos</key>
 			<real>1305</real>
 			<key>ypos</key>
-			<real>555</real>
+			<real>920</real>
 		</dict>
 		<key>F79CD6E7-50C9-45F4-A615-67B810787BF3</key>
 		<dict>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>330</real>
+			<real>695</real>
 		</dict>
 		<key>FA64E015-CFB7-4BFE-B8F8-57995BAAE32C</key>
 		<dict>
 			<key>xpos</key>
 			<real>180</real>
 			<key>ypos</key>
-			<real>30</real>
+			<real>395</real>
 		</dict>
 		<key>FF072746-D0AA-40A3-85FB-9315CEE9DD64</key>
 		<dict>
 			<key>xpos</key>
 			<real>300</real>
 			<key>ypos</key>
-			<real>655</real>
+			<real>1020</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

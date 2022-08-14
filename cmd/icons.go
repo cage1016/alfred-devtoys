@@ -6,6 +6,8 @@ var (
 	LoremIpsumIcon         = &aw.Icon{Value: "lorem-ipsum.pdf"}
 	LoremIpsumGrayIcon     = &aw.Icon{Value: "lorem-ipsum-gray.pdf"}
 	Base64Icon             = &aw.Icon{Value: "base64.pdf"}
+	Base64ImgIcon          = &aw.Icon{Value: "base64-img.pdf"}
+	Base64ImgGrayIcon      = &aw.Icon{Value: "base64-img-gray.pdf"}
 	DevToysIcon            = &aw.Icon{Value: "devtoys.pdf"}
 	DownloadIcon           = &aw.Icon{Value: "download.pdf"}
 	EncodeDecodeIcon       = &aw.Icon{Value: "encode-decode.pdf"}
