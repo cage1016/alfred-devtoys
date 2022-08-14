@@ -586,6 +586,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E6722CFB-EC4E-4094-AD75-F2B3D973B654</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1D435D66-501B-49F4-B0A0-45F81C6E9D40</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F114E387-C783-4D1A-AD1A-EDD52C711304</key>
 		<array>
 			<dict>
@@ -751,6 +764,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>JWT Decode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>E6722CFB-EC4E-4094-AD75-F2B3D973B654</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -839,6 +873,53 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>FA64E015-CFB7-4BFE-B8F8-57995BAAE32C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>./exe jwt $1</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>JWT Decode</string>
+				<key>title</key>
+				<string>JWT Decode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1D435D66-501B-49F4-B0A0-45F81C6E9D40</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1318,55 +1399,6 @@
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>F79CD6E7-50C9-45F4-A615-67B810787BF3</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>jwt</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe jwt $1</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>parser JWT</string>
-				<key>title</key>
-				<string>JWT</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>1D435D66-501B-49F4-B0A0-45F81C6E9D40</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -2766,9 +2798,9 @@ https://github.com/cage1016/alfred-devtoys</string>
 		<key>1D435D66-501B-49F4-B0A0-45F81C6E9D40</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>215</real>
 			<key>ypos</key>
-			<real>695</real>
+			<real>175</real>
 		</dict>
 		<key>1F2BD1D7-0A68-49C6-88DE-43E0A91477DB</key>
 		<dict>
@@ -3021,6 +3053,13 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<real>1305</real>
 			<key>ypos</key>
 			<real>920</real>
+		</dict>
+		<key>E6722CFB-EC4E-4094-AD75-F2B3D973B654</key>
+		<dict>
+			<key>xpos</key>
+			<real>65</real>
+			<key>ypos</key>
+			<real>175</real>
 		</dict>
 		<key>F114E387-C783-4D1A-AD1A-EDD52C711304</key>
 		<dict>
