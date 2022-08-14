@@ -519,3 +519,51 @@ func TestHexToDec(t *testing.T) {
 		})
 	}
 }
+
+func TestBaseConvert(t *testing.T) {
+	type Input struct {
+		Number           string
+		FromBase, ToBase int
+	}
+
+	type fields struct {
+		c func(number string, fromBase, toBase int) string
+	}
+
+	type args struct {
+		n map[Input]string
+	}
+
+	tests := []struct {
+		name    string
+		prepare func(f *fields)
+		args    args
+	}{
+		{
+			name: "test",
+			prepare: func(f *fields) {
+				f.c = baseConvert
+			},
+			args: args{
+				n: map[Input]string{
+					{"10", 10, 2}: "1010",
+					{"10", -1, 2}: "",
+				},
+			},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			f := fields{}
+			if tt.prepare != nil {
+				tt.prepare(&f)
+			}
+
+			for k, v := range tt.args.n {
+				if got := f.c(k.Number, k.FromBase, k.ToBase); got != v {
+					t.Errorf("HexToDec() = %v, want %v", got, v)
+				}
+			}
+		})
+	}
+}

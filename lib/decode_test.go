@@ -24,6 +24,15 @@ func TestDecode_Base64(t *testing.T) {
 				},
 			},
 		},
+		{
+			name: "Invalid Base64",
+			e:    &lib.Decode{},
+			args: args{
+				input: map[string]string{
+					"fake-base64": "",
+				},
+			},
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
