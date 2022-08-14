@@ -6,6 +6,7 @@ A Swiss Army knife for developers for Alfred
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 ![GitHub all releases](https://img.shields.io/github/downloads/cage1016/alfred-devtoys/total)
 [![codecov](https://codecov.io/gh/cage1016/alfred-devtoys/branch/master/graph/badge.svg)](https://codecov.io/gh/cage1016/alfred-devtoys)
+![](https://img.shields.io/badge/Alfred-5-blueviolet)
 
 ![](screenshots/alfred-devtoys.png)
 
@@ -169,6 +170,10 @@ use `imgbase64f` to find and open with Img Base64 Encode as `Base64 string`,`Bas
 
 ### 1.4.0
 - Add image Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML <img> code` and `CSS Background Source`
+- CheckSum add File Filter and File Action
+- QRCode Generator add Quicklook
+- JWT decode add Universal Action
+- increase test coverage
 
 ### 1.3.0
 - Add `amd64` & `arm64` support
