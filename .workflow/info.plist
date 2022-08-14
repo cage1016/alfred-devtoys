@@ -1298,7 +1298,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>Loading...</string>
 				<key>script</key>
 				<string>./exe qrcode $1</string>
 				<key>scriptargtype</key>
@@ -1306,7 +1306,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>qrcode generator</string>
+				<string>QRCode Generator</string>
 				<key>title</key>
 				<string>QRCode Generator</string>
 				<key>type</key>
@@ -2738,7 +2738,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 		<key>0D0AFFEB-55CC-4858-A5E5-63E3D1FE013E</key>
 		<dict>
 			<key>xpos</key>
-			<real>280</real>
+			<real>385</real>
 			<key>ypos</key>
 			<real>120</real>
 		</dict>
@@ -3025,7 +3025,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 		<key>F114E387-C783-4D1A-AD1A-EDD52C711304</key>
 		<dict>
 			<key>xpos</key>
-			<real>285</real>
+			<real>390</real>
 			<key>ypos</key>
 			<real>225</real>
 		</dict>
@@ -3039,7 +3039,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 		<key>FA64E015-CFB7-4BFE-B8F8-57995BAAE32C</key>
 		<dict>
 			<key>xpos</key>
-			<real>475</real>
+			<real>580</real>
 			<key>ypos</key>
 			<real>175</real>
 		</dict>
