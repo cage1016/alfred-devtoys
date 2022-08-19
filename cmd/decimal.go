@@ -41,13 +41,31 @@ func runDecimal(cmd *cobra.Command, args []string) {
 			wf.NewItem(fmt.Sprintf("`%s` is overflows int", query)).Subtitle("Try a different query?").Icon(NumberGrayIcon)
 		} else {
 			b := lib.DecToBin(query)
-			wf.NewItem(BinaryFormat(b)).Subtitle("➜ Decimal to Binary").Valid(true).Arg(b).Icon(NumberIcon).Var("action", "copy")
+			wf.NewItem(BinaryFormat(b)).
+				Subtitle(" ⌘+L, ↩ Copy Decimal to Binary").
+				Valid(true).
+				Arg(b).
+				Largetype(b).
+				Icon(NumberIcon).
+				Var("action", "copy")
 
 			o := lib.DecToOct(query)
-			wf.NewItem(OctalFormat(o)).Subtitle("➜ Decimal to Octal").Valid(true).Arg(o).Icon(NumberIcon).Var("action", "copy")
+			wf.NewItem(OctalFormat(o)).
+				Subtitle(" ⌘+L, ↩ Copy Decimal to Octal").
+				Valid(true).
+				Arg(o).
+				Largetype(o).
+				Icon(NumberIcon).
+				Var("action", "copy")
 
 			h := lib.DecToHex(query)
-			wf.NewItem(HexFormat(h)).Subtitle("➜ Decimal to Hexadecimal").Valid(true).Arg(h).Icon(NumberIcon).Var("action", "copy")
+			wf.NewItem(HexFormat(h)).
+				Subtitle(" ⌘+L, ↩ Copy Decimal to Hexadecimal").
+				Valid(true).
+				Arg(h).
+				Largetype(h).
+				Icon(NumberIcon).
+				Var("action", "copy")
 		}
 	}
 	wf.SendFeedback()

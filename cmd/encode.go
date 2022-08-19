@@ -22,8 +22,7 @@ var encodeCmd = &cobra.Command{
 }
 
 func encodeRun(cmd *cobra.Command, args []string) {
-	coder := lib.NewEncoder()
-	query := strings.Join(args, " ")
+	query := args[0]
 	if strings.TrimSpace(query) == "" {
 		query = string(clipboard.Read(clipboard.FmtText))
 	}
@@ -31,14 +30,33 @@ func encodeRun(cmd *cobra.Command, args []string) {
 
 	CheckForUpdate()
 
+	coder := lib.NewEncoder()
 	b64EncodeStr := coder.Base64(query)
-	wf.NewItem(b64EncodeStr).Subtitle("Base64 Encode").Valid(true).Icon(Base64Icon).Arg(b64EncodeStr).Var("action", "copy")
+	wf.NewItem(b64EncodeStr).
+		Subtitle("⌘+L, ↩ Copy Base64 Encode").
+		Valid(true).
+		Largetype(b64EncodeStr).
+		Icon(Base64Icon).
+		Arg(b64EncodeStr).
+		Var("action", "copy")
 
 	urlEncodeStr := coder.URL(query)
-	wf.NewItem(urlEncodeStr).Subtitle("URL Encode").Valid(true).Icon(UrlIcon).Arg(urlEncodeStr).Var("action", "copy")
+	wf.NewItem(urlEncodeStr).
+		Subtitle("⌘+L, ↩ Copy URL Encode").
+		Valid(true).
+		Largetype(urlEncodeStr).
+		Icon(UrlIcon).
+		Arg(urlEncodeStr).
+		Var("action", "copy")
 
 	htmlEncodeStr := coder.HTML(query)
-	wf.NewItem(htmlEncodeStr).Subtitle("HTML Encode").Valid(true).Arg(htmlEncodeStr).Icon(HtmlIcon).Var("action", "copy")
+	wf.NewItem(htmlEncodeStr).
+		Subtitle("⌘+L, ↩ Copy HTML Encode").
+		Valid(true).
+		Arg(htmlEncodeStr).
+		Largetype(htmlEncodeStr).
+		Icon(HtmlIcon).
+		Var("action", "copy")
 
 	wf.SendFeedback()
 }

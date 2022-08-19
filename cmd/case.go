@@ -54,7 +54,7 @@ var caseCmd = &cobra.Command{
 }
 
 func runCase(cmd *cobra.Command, args []string) {
-	query := strings.Join(args, " ")
+	query := args[0]
 	if strings.TrimSpace(query) == "" {
 		query = string(clipboard.Read(clipboard.FmtText))
 	}
@@ -75,7 +75,13 @@ func runCase(cmd *cobra.Command, args []string) {
 				wf.NewItem(fmt.Sprintf("`%s` is invalid input", query)).Subtitle(fmt.Sprintf("Try a different query for %s?", v)).Icon(TextChangeCaseGrayIcon)
 			} else {
 				str := m.Fn(query)
-				wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", v, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon).Var("action", "copy")
+				wf.NewItem(str).
+					Subtitle(fmt.Sprintf("%s ➜ ⌘+L, ↩ Copy %s", v, m.Subtitle)).
+					Valid(true).
+					Arg(str).
+					Largetype(str).
+					Icon(TextChangeCaseIcon).
+					Var("action", "copy")
 			}
 		}
 	} else {
@@ -84,7 +90,13 @@ func runCase(cmd *cobra.Command, args []string) {
 				wf.NewItem(fmt.Sprintf("`%s` is invalid input", query)).Subtitle(fmt.Sprintf("Try a different query for %s?", t)).Icon(TextChangeCaseGrayIcon)
 			} else {
 				str := m.Fn(query)
-				wf.NewItem(str).Subtitle(fmt.Sprintf("%s ➜ %s", t, m.Subtitle)).Valid(true).Arg(str).Icon(TextChangeCaseIcon).Var("action", "copy")
+				wf.NewItem(str).
+					Subtitle(fmt.Sprintf("%s ➜ ⌘+L, ↩ Copy %s", t, m.Subtitle)).
+					Valid(true).
+					Arg(str).
+					Largetype(str).
+					Icon(TextChangeCaseIcon).
+					Var("action", "copy")
 			}
 		}
 	}

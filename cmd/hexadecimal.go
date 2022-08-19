@@ -36,13 +36,31 @@ func runHexadecimal(cmd *cobra.Command, args []string) {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid hexadecimal", query)).Subtitle("Try a different query?").Icon(NumberGrayIcon)
 	} else {
 		b := lib.HexToBin(query)
-		wf.NewItem(BinaryFormat(b)).Subtitle("➜ Hexadecimal to Binary").Valid(true).Arg(b).Icon(NumberIcon).Var("action", "copy")
+		wf.NewItem(BinaryFormat(b)).
+			Subtitle(" ⌘+L, ↩ Copy Hexadecimal to Binary").
+			Valid(true).
+			Arg(b).
+			Largetype(b).
+			Icon(NumberIcon).
+			Var("action", "copy")
 
 		o := lib.HexToOct(query)
-		wf.NewItem(OctalFormat(o)).Subtitle("➜ Hexadecimal to Octal").Valid(true).Arg(o).Icon(NumberIcon).Var("action", "copy")
+		wf.NewItem(OctalFormat(o)).
+			Subtitle(" ⌘+L, ↩ Copy Hexadecimal to Octal").
+			Valid(true).
+			Arg(o).
+			Largetype(o).
+			Icon(NumberIcon).
+			Var("action", "copy")
 
 		d := lib.HexToDec(query)
-		wf.NewItem(DecimalFormat(d)).Subtitle("➜ Hexadecimal to Decimal").Valid(true).Arg(d).Icon(NumberIcon).Var("action", "copy")
+		wf.NewItem(DecimalFormat(d)).
+			Subtitle(" ⌘+L, ↩ Copy Hexadecimal to Decimal").
+			Valid(true).
+			Arg(d).
+			Largetype(d).
+			Icon(NumberIcon).
+			Var("action", "copy")
 	}
 
 	wf.SendFeedback()

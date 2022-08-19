@@ -23,7 +23,7 @@ var binaryCmd = &cobra.Command{
 }
 
 func runBinary(cmd *cobra.Command, args []string) {
-	query := strings.Join(args, " ")
+	query := args[0]
 	if strings.TrimSpace(query) == "" {
 		query = string(clipboard.Read(clipboard.FmtText))
 	}
@@ -36,13 +36,31 @@ func runBinary(cmd *cobra.Command, args []string) {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid binary", query)).Subtitle("Try a different query?").Icon(NumberGrayIcon)
 	} else {
 		b := lib.BinToDec(query)
-		wf.NewItem(DecimalFormat(b)).Subtitle("➜ Binary to Decimal").Valid(true).Arg(b).Icon(NumberIcon).Var("action", "copy")
+		wf.NewItem(DecimalFormat(b)).
+			Subtitle(" ⌘+L, ↩ Copy Binary to Decimal").
+			Valid(true).
+			Arg(b).
+			Largetype(b).
+			Icon(NumberIcon).
+			Var("action", "copy")
 
 		o := lib.BinToOct(query)
-		wf.NewItem(OctalFormat(o)).Subtitle("➜ Binary to Octal").Valid(true).Arg(o).Icon(NumberIcon).Var("action", "copy")
+		wf.NewItem(OctalFormat(o)).
+			Subtitle(" ⌘+L, ↩ Copy Binary to Octal").
+			Valid(true).
+			Arg(o).
+			Largetype(o).
+			Icon(NumberIcon).
+			Var("action", "copy")
 
 		h := lib.BinToHex(query)
-		wf.NewItem(HexFormat(h)).Subtitle("➜ Binary to Hexadecimal").Valid(true).Arg(h).Icon(NumberIcon).Var("action", "copy")
+		wf.NewItem(HexFormat(h)).
+			Subtitle(" ⌘+L, ↩ Copy Binary to Hexadecimal").
+			Valid(true).
+			Arg(h).
+			Largetype(h).
+			Icon(NumberIcon).
+			Var("action", "copy")
 	}
 
 	wf.SendFeedback()

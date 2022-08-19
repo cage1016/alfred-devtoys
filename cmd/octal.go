@@ -23,7 +23,7 @@ var octalCmd = &cobra.Command{
 }
 
 func runOctal(cmd *cobra.Command, args []string) {
-	query := strings.Join(args, " ")
+	query := args[0]
 	if strings.TrimSpace(query) == "" {
 		query = string(clipboard.Read(clipboard.FmtText))
 	}
@@ -36,13 +36,31 @@ func runOctal(cmd *cobra.Command, args []string) {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid octal", query)).Subtitle("Try a different query?").Icon(NumberGrayIcon)
 	} else {
 		b := lib.OctToBin(query)
-		wf.NewItem(BinaryFormat(b)).Subtitle("➜ Octal to Binary").Valid(true).Arg(b).Icon(NumberIcon).Var("action", "copy")
+		wf.NewItem(BinaryFormat(b)).
+			Subtitle(" ⌘+L, ↩ Copy Octal to Binary").
+			Valid(true).
+			Arg(b).
+			Largetype(b).
+			Icon(NumberIcon).
+			Var("action", "copy")
 
 		o := lib.OctToDec(query)
-		wf.NewItem(DecimalFormat(o)).Subtitle("➜ Octal to Decimal").Valid(true).Arg(o).Icon(NumberIcon).Var("action", "copy")
+		wf.NewItem(DecimalFormat(o)).
+			Subtitle(" ⌘+L, ↩ Copy Octal to Decimal").
+			Valid(true).
+			Arg(o).
+			Largetype(o).
+			Icon(NumberIcon).
+			Var("action", "copy")
 
 		h := lib.OctToHex(query)
-		wf.NewItem(HexFormat(h)).Subtitle("➜ Octal to Hexadecimal").Valid(true).Arg(h).Icon(NumberIcon).Var("action", "copy")
+		wf.NewItem(HexFormat(h)).
+			Subtitle(" ⌘+L, ↩ Copy Octal to Hexadecimal").
+			Valid(true).
+			Arg(h).
+			Largetype(h).
+			Icon(NumberIcon).
+			Var("action", "copy")
 	}
 	wf.SendFeedback()
 }

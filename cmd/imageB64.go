@@ -58,36 +58,40 @@ func runImageB64(cmd *cobra.Command, args []string) {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid file", query)).Subtitle("Try a different query?").Icon(Base64ImgGrayIcon)
 	} else {
 		wf.NewItem(b64EncodeStr).
-			Subtitle("Base64 string").
+			Subtitle("⌘+L ⇧, ↩ Copy Base64 string").
 			Valid(true).
 			Quicklook(query).
+			Largetype(b64EncodeStr).
 			Icon(Base64ImgIcon).
 			Arg(b64EncodeStr).
 			Var("action", "copy")
 
 		dataURI := fmt.Sprintf("data:%s;base64,%s", mtype, b64EncodeStr)
 		wf.NewItem(dataURI).
-			Subtitle("Base64 Data URI").
+			Subtitle("⌘+L ⇧, ↩ Copy Base64 Data URI").
 			Valid(true).
 			Quicklook(query).
+			Largetype(dataURI).
 			Icon(Base64ImgIcon).
 			Arg(dataURI).
 			Var("action", "copy")
 
 		str2 := fmt.Sprintf("<img src=\"%s\">", dataURI)
 		wf.NewItem(str2).
-			Subtitle("HTML <img> code").
+			Subtitle("⌘+L ⇧, ↩ Copy HTML <img> code").
 			Valid(true).
 			Quicklook(query).
+			Largetype(str2).
 			Icon(Base64ImgIcon).
 			Arg(str2).
 			Var("action", "copy")
 
 		str3 := fmt.Sprintf("background-image: url(\"%s\");", dataURI)
 		wf.NewItem(str3).
-			Subtitle("CSS Background Source").
+			Subtitle("⌘+L ⇧, ↩ Copy CSS Background Source").
 			Valid(true).
 			Quicklook(query).
+			Largetype(str3).
 			Icon(Base64ImgIcon).
 			Arg(str3).
 			Var("action", "copy")
