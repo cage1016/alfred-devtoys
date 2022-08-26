@@ -2715,6 +2715,9 @@ A Swiss Army knife for developers for Alfred
 
 ## Change Log
 
+### 1.4.1
+- update item name and subtitle display for better experience
+
 ### 1.4.0
 - Add image Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML &lt;img&gt; code` and `CSS Background Source`
 - CheckSum add File Filter and File Action
@@ -3097,7 +3100,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>1.4.0</string>
+	<string>1.4.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/cage1016/alfred-devtoys</string>
 </dict>

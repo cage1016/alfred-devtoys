@@ -168,6 +168,9 @@ use `imgbase64f` to find and open with Img Base64 Encode as `Base64 string`,`Bas
 
 ## Change Log
 
+### 1.4.1
+- update item name and subtitle display for better experience
+
 ### 1.4.0
 - Add image Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML <img> code` and `CSS Background Source`
 - CheckSum add File Filter and File Action
