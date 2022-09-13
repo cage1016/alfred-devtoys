@@ -19,6 +19,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>05858501-F16A-4C7A-BAF7-723A8634DCC3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C5532483-9440-4531-A816-671E47CD6F2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>0D0AFFEB-55CC-4858-A5E5-63E3D1FE013E</key>
 		<array>
 			<dict>
@@ -132,6 +145,18 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>5D386A58-954A-4E1C-B07E-7AC330871F0D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D4D116C9-95CC-41C8-A9FD-7A4C9771F6EC</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B80835B5-8F9A-4BD5-A529-41640226ECCB</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -1927,6 +1952,20 @@
 						<key>uid</key>
 						<string>5D386A58-954A-4E1C-B07E-7AC330871F0D</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>browse</string>
+						<key>outputlabel</key>
+						<string>browse</string>
+						<key>uid</key>
+						<string>B80835B5-8F9A-4BD5-A529-41640226ECCB</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -2360,6 +2399,27 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>D4D116C9-95CC-41C8-A9FD-7A4C9771F6EC</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -2684,6 +2744,55 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>time</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>./exe time "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Time Converter</string>
+				<key>title</key>
+				<string>Time Converter</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>05858501-F16A-4C7A-BAF7-723A8634DCC3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string># alfred-devtoys
@@ -2706,6 +2815,7 @@ A Swiss Army knife for developers for Alfred
 - **Number Base** - Base conversion between `decimal`, `hex`, `octal` and `binary`
 - **JSON** - JSON formatting as `tab`,  `2 spaces`, `4 spaces` indents and `minify`
 - **Base64 Image** - Imgage Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML &lt;img&gt; code` and `CSS Background Source`
+- **time** - Convert unix time / natural date
 
 ## Requires
 - Preferably Alfred 5
@@ -2714,6 +2824,9 @@ A Swiss Army knife for developers for Alfred
 - QR Code image size
 
 ## Change Log
+
+### 1.5.0
+- add time convert (unix time / natural date)
 
 ### 1.4.1
 - update item name and subtitle display for better experience
@@ -2751,6 +2864,13 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<real>180</real>
 			<key>ypos</key>
 			<real>595</real>
+		</dict>
+		<key>05858501-F16A-4C7A-BAF7-723A8634DCC3</key>
+		<dict>
+			<key>xpos</key>
+			<real>420</real>
+			<key>ypos</key>
+			<real>1780</real>
 		</dict>
 		<key>0D0AFFEB-55CC-4858-A5E5-63E3D1FE013E</key>
 		<dict>
@@ -3004,6 +3124,13 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<key>ypos</key>
 			<real>570</real>
 		</dict>
+		<key>D4D116C9-95CC-41C8-A9FD-7A4C9771F6EC</key>
+		<dict>
+			<key>xpos</key>
+			<real>1185</real>
+			<key>ypos</key>
+			<real>1235</real>
+		</dict>
 		<key>D70D8FA9-239C-4AA6-A867-583907597EC5</key>
 		<dict>
 			<key>xpos</key>
@@ -3098,9 +3225,51 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<key>variable</key>
 			<string>QRCODE_SIZE</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>Mon, 02 Jan 2006 15:04:05 -0700</string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>visit https://pkg.go.dev/time#pkg-constants to check more time fomrat</string>
+			<key>label</key>
+			<string>Time Format</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>TIME_FORMAT</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Time Zone</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>TIME_ZONE</string>
+		</dict>
 	</array>
 	<key>version</key>
-	<string>1.4.1</string>
+	<string>1.5.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/cage1016/alfred-devtoys</string>
 </dict>

@@ -26,4 +26,6 @@ var (
 	UuidGrayIcon           = &aw.Icon{Value: "uuid-gray.pdf"}
 	NumberIcon             = &aw.Icon{Value: "number.pdf"}
 	NumberGrayIcon         = &aw.Icon{Value: "number-gray.pdf"}
+	TimeConverterIcon      = &aw.Icon{Value: "time-converter.pdf"}
+	TimeConverterGrayIcon  = &aw.Icon{Value: "time-converter-gray.pdf"}
 )

@@ -13,6 +13,7 @@ require (
 	github.com/spf13/cobra v1.5.0
 	github.com/stretchr/testify v1.8.0
 	github.com/tidwall/pretty v1.2.0
+	github.com/tj/go-naturaldate v1.3.0
 	golang.design/x/clipboard v0.6.2
 	golang.org/x/image v0.0.0-20211028202545-6944b10bf410
 	gopkg.in/loremipsum.v1 v1.1.0

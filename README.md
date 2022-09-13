@@ -27,7 +27,8 @@ A Swiss Army knife for developers for Alfred
 - **Case** - Convert string to `camel`, `constant`, `dot`, `lower`, `lcfirst`, `no`, `param`, `pascal`, `path`, `sentence`, `snake`, `swap`, `title`, `upper`, `ucfirst` and `hashtag` case
 - **Number Base** - Base conversion between `decimal`, `hex`, `octal` and `binary`
 - **JSON** - JSON formatting as `tab`,  `2 spaces`, `4 spaces` indents and `minify`
-- **Base64 Image** - Imgage Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML <img> code` and `CSS Background Source`
+- **Base64 Image** - **Imgage** Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML <img> code` and `CSS Background Source`
+- **time** - Convert unix time / natural date string to time format
 ## Download
 Make sure to download the latest released directly from the releases page. [Download here](https://github.com/cage1016/alfred-devtoys/releases).
 
@@ -159,14 +160,30 @@ use `imgbase64f` to find and open with Img Base64 Encode as `Base64 string`,`Bas
 <img src="/screenshots/imgbase64.gif?raw=true">
 </p>
 
+## Time Convert
+
+use `time` to convert unix time / natural date string to time format
+
+- Support time zone setting
+- Visit [time package - time - Go Packages](https://pkg.go.dev/time#pkg-constants) to check more time format 
+- Visit [tj/go-naturaldate: Natural date/time parsing for Go.](https://github.com/tj/go-naturaldate) to check more netural date format example
+
+<p align="center">
+<img src="/screenshots/time.gif?raw=true">
+</p>
+
 ## Third Party Libraries
 
 - [ku/go-change-case: a golang port of npm package change-case](https://github.com/ku/go-change-case)
 - [go-loremipsum/loremipsum: A lorem ipsum generator for Go](https://github.com/go-loremipsum/loremipsum)
 - [boombuler/barcode: a barcode creation lib for golang](https://github.com/boombuler/barcode)
 - [tidwall/pretty: Efficient JSON beautifier and compactor for Go](https://github.com/tidwall/pretty)
+- [tj/go-naturaldate: Natural date/time parsing for Go.](https://github.com/tj/go-naturaldate)
 
 ## Change Log
+
+### 1.5.0
+- add time convert (unix time / natural date)
 
 ### 1.4.1
 - update item name and subtitle display for better experience
