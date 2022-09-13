@@ -95,3 +95,5 @@ Temporary Items
 .workflow/exe
 *.alfredworkflow
 testenv
+.idea
+coverage.txt
