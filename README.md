@@ -182,6 +182,10 @@ use `time` to convert unix time / natural date string to time format
 
 ## Change Log
 
+### 1.5.1
+- fix clipboard issue for Apple M1
+- fix typo error
+
 ### 1.5.0
 - add time convert (unix time / natural date)
 
