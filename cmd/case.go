@@ -11,9 +11,9 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/atotto/clipboard"
 	changecase "github.com/ku/go-change-case"
 	"github.com/spf13/cobra"
-	"golang.design/x/clipboard"
 )
 
 var M = map[string]struct {
@@ -56,7 +56,7 @@ var caseCmd = &cobra.Command{
 func runCase(cmd *cobra.Command, args []string) {
 	query := args[0]
 	if strings.TrimSpace(query) == "" {
-		query = string(clipboard.Read(clipboard.FmtText))
+		query, _ = clipboard.ReadAll()
 	}
 	log.Println(query)
 

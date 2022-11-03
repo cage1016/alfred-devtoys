@@ -10,9 +10,9 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/atotto/clipboard"
 	"github.com/google/uuid"
 	"github.com/spf13/cobra"
-	"golang.design/x/clipboard"
 )
 
 // uuidCmd represents the uuid command
@@ -25,7 +25,7 @@ var uuidCmd = &cobra.Command{
 func runUuid(cmd *cobra.Command, args []string) {
 	query := args[0]
 	if strings.TrimSpace(query) == "" {
-		query = string(clipboard.Read(clipboard.FmtText))
+		query, _ = clipboard.ReadAll()
 	}
 	log.Println(query)
 

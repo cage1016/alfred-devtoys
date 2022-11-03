@@ -12,11 +12,11 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/atotto/clipboard"
 	"github.com/boombuler/barcode"
 	"github.com/boombuler/barcode/qr"
 	aw "github.com/deanishe/awgo"
 	"github.com/spf13/cobra"
-	"golang.design/x/clipboard"
 
 	"github.com/cage1016/alfred-devtoys/alfred"
 )
@@ -56,7 +56,7 @@ func createQRCodeByBoombuler(content string, quality qr.ErrorCorrectionLevel, si
 func runQrcode(cmd *cobra.Command, args []string) {
 	query := args[0]
 	if strings.TrimSpace(query) == "" {
-		query = string(clipboard.Read(clipboard.FmtText))
+		query, _ = clipboard.ReadAll()
 	}
 	log.Println(query)
 

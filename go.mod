@@ -3,6 +3,7 @@ module github.com/cage1016/alfred-devtoys
 go 1.16
 
 require (
+	github.com/atotto/clipboard v0.1.4
 	github.com/boombuler/barcode v1.0.1
 	github.com/deanishe/awgo v0.29.1
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
@@ -14,7 +15,6 @@ require (
 	github.com/stretchr/testify v1.8.0
 	github.com/tidwall/pretty v1.2.0
 	github.com/tj/go-naturaldate v1.3.0
-	golang.design/x/clipboard v0.6.2
 	golang.org/x/image v0.0.0-20211028202545-6944b10bf410
 	gopkg.in/loremipsum.v1 v1.1.0
 )
