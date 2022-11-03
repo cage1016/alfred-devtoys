@@ -71,7 +71,7 @@ func runQrcode(cmd *cobra.Command, args []string) {
 			wf.NewItem(err.Error()).Subtitle("QR Code").Valid(false).Icon(aw.IconError)
 		} else {
 			wf.NewItem(query).
-				Subtitle("⌘+L ⇧, ↩ Brose QR code file").
+				Subtitle("⌘+L ⇧, ↩ Browse QR code file").
 				Valid(true).
 				Quicklook(path).
 				Largetype(query).
