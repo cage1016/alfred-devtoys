@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/atotto/clipboard"
 	"github.com/spf13/cobra"
-	"golang.design/x/clipboard"
 	"gopkg.in/loremipsum.v1"
 )
 
@@ -25,7 +25,7 @@ var loremCmd = &cobra.Command{
 func runLorem(cmd *cobra.Command, args []string) {
 	query := args[0]
 	if strings.TrimSpace(query) == "" {
-		query = string(clipboard.Read(clipboard.FmtText))
+		query, _ = clipboard.ReadAll()
 	}
 	log.Println(query)
 

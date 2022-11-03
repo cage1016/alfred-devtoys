@@ -10,9 +10,10 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cage1016/alfred-devtoys/lib"
+	"github.com/atotto/clipboard"
 	"github.com/spf13/cobra"
-	"golang.design/x/clipboard"
+
+	"github.com/cage1016/alfred-devtoys/lib"
 )
 
 // octalCmd represents the octal command
@@ -25,7 +26,7 @@ var octalCmd = &cobra.Command{
 func runOctal(cmd *cobra.Command, args []string) {
 	query := args[0]
 	if strings.TrimSpace(query) == "" {
-		query = string(clipboard.Read(clipboard.FmtText))
+		query, _ = clipboard.ReadAll()
 	}
 	log.Println(query)
 
