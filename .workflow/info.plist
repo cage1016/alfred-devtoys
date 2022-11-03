@@ -1147,7 +1147,7 @@
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Encdoe string</string>
+				<string>Encode string</string>
 				<key>title</key>
 				<string>Encode</string>
 				<key>type</key>
@@ -3269,7 +3269,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 		</dict>
 	</array>
 	<key>version</key>
-	<string>1.5.0</string>
+	<string>1.5.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/cage1016/alfred-devtoys</string>
 </dict>
