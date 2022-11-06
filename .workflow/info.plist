@@ -6,24 +6,11 @@
 	<string>com.kaichu.devtoys</string>
 	<key>connections</key>
 	<dict>
-		<key>0020866E-4F61-447D-994C-6812E4D86C84</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>05858501-F16A-4C7A-BAF7-723A8634DCC3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>C5532483-9440-4531-A816-671E47CD6F2D</string>
+				<string>61B1FA13-B683-4735-B8B8-84AA6C92277C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -45,11 +32,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>0EB15901-2570-4322-97EC-DB3AF20A980B</key>
+		<key>1B15A10C-B3F5-4813-9FE8-B088108FE718</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -58,24 +45,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>0F529BB7-CB3B-486D-9DE1-AFB1B6D05EFE</key>
+		<key>1B2E2CED-3A31-42BF-8639-E29683C171CC</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>1BC73F6D-19FB-4032-9632-78CC08B1E422</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>C0094533-1D11-420A-A700-176F7D5C93AE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -88,7 +62,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
+				<string>A64C17FB-3845-4AB9-9014-6A3229A6C6EE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -97,101 +71,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>1F2BD1D7-0A68-49C6-88DE-43E0A91477DB</key>
+		<key>414A84F3-F4B4-4575-9E6F-3E879F83982B</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>54185D5A-A90D-43D6-8911-882FCBFD4CA4</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>4D96CDF8-BDC6-41A4-B274-67CA02B1DE03</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>E377B5E7-7041-4785-A436-0EE645D6591D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>4D96CDF8-BDC6-41A4-B274-67CA02B1DE03</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>50FCEAF1-2982-4F22-A6C4-7772EF3F958C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>5D386A58-954A-4E1C-B07E-7AC330871F0D</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>D4D116C9-95CC-41C8-A9FD-7A4C9771F6EC</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>B80835B5-8F9A-4BD5-A529-41640226ECCB</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>2190908E-CE13-43D3-8C8C-A880648445DD</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3758D1AA-7A87-480F-A18A-A12709A29BA7</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>3D36CEA1-A3F0-448F-AAD0-791F521A3B62</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -213,6 +97,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>4CB88807-6E5F-428B-941F-6BF60B3AB4F8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C0094533-1D11-420A-A700-176F7D5C93AE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4EDC45C1-E017-4B31-9259-7032CDDC79FF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4EE4E0AD-A4A7-47E0-8D37-3B95EC3522E0</key>
 		<array>
 			<dict>
@@ -226,11 +136,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>51F38119-0AB1-4E3B-9F9D-8EB42C485078</key>
+		<key>4F8B3DB5-0878-48F0-99F4-A6C0A2C79945</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -239,11 +149,21 @@
 				<false/>
 			</dict>
 		</array>
-		<key>60AD413A-80C1-486B-B448-F0161FBAE954</key>
+		<key>52736CC7-178B-4659-A65D-DE8D09BD57FC</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>62519B07-06A5-45A6-9AF2-72FEB243B518</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -252,11 +172,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>6C2E2EC0-D6A1-4C54-9C7E-091136E8BB01</key>
+		<key>53BE0047-4AF1-484A-A4DA-BFCB6CEBDF74</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -265,11 +185,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>7E6059B2-3514-488A-A7B3-183767BD2C3A</key>
+		<key>54BB5CD3-CAAB-4903-B8CB-E302747700FF</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -278,11 +198,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>803E6FCC-E33B-47AC-A8C4-D3D4496025EA</key>
+		<key>54F40950-005B-42EA-ABE8-35AE3C965F40</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
+				<string>C0094533-1D11-420A-A700-176F7D5C93AE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -291,11 +211,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>85D8B4B1-9395-42D5-9E5C-AEF309181BFC</key>
+		<key>5CAFF430-71F5-4682-834E-84D2501B5C39</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>C0094533-1D11-420A-A700-176F7D5C93AE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -304,11 +224,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8649359F-4493-4F4C-BAA2-A63C8CD0473A</key>
+		<key>62519B07-06A5-45A6-9AF2-72FEB243B518</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -317,11 +237,153 @@
 				<false/>
 			</dict>
 		</array>
-		<key>90A2BF29-C6BA-44CB-A577-21A73F8FBA46</key>
+		<key>6CC70FCC-65B2-491D-9ABB-2C449740F5F3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>C0094533-1D11-420A-A700-176F7D5C93AE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7D7A12BA-E8A9-46F8-B94B-B11D0819A36C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7EBE3224-EA60-429A-99C9-D52217DC95F2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B09E93C3-A5DB-4763-A055-05C2A527BC3B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>4D96CDF8-BDC6-41A4-B274-67CA02B1DE03</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>96171297-7945-46B1-814B-5D0415D71D6D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>4D96CDF8-BDC6-41A4-B274-67CA02B1DE03</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D4B3C85-35F6-464B-800F-E5D58F175E91</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>5D386A58-954A-4E1C-B07E-7AC330871F0D</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E04DCB97-2F8B-4EAE-8A77-0FA0AAE80F6C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>B80835B5-8F9A-4BD5-A529-41640226ECCB</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>86AAE907-0D68-432A-9A75-B3B25FEB564A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>877A0B13-7175-4050-8689-F6894C125FCE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>888D9E99-603F-42FE-AB66-E834EC78639D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>899FB146-288C-4756-AEA0-AF763543C368</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8D395D48-868B-4369-8442-115C1F0673A7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8F0AC042-36F8-4855-9ED1-D2298A14F9B3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -334,7 +396,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
+				<string>BFFC4150-4AA1-4799-A954-4613A3A34A8F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -356,11 +418,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>A86ABF57-CB9C-46B0-80DC-D6468E5D89C5</key>
+		<key>A8D16C27-C32E-416D-A80E-29F0138F9447</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
+				<string>C0094533-1D11-420A-A700-176F7D5C93AE</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -446,11 +508,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B42BF457-B823-4475-BB9B-412D9A0080A1</key>
+		<key>BB249334-2E71-4818-8715-F266340F6207</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>AB5C9DE0-0756-4329-BEEA-0F9783C3621B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -459,11 +521,24 @@
 				<false/>
 			</dict>
 		</array>
-		<key>BB249334-2E71-4818-8715-F266340F6207</key>
+		<key>BB6FF7A9-071E-4F38-BA0F-49A80E0C1603</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>AB5C9DE0-0756-4329-BEEA-0F9783C3621B</string>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C0094533-1D11-420A-A700-176F7D5C93AE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0C72E704-646D-4E39-B267-8BD02F767935</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -485,11 +560,24 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C3DA3602-F25B-437F-8617-D01B2D83515B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C5532483-9440-4531-A816-671E47CD6F2D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</string>
+				<string>08CF8713-A4C0-43B1-B2E4-497F24E5A9E8</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -498,86 +586,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>C8CEF9B8-8427-45EF-95EF-2C56C5EE738C</key>
+		<key>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D238AE44-A74F-44B1-92DE-8EA2D52DA89C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D2D00E80-4891-40FF-9F52-AD4925066F25</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D70D8FA9-239C-4AA6-A867-583907597EC5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>D9190DC4-F5B4-41EC-B2E4-71D549C35DEC</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>DD1AF965-E047-415E-BC12-5C2DBAB4AC55</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D238AE44-A74F-44B1-92DE-8EA2D52DA89C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>02AEC025-0EE1-40FC-9928-A713503C231B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -625,11 +638,24 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F43F90F8-9FF4-4034-BD45-C3CE7DBBA694</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7EBE3224-EA60-429A-99C9-D52217DC95F2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F79CD6E7-50C9-45F4-A615-67B810787BF3</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>4C3AA443-3696-4DA1-BE97-18252F520E01</string>
+				<string>54D5A5E7-7BD4-439E-BC1F-522F98D7526F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -642,20 +668,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>FF072746-D0AA-40A3-85FB-9315CEE9DD64</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
+				<string>FD69AB72-83CB-4B5F-A2E0-C6FD8A86BC16</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -675,6 +688,257 @@
 	<string>DevToys</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{var:action} {query} Copied</string>
+				<key>title</key>
+				<string>DevToys</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>B09E93C3-A5DB-4763-A055-05C2A527BC3B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>96171297-7945-46B1-814B-5D0415D71D6D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>go-action</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>F43F90F8-9FF4-4034-BD45-C3CE7DBBA694</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>jumpto</key>
+				<string>_popUpItemAction:</string>
+				<key>path</key>
+				<string>{query}</string>
+				<key>type</key>
+				<integer>100</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.actioninalfred</string>
+			<key>uid</key>
+			<string>8D4B3C85-35F6-464B-800F-E5D58F175E91</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>copy</string>
+						<key>outputlabel</key>
+						<string>copy</string>
+						<key>uid</key>
+						<string>4D96CDF8-BDC6-41A4-B274-67CA02B1DE03</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>action in alfred</string>
+						<key>outputlabel</key>
+						<string>action in alfred</string>
+						<key>uid</key>
+						<string>5D386A58-954A-4E1C-B07E-7AC330871F0D</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:action}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>browse</string>
+						<key>outputlabel</key>
+						<string>browse</string>
+						<key>uid</key>
+						<string>B80835B5-8F9A-4BD5-A529-41640226ECCB</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>7EBE3224-EA60-429A-99C9-D52217DC95F2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>E04DCB97-2F8B-4EAE-8A77-0FA0AAE80F6C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>json format</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe json "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Encode string</string>
+				<key>title</key>
+				<string>JSON format</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6CC70FCC-65B2-491D-9ABB-2C449740F5F3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>encode</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe encode "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Encdoe string</string>
+				<key>title</key>
+				<string>Encode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>54F40950-005B-42EA-ABE8-35AE3C965F40</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -699,242 +963,119 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>anchorfields</key>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
 				<true/>
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>daterange</key>
-				<integer>0</integer>
-				<key>fields</key>
-				<array>
-					<dict>
-						<key>field</key>
-						<string>kMDItemDisplayName</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemAlternateNames</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-					<dict>
-						<key>field</key>
-						<string>kMDItemFinderComment</string>
-						<key>not</key>
-						<false/>
-						<key>split</key>
-						<true/>
-						<key>value</key>
-						<string>{query}</string>
-						<key>words</key>
-						<true/>
-					</dict>
-				</array>
-				<key>includesystem</key>
-				<false/>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
 				<key>keyword</key>
-				<string>checksumf</string>
-				<key>limit</key>
+				<string>uuid</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
 				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
 				<key>runningsubtext</key>
 				<string></string>
-				<key>scopes</key>
-				<array/>
-				<key>sortmode</key>
-				<integer>0</integer>
+				<key>script</key>
+				<string>./exe uuid "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
 				<key>subtext</key>
-				<string>Find and Open with File CheckSum</string>
+				<string>Generate UUID</string>
 				<key>title</key>
-				<string>Find and Open with File CheckSum</string>
-				<key>types</key>
-				<array/>
+				<string>UUID</string>
+				<key>type</key>
+				<integer>0</integer>
 				<key>withspace</key>
 				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.filefilter</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>0D0AFFEB-55CC-4858-A5E5-63E3D1FE013E</string>
+			<string>A8D16C27-C32E-416D-A80E-29F0138F9447</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsfiles</key>
+				<key>alfredfiltersresults</key>
 				<false/>
-				<key>acceptsmulti</key>
+				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
-				<key>acceptstext</key>
+				<key>argumenttreatemptyqueryasnil</key>
 				<true/>
-				<key>acceptsurls</key>
-				<false/>
-				<key>name</key>
-				<string>JWT Decode</string>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>decode</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe decode "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Decode string</string>
+				<key>title</key>
+				<string>Decode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.universalaction</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>E6722CFB-EC4E-4094-AD75-F2B3D973B654</string>
+			<string>5CAFF430-71F5-4682-834E-84D2501B5C39</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>go-action</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>0C72E704-646D-4E39-B267-8BD02F767935</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Loading...</string>
-				<key>script</key>
-				<string>./exe imageB64 "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Img Base64 Encode</string>
-				<key>title</key>
-				<string>Img Base64 Encode</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>9464C7BA-0AAA-4084-B1E0-35CBA8319399</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Loading...</string>
-				<key>script</key>
-				<string>./exe checksum "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>File checkSum</string>
-				<key>title</key>
-				<string>File checkSum</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>FA64E015-CFB7-4BFE-B8F8-57995BAAE32C</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Loading...</string>
-				<key>script</key>
-				<string>./exe jwt "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>JWT Decode</string>
-				<key>title</key>
-				<string>JWT Decode</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>1D435D66-501B-49F4-B0A0-45F81C6E9D40</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1025,246 +1166,74 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>acceptsmulti</key>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
 				<integer>0</integer>
-				<key>filetypes</key>
-				<array/>
-				<key>name</key>
-				<string>Open With Checksum</string>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>./exe imageB64 "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Img Base64 Encode</string>
+				<key>title</key>
+				<string>Img Base64 Encode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
+			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>F114E387-C783-4D1A-AD1A-EDD52C711304</string>
+			<string>9464C7BA-0AAA-4084-B1E0-35CBA8319399</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>go-action</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>BFFC4150-4AA1-4799-A954-4613A3A34A8F</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array>
-					<string>com.compuserve.gif</string>
-					<string>com.microsoft.bmp</string>
-					<string>org.webmproject.webp</string>
-					<string>public.jpeg</string>
-					<string>public.png</string>
-					<string>public.svg-image</string>
-					<string>public.tiff</string>
-				</array>
-				<key>name</key>
-				<string>Open With Img Base64 Encode</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>47326492-81AC-42E0-AC9D-91D6498125AE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>json format</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe json "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>JSON Formatter &amp; Validator beautifies</string>
-				<key>title</key>
-				<string>JSON format</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>A86ABF57-CB9C-46B0-80DC-D6468E5D89C5</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>encode</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe encode "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Encode string</string>
-				<key>title</key>
-				<string>Encode</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>D9190DC4-F5B4-41EC-B2E4-71D549C35DEC</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>decode</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe decode "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Decode string</string>
-				<key>title</key>
-				<string>Decode</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>0EB15901-2570-4322-97EC-DB3AF20A980B</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>uuid</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe uuid "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Generate UUID</string>
-				<key>title</key>
-				<string>UUID</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>803E6FCC-E33B-47AC-A8C4-D3D4496025EA</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
-			<string>D2D00E80-4891-40FF-9F52-AD4925066F25</string>
+			<string>C0094533-1D11-420A-A700-176F7D5C93AE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -1313,7 +1282,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>0020866E-4F61-447D-994C-6812E4D86C84</string>
+			<string>1B2E2CED-3A31-42BF-8639-E29683C171CC</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -1362,9 +1331,1165 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>0F529BB7-CB3B-486D-9DE1-AFB1B6D05EFE</string>
+			<string>4CB88807-6E5F-428B-941F-6BF60B3AB4F8</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>com.compuserve.gif</string>
+					<string>com.microsoft.bmp</string>
+					<string>org.webmproject.webp</string>
+					<string>public.jpeg</string>
+					<string>public.png</string>
+					<string>public.svg-image</string>
+					<string>public.tiff</string>
+				</array>
+				<key>name</key>
+				<string>Open With Img Base64 Encode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>47326492-81AC-42E0-AC9D-91D6498125AE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc command</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t command</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert All Change Case</string>
+				<key>title</key>
+				<string>Change Case Command</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>899FB146-288C-4756-AEA0-AF763543C368</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>./exe jwt "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>JWT Decode</string>
+				<key>title</key>
+				<string>JWT Decode</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1D435D66-501B-49F4-B0A0-45F81C6E9D40</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>go-action</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>A64C17FB-3845-4AB9-9014-6A3229A6C6EE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsfiles</key>
+				<false/>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>acceptstext</key>
+				<true/>
+				<key>acceptsurls</key>
+				<false/>
+				<key>name</key>
+				<string>JWT Decode</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.universalaction</string>
+			<key>uid</key>
+			<string>E6722CFB-EC4E-4094-AD75-F2B3D973B654</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc lcfirst</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t lcfirst</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a string with the first character lower cased</string>
+				<key>title</key>
+				<string>Change Case Lcfirst</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>62519B07-06A5-45A6-9AF2-72FEB243B518</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc path</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t path</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a lower case, slash separated string</string>
+				<key>title</key>
+				<string>Change Case Path</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4F8B3DB5-0878-48F0-99F4-A6C0A2C79945</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc camel</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t camel</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a string with the separators denoted by having the next letter capitalised</string>
+				<key>title</key>
+				<string>Change Case Camel</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>52736CC7-178B-4659-A65D-DE8D09BD57FC</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc title</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t title</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a space separated string with the first character of every word upper cased</string>
+				<key>title</key>
+				<string>Change Case Title</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>54BB5CD3-CAAB-4903-B8CB-E302747700FF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>anchorfields</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>daterange</key>
+				<integer>0</integer>
+				<key>fields</key>
+				<array>
+					<dict>
+						<key>field</key>
+						<string>kMDItemDisplayName</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemAlternateNames</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+					<dict>
+						<key>field</key>
+						<string>kMDItemFinderComment</string>
+						<key>not</key>
+						<false/>
+						<key>split</key>
+						<true/>
+						<key>value</key>
+						<string>{query}</string>
+						<key>words</key>
+						<true/>
+					</dict>
+				</array>
+				<key>includesystem</key>
+				<false/>
+				<key>keyword</key>
+				<string>checksumf</string>
+				<key>limit</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>scopes</key>
+				<array/>
+				<key>sortmode</key>
+				<integer>0</integer>
+				<key>subtext</key>
+				<string>Find and Open with File CheckSum</string>
+				<key>title</key>
+				<string>Find and Open with File CheckSum</string>
+				<key>types</key>
+				<array/>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.filefilter</string>
+			<key>uid</key>
+			<string>0D0AFFEB-55CC-4858-A5E5-63E3D1FE013E</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc upper</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t upper</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a string in upper case</string>
+				<key>title</key>
+				<string>Change Case Upper</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>86AAE907-0D68-432A-9A75-B3B25FEB564A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc no</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t no</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert the string without any casing (lower case, space separated)</string>
+				<key>title</key>
+				<string>Change Case No</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>414A84F3-F4B4-4575-9E6F-3E879F83982B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc constant</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t constant</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to an upper case, underscore separated string</string>
+				<key>title</key>
+				<string>Change Case Constant</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8F0AC042-36F8-4855-9ED1-D2298A14F9B3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>go-action</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>02AEC025-0EE1-40FC-9928-A713503C231B</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc sentence</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t sentence</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a lower case, space separated string</string>
+				<key>title</key>
+				<string>Change Case Sentence</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8D395D48-868B-4369-8442-115C1F0673A7</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>go-action</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>FD69AB72-83CB-4B5F-A2E0-C6FD8A86BC16</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>./exe checksum "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>File checkSum</string>
+				<key>title</key>
+				<string>File checkSum</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FA64E015-CFB7-4BFE-B8F8-57995BAAE32C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Open With Checksum</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>F114E387-C783-4D1A-AD1A-EDD52C711304</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc param</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t param</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a lower case, dash separated string</string>
+				<key>title</key>
+				<string>Change Case Param</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>53BE0047-4AF1-484A-A4DA-BFCB6CEBDF74</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc dot</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t dot</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a lower case, period separated string</string>
+				<key>title</key>
+				<string>Change Case Dot</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7D7A12BA-E8A9-46F8-B94B-B11D0819A36C</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc snake</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t snake</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a lower case, underscore separated string</string>
+				<key>title</key>
+				<string>Change Case Snake</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1B15A10C-B3F5-4813-9FE8-B088108FE718</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc ucfirst</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t ucfirst</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a string with the first character upper cased</string>
+				<key>title</key>
+				<string>Change Case Ucfirst</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>BB6FF7A9-071E-4F38-BA0F-49A80E0C1603</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc pascal</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t pascal</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a string denoted in the same fashion as camelCase, but with the first letter also capitalised</string>
+				<key>title</key>
+				<string>Change Case Pascal</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C3DA3602-F25B-437F-8617-D01B2D83515B</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc lower</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t lower</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a string in lower case</string>
+				<key>title</key>
+				<string>Change Case Lower</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>888D9E99-603F-42FE-AB66-E834EC78639D</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc hashtag</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t hashtag</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a string, space separated string with hashtag symbols</string>
+				<key>title</key>
+				<string>Change Case HashTag</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>877A0B13-7175-4050-8689-F6894C125FCE</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>cc swap</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe case "$1" -t swap</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Convert to a string with every character case reversed</string>
+				<key>title</key>
+				<string>Change Case Swap</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4EDC45C1-E017-4B31-9259-7032CDDC79FF</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>path</key>
+				<string>{query}</string>
+				<key>sortBy</key>
+				<integer>0</integer>
+				<key>sortDirection</key>
+				<integer>0</integer>
+				<key>sortFoldersAtTop</key>
+				<false/>
+				<key>sortOverride</key>
+				<false/>
+				<key>stackBrowserView</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.browseinalfred</string>
+			<key>uid</key>
+			<string>54D5A5E7-7BD4-439E-BC1F-522F98D7526F</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -1414,1008 +2539,6 @@
 			<string>F79CD6E7-50C9-45F4-A615-67B810787BF3</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>path</key>
-				<string>{query}</string>
-				<key>sortBy</key>
-				<integer>0</integer>
-				<key>sortDirection</key>
-				<integer>0</integer>
-				<key>sortFoldersAtTop</key>
-				<false/>
-				<key>sortOverride</key>
-				<false/>
-				<key>stackBrowserView</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.browseinalfred</string>
-			<key>uid</key>
-			<string>4C3AA443-3696-4DA1-BE97-18252F520E01</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc command</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t command</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert All Change Case</string>
-				<key>title</key>
-				<string>Change Case Command</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>B42BF457-B823-4475-BB9B-412D9A0080A1</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{query}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>54185D5A-A90D-43D6-8911-882FCBFD4CA4</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc lcfirst</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t lcfirst</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a string with the first character lower cased</string>
-				<key>title</key>
-				<string>Change Case Lcfirst</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>D238AE44-A74F-44B1-92DE-8EA2D52DA89C</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc path</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t path</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a lower case, slash separated string</string>
-				<key>title</key>
-				<string>Change Case Path</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>3758D1AA-7A87-480F-A18A-A12709A29BA7</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc title</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t title</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a space separated string with the first character of every word upper cased</string>
-				<key>title</key>
-				<string>Change Case Title</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>6C2E2EC0-D6A1-4C54-9C7E-091136E8BB01</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc camel</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t camel</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a string with the separators denoted by having the next letter capitalised</string>
-				<key>title</key>
-				<string>Change Case Camel</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>DD1AF965-E047-415E-BC12-5C2DBAB4AC55</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{var:action} {query} Copied</string>
-				<key>title</key>
-				<string>DevToys</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>E377B5E7-7041-4785-A436-0EE645D6591D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc no</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t no</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert the string without any casing (lower case, space separated)</string>
-				<key>title</key>
-				<string>Change Case No</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>1F2BD1D7-0A68-49C6-88DE-43E0A91477DB</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc upper</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t upper</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a string in upper case</string>
-				<key>title</key>
-				<string>Change Case Upper</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>7E6059B2-3514-488A-A7B3-183767BD2C3A</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc constant</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t constant</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to an upper case, underscore separated string</string>
-				<key>title</key>
-				<string>Change Case Constant</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>90A2BF29-C6BA-44CB-A577-21A73F8FBA46</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc sentence</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t sentence</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a lower case, space separated string</string>
-				<key>title</key>
-				<string>Change Case Sentence</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>FF072746-D0AA-40A3-85FB-9315CEE9DD64</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:action}</string>
-						<key>matchcasesensitive</key>
-						<true/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>copy</string>
-						<key>outputlabel</key>
-						<string>copy</string>
-						<key>uid</key>
-						<string>4D96CDF8-BDC6-41A4-B274-67CA02B1DE03</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:action}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>action in alfred</string>
-						<key>outputlabel</key>
-						<string>action in alfred</string>
-						<key>uid</key>
-						<string>5D386A58-954A-4E1C-B07E-7AC330871F0D</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:action}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>browse</string>
-						<key>outputlabel</key>
-						<string>browse</string>
-						<key>uid</key>
-						<string>B80835B5-8F9A-4BD5-A529-41640226ECCB</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>2190908E-CE13-43D3-8C8C-A880648445DD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc snake</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t snake</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a lower case, underscore separated string</string>
-				<key>title</key>
-				<string>Change Case Snake</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>C8CEF9B8-8427-45EF-95EF-2C56C5EE738C</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc param</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t param</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a lower case, dash separated string</string>
-				<key>title</key>
-				<string>Change Case Param</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>8649359F-4493-4F4C-BAA2-A63C8CD0473A</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc ucfirst</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t ucfirst</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a string with the first character upper cased</string>
-				<key>title</key>
-				<string>Change Case Ucfirst</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>D70D8FA9-239C-4AA6-A867-583907597EC5</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc dot</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t dot</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a lower case, period separated string</string>
-				<key>title</key>
-				<string>Change Case Dot</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>85D8B4B1-9395-42D5-9E5C-AEF309181BFC</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>jumpto</key>
-				<string>_popUpItemAction:</string>
-				<key>path</key>
-				<string>{query}</string>
-				<key>type</key>
-				<integer>100</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.actioninalfred</string>
-			<key>uid</key>
-			<string>50FCEAF1-2982-4F22-A6C4-7772EF3F958C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc swap</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t swap</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a string with every character case reversed</string>
-				<key>title</key>
-				<string>Change Case Swap</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>51F38119-0AB1-4E3B-9F9D-8EB42C485078</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc lower</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t lower</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a string in lower case</string>
-				<key>title</key>
-				<string>Change Case Lower</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>60AD413A-80C1-486B-B448-F0161FBAE954</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc hashtag</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t hashtag</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a string, space separated string with hashtag symbols</string>
-				<key>title</key>
-				<string>Change Case HashTag</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>1BC73F6D-19FB-4032-9632-78CC08B1E422</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>cc pascal</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>script</key>
-				<string>./exe case "$1" -t pascal</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Convert to a string denoted in the same fashion as camelCase, but with the first letter also capitalised</string>
-				<key>title</key>
-				<string>Change Case Pascal</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>3D36CEA1-A3F0-448F-AAD0-791F521A3B62</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>skipqueryencode</key>
-				<false/>
-				<key>skipvarencode</key>
-				<false/>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>{query}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>D4D116C9-95CC-41C8-A9FD-7A4C9771F6EC</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2601,6 +2724,93 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>time</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Loading...</string>
+				<key>script</key>
+				<string>./exe time "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Time Converter</string>
+				<key>title</key>
+				<string>Time Converter</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>05858501-F16A-4C7A-BAF7-723A8634DCC3</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>go-action</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>08CF8713-A4C0-43B1-B2E4-497F24E5A9E8</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>externaltriggerid</key>
+				<string>go-action</string>
+				<key>passinputasargument</key>
+				<true/>
+				<key>passvariables</key>
+				<true/>
+				<key>workflowbundleid</key>
+				<string>self</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.callexternaltrigger</string>
+			<key>uid</key>
+			<string>61B1FA13-B683-4735-B8B8-84AA6C92277C</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
@@ -2744,55 +2954,6 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>time</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Loading...</string>
-				<key>script</key>
-				<string>./exe time "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Time Converter</string>
-				<key>title</key>
-				<string>Time Converter</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>05858501-F16A-4C7A-BAF7-723A8634DCC3</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string># alfred-devtoys
@@ -2862,348 +3023,406 @@ A Swiss Army knife for developers for Alfred
 https://github.com/cage1016/alfred-devtoys</string>
 	<key>uidata</key>
 	<dict>
-		<key>0020866E-4F61-447D-994C-6812E4D86C84</key>
+		<key>02AEC025-0EE1-40FC-9928-A713503C231B</key>
 		<dict>
 			<key>xpos</key>
-			<real>180</real>
+			<real>1890</real>
 			<key>ypos</key>
-			<real>595</real>
+			<real>1045</real>
 		</dict>
 		<key>05858501-F16A-4C7A-BAF7-723A8634DCC3</key>
 		<dict>
 			<key>xpos</key>
-			<real>420</real>
+			<real>1070</real>
 			<key>ypos</key>
-			<real>1780</real>
+			<real>1620</real>
+		</dict>
+		<key>08CF8713-A4C0-43B1-B2E4-497F24E5A9E8</key>
+		<dict>
+			<key>xpos</key>
+			<real>755</real>
+			<key>ypos</key>
+			<real>1620</real>
+		</dict>
+		<key>0C72E704-646D-4E39-B267-8BD02F767935</key>
+		<dict>
+			<key>xpos</key>
+			<real>590</real>
+			<key>ypos</key>
+			<real>585</real>
 		</dict>
 		<key>0D0AFFEB-55CC-4858-A5E5-63E3D1FE013E</key>
 		<dict>
 			<key>xpos</key>
-			<real>385</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>1015</real>
 		</dict>
-		<key>0EB15901-2570-4322-97EC-DB3AF20A980B</key>
+		<key>1B15A10C-B3F5-4813-9FE8-B088108FE718</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>1310</real>
 			<key>ypos</key>
-			<real>495</real>
+			<real>1145</real>
 		</dict>
-		<key>0F529BB7-CB3B-486D-9DE1-AFB1B6D05EFE</key>
+		<key>1B2E2CED-3A31-42BF-8639-E29683C171CC</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>150</real>
 			<key>ypos</key>
-			<real>595</real>
-		</dict>
-		<key>1BC73F6D-19FB-4032-9632-78CC08B1E422</key>
-		<dict>
-			<key>xpos</key>
-			<real>420</real>
-			<key>ypos</key>
-			<real>1220</real>
+			<real>685</real>
 		</dict>
 		<key>1D435D66-501B-49F4-B0A0-45F81C6E9D40</key>
 		<dict>
 			<key>xpos</key>
-			<real>215</real>
+			<real>220</real>
 			<key>ypos</key>
-			<real>175</real>
+			<real>850</real>
 		</dict>
-		<key>1F2BD1D7-0A68-49C6-88DE-43E0A91477DB</key>
+		<key>414A84F3-F4B4-4575-9E6F-3E879F83982B</key>
 		<dict>
 			<key>xpos</key>
-			<real>180</real>
+			<real>1190</real>
 			<key>ypos</key>
-			<real>1020</real>
-		</dict>
-		<key>1FAAD0F3-7B84-47A0-81A9-B2FA1462CEDE</key>
-		<dict>
-			<key>xpos</key>
-			<real>950</real>
-			<key>ypos</key>
-			<real>1040</real>
-		</dict>
-		<key>2190908E-CE13-43D3-8C8C-A880648445DD</key>
-		<dict>
-			<key>xpos</key>
-			<real>750</real>
-			<key>ypos</key>
-			<real>1050</real>
-		</dict>
-		<key>3758D1AA-7A87-480F-A18A-A12709A29BA7</key>
-		<dict>
-			<key>xpos</key>
-			<real>300</real>
-			<key>ypos</key>
-			<real>920</real>
-		</dict>
-		<key>3D36CEA1-A3F0-448F-AAD0-791F521A3B62</key>
-		<dict>
-			<key>xpos</key>
-			<real>180</real>
-			<key>ypos</key>
-			<real>1220</real>
+			<real>1045</real>
 		</dict>
 		<key>47326492-81AC-42E0-AC9D-91D6498125AE</key>
 		<dict>
 			<key>xpos</key>
-			<real>755</real>
+			<real>1070</real>
 			<key>ypos</key>
-			<real>280</real>
+			<real>700</real>
 		</dict>
-		<key>4C3AA443-3696-4DA1-BE97-18252F520E01</key>
+		<key>4CB88807-6E5F-428B-941F-6BF60B3AB4F8</key>
 		<dict>
 			<key>xpos</key>
-			<real>1185</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>695</real>
+			<real>685</real>
+		</dict>
+		<key>4EDC45C1-E017-4B31-9259-7032CDDC79FF</key>
+		<dict>
+			<key>xpos</key>
+			<real>1310</real>
+			<key>ypos</key>
+			<real>1245</real>
 		</dict>
 		<key>4EE4E0AD-A4A7-47E0-8D37-3B95EC3522E0</key>
 		<dict>
 			<key>xpos</key>
-			<real>420</real>
+			<real>385</real>
 			<key>ypos</key>
-			<real>1555</real>
+			<real>1680</real>
 		</dict>
-		<key>50FCEAF1-2982-4F22-A6C4-7772EF3F958C</key>
+		<key>4F8B3DB5-0878-48F0-99F4-A6C0A2C79945</key>
 		<dict>
 			<key>xpos</key>
-			<real>1185</real>
+			<real>1310</real>
 			<key>ypos</key>
-			<real>1120</real>
+			<real>945</real>
 		</dict>
-		<key>51F38119-0AB1-4E3B-9F9D-8EB42C485078</key>
+		<key>52736CC7-178B-4659-A65D-DE8D09BD57FC</key>
 		<dict>
 			<key>xpos</key>
-			<real>300</real>
+			<real>1070</real>
 			<key>ypos</key>
-			<real>1220</real>
+			<real>945</real>
 		</dict>
-		<key>54185D5A-A90D-43D6-8911-882FCBFD4CA4</key>
+		<key>53BE0047-4AF1-484A-A4DA-BFCB6CEBDF74</key>
 		<dict>
 			<key>xpos</key>
-			<real>1185</real>
+			<real>1190</real>
 			<key>ypos</key>
-			<real>885</real>
+			<real>1145</real>
 		</dict>
-		<key>60AD413A-80C1-486B-B448-F0161FBAE954</key>
+		<key>54BB5CD3-CAAB-4903-B8CB-E302747700FF</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>1430</real>
 			<key>ypos</key>
-			<real>1220</real>
+			<real>945</real>
 		</dict>
-		<key>6C2E2EC0-D6A1-4C54-9C7E-091136E8BB01</key>
+		<key>54D5A5E7-7BD4-439E-BC1F-522F98D7526F</key>
 		<dict>
 			<key>xpos</key>
-			<real>420</real>
+			<real>590</real>
 			<key>ypos</key>
-			<real>920</real>
+			<real>1275</real>
 		</dict>
-		<key>7E6059B2-3514-488A-A7B3-183767BD2C3A</key>
+		<key>54F40950-005B-42EA-ABE8-35AE3C965F40</key>
 		<dict>
 			<key>xpos</key>
-			<real>420</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>1020</real>
+			<real>485</real>
 		</dict>
-		<key>803E6FCC-E33B-47AC-A8C4-D3D4496025EA</key>
+		<key>5CAFF430-71F5-4682-834E-84D2501B5C39</key>
 		<dict>
 			<key>xpos</key>
-			<real>180</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>495</real>
+			<real>585</real>
 		</dict>
-		<key>85D8B4B1-9395-42D5-9E5C-AEF309181BFC</key>
+		<key>61B1FA13-B683-4735-B8B8-84AA6C92277C</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>1295</real>
 			<key>ypos</key>
-			<real>1120</real>
+			<real>1620</real>
 		</dict>
-		<key>8649359F-4493-4F4C-BAA2-A63C8CD0473A</key>
+		<key>62519B07-06A5-45A6-9AF2-72FEB243B518</key>
 		<dict>
 			<key>xpos</key>
-			<real>180</real>
+			<real>1190</real>
 			<key>ypos</key>
-			<real>1120</real>
+			<real>945</real>
 		</dict>
-		<key>90A2BF29-C6BA-44CB-A577-21A73F8FBA46</key>
+		<key>6CC70FCC-65B2-491D-9ABB-2C449740F5F3</key>
 		<dict>
 			<key>xpos</key>
-			<real>60</real>
+			<real>150</real>
 			<key>ypos</key>
-			<real>1020</real>
+			<real>485</real>
+		</dict>
+		<key>7D7A12BA-E8A9-46F8-B94B-B11D0819A36C</key>
+		<dict>
+			<key>xpos</key>
+			<real>1070</real>
+			<key>ypos</key>
+			<real>1145</real>
+		</dict>
+		<key>7EBE3224-EA60-429A-99C9-D52217DC95F2</key>
+		<dict>
+			<key>xpos</key>
+			<real>225</real>
+			<key>ypos</key>
+			<real>155</real>
+		</dict>
+		<key>86AAE907-0D68-432A-9A75-B3B25FEB564A</key>
+		<dict>
+			<key>xpos</key>
+			<real>1430</real>
+			<key>ypos</key>
+			<real>1045</real>
+		</dict>
+		<key>877A0B13-7175-4050-8689-F6894C125FCE</key>
+		<dict>
+			<key>xpos</key>
+			<real>1430</real>
+			<key>ypos</key>
+			<real>1245</real>
+		</dict>
+		<key>888D9E99-603F-42FE-AB66-E834EC78639D</key>
+		<dict>
+			<key>xpos</key>
+			<real>1070</real>
+			<key>ypos</key>
+			<real>1245</real>
+		</dict>
+		<key>899FB146-288C-4756-AEA0-AF763543C368</key>
+		<dict>
+			<key>xpos</key>
+			<real>1430</real>
+			<key>ypos</key>
+			<real>845</real>
+		</dict>
+		<key>8D395D48-868B-4369-8442-115C1F0673A7</key>
+		<dict>
+			<key>xpos</key>
+			<real>1310</real>
+			<key>ypos</key>
+			<real>1045</real>
+		</dict>
+		<key>8D4B3C85-35F6-464B-800F-E5D58F175E91</key>
+		<dict>
+			<key>xpos</key>
+			<real>590</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
+		<key>8F0AC042-36F8-4855-9ED1-D2298A14F9B3</key>
+		<dict>
+			<key>xpos</key>
+			<real>1070</real>
+			<key>ypos</key>
+			<real>1045</real>
 		</dict>
 		<key>9464C7BA-0AAA-4084-B1E0-35CBA8319399</key>
 		<dict>
 			<key>xpos</key>
-			<real>950</real>
+			<real>1265</real>
 			<key>ypos</key>
-			<real>175</real>
+			<real>595</real>
+		</dict>
+		<key>96171297-7945-46B1-814B-5D0415D71D6D</key>
+		<dict>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>120</real>
 		</dict>
 		<key>98633F2E-5761-4974-90CC-FE30450B5A2F</key>
 		<dict>
 			<key>xpos</key>
-			<real>755</real>
+			<real>1070</real>
 			<key>ypos</key>
-			<real>175</real>
+			<real>595</real>
 		</dict>
-		<key>A86ABF57-CB9C-46B0-80DC-D6468E5D89C5</key>
+		<key>A64C17FB-3845-4AB9-9014-6A3229A6C6EE</key>
 		<dict>
 			<key>xpos</key>
-			<real>180</real>
+			<real>590</real>
 			<key>ypos</key>
-			<real>395</real>
+			<real>850</real>
+		</dict>
+		<key>A8D16C27-C32E-416D-A80E-29F0138F9447</key>
+		<dict>
+			<key>xpos</key>
+			<real>150</real>
+			<key>ypos</key>
+			<real>585</real>
 		</dict>
 		<key>AB5C9DE0-0756-4329-BEEA-0F9783C3621B</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>210</real>
 			<key>ypos</key>
-			<real>1490</real>
+			<real>1615</real>
+		</dict>
+		<key>B09E93C3-A5DB-4763-A055-05C2A527BC3B</key>
+		<dict>
+			<key>xpos</key>
+			<real>445</real>
+			<key>ypos</key>
+			<real>15</real>
 		</dict>
 		<key>B1F2B9A2-3F02-4D1A-BF6B-7F165D678C1B</key>
 		<dict>
 			<key>xpos</key>
-			<real>420</real>
+			<real>385</real>
 			<key>ypos</key>
-			<real>1455</real>
+			<real>1580</real>
 		</dict>
 		<key>B41982C1-252F-4151-8A0B-EC3512926930</key>
 		<dict>
 			<key>xpos</key>
-			<real>755</real>
+			<real>1070</real>
 			<key>ypos</key>
-			<real>70</real>
-		</dict>
-		<key>B42BF457-B823-4475-BB9B-412D9A0080A1</key>
-		<dict>
-			<key>xpos</key>
-			<real>420</real>
-			<key>ypos</key>
-			<real>820</real>
+			<real>490</real>
 		</dict>
 		<key>BB249334-2E71-4818-8715-F266340F6207</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>1500</real>
+			<real>1625</real>
+		</dict>
+		<key>BB6FF7A9-071E-4F38-BA0F-49A80E0C1603</key>
+		<dict>
+			<key>xpos</key>
+			<real>1430</real>
+			<key>ypos</key>
+			<real>1145</real>
+		</dict>
+		<key>BFFC4150-4AA1-4799-A954-4613A3A34A8F</key>
+		<dict>
+			<key>xpos</key>
+			<real>1465</real>
+			<key>ypos</key>
+			<real>595</real>
+		</dict>
+		<key>C0094533-1D11-420A-A700-176F7D5C93AE</key>
+		<dict>
+			<key>xpos</key>
+			<real>450</real>
+			<key>ypos</key>
+			<real>615</real>
 		</dict>
 		<key>C1A6092E-C049-44EF-9E18-D13C9173B65A</key>
 		<dict>
 			<key>xpos</key>
-			<real>420</real>
+			<real>385</real>
 			<key>ypos</key>
-			<real>1655</real>
+			<real>1780</real>
+		</dict>
+		<key>C3DA3602-F25B-437F-8617-D01B2D83515B</key>
+		<dict>
+			<key>xpos</key>
+			<real>1190</real>
+			<key>ypos</key>
+			<real>1245</real>
 		</dict>
 		<key>C5532483-9440-4531-A816-671E47CD6F2D</key>
 		<dict>
 			<key>xpos</key>
-			<real>750</real>
+			<real>635</real>
 			<key>ypos</key>
-			<real>1530</real>
+			<real>1650</real>
 		</dict>
-		<key>C8CEF9B8-8427-45EF-95EF-2C56C5EE738C</key>
+		<key>D162E3F6-6BFB-42BB-A954-A3CD34DEFA2D</key>
 		<dict>
 			<key>xpos</key>
-			<real>300</real>
+			<real>1760</real>
 			<key>ypos</key>
-			<real>1120</real>
-		</dict>
-		<key>D238AE44-A74F-44B1-92DE-8EA2D52DA89C</key>
-		<dict>
-			<key>xpos</key>
-			<real>180</real>
-			<key>ypos</key>
-			<real>920</real>
-		</dict>
-		<key>D2D00E80-4891-40FF-9F52-AD4925066F25</key>
-		<dict>
-			<key>xpos</key>
-			<real>815</real>
-			<key>ypos</key>
-			<real>570</real>
-		</dict>
-		<key>D4D116C9-95CC-41C8-A9FD-7A4C9771F6EC</key>
-		<dict>
-			<key>xpos</key>
-			<real>1185</real>
-			<key>ypos</key>
-			<real>1235</real>
-		</dict>
-		<key>D70D8FA9-239C-4AA6-A867-583907597EC5</key>
-		<dict>
-			<key>xpos</key>
-			<real>420</real>
-			<key>ypos</key>
-			<real>1120</real>
-		</dict>
-		<key>D9190DC4-F5B4-41EC-B2E4-71D549C35DEC</key>
-		<dict>
-			<key>xpos</key>
-			<real>60</real>
-			<key>ypos</key>
-			<real>395</real>
-		</dict>
-		<key>DD1AF965-E047-415E-BC12-5C2DBAB4AC55</key>
-		<dict>
-			<key>xpos</key>
-			<real>60</real>
-			<key>ypos</key>
-			<real>920</real>
+			<real>1075</real>
 		</dict>
 		<key>DF6397E1-782C-493E-8337-BAE814409210</key>
 		<dict>
 			<key>xpos</key>
-			<real>420</real>
+			<real>385</real>
 			<key>ypos</key>
-			<real>1355</real>
+			<real>1480</real>
 		</dict>
-		<key>E377B5E7-7041-4785-A436-0EE645D6591D</key>
+		<key>E04DCB97-2F8B-4EAE-8A77-0FA0AAE80F6C</key>
 		<dict>
 			<key>xpos</key>
-			<real>1185</real>
+			<real>590</real>
 			<key>ypos</key>
-			<real>1005</real>
+			<real>255</real>
 		</dict>
 		<key>E6722CFB-EC4E-4094-AD75-F2B3D973B654</key>
 		<dict>
 			<key>xpos</key>
-			<real>65</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>175</real>
+			<real>850</real>
 		</dict>
 		<key>F114E387-C783-4D1A-AD1A-EDD52C711304</key>
 		<dict>
 			<key>xpos</key>
-			<real>390</real>
+			<real>35</real>
 			<key>ypos</key>
-			<real>225</real>
+			<real>1120</real>
+		</dict>
+		<key>F43F90F8-9FF4-4034-BD45-C3CE7DBBA694</key>
+		<dict>
+			<key>note</key>
+			<string>call action</string>
+			<key>xpos</key>
+			<real>30</real>
+			<key>ypos</key>
+			<real>150</real>
 		</dict>
 		<key>F79CD6E7-50C9-45F4-A615-67B810787BF3</key>
 		<dict>
 			<key>xpos</key>
-			<real>180</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>695</real>
+			<real>1275</real>
 		</dict>
 		<key>FA64E015-CFB7-4BFE-B8F8-57995BAAE32C</key>
 		<dict>
 			<key>xpos</key>
-			<real>580</real>
+			<real>225</real>
 			<key>ypos</key>
-			<real>175</real>
+			<real>1070</real>
 		</dict>
-		<key>FF072746-D0AA-40A3-85FB-9315CEE9DD64</key>
+		<key>FD69AB72-83CB-4B5F-A2E0-C6FD8A86BC16</key>
 		<dict>
 			<key>xpos</key>
-			<real>300</real>
+			<real>590</real>
 			<key>ypos</key>
-			<real>1020</real>
+			<real>1070</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
