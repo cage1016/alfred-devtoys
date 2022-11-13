@@ -13,6 +13,8 @@ import (
 	"github.com/atotto/clipboard"
 	"github.com/google/uuid"
 	"github.com/spf13/cobra"
+
+	"github.com/cage1016/alfred-devtoys/alfred"
 )
 
 // uuidCmd represents the uuid command
@@ -26,6 +28,10 @@ func runUuid(cmd *cobra.Command, args []string) {
 	query := args[0]
 	if strings.TrimSpace(query) == "" {
 		query, _ = clipboard.ReadAll()
+		_, err := strconv.ParseUint(query, 10, 64)
+		if err != nil {
+			query = alfred.GetUuidDefault(wf)
+		}
 	}
 	log.Println(query)
 

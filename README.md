@@ -36,7 +36,12 @@ Make sure to download the latest released directly from the releases page. [Down
 - Preferably Alfred 5
 
 ## Configuration
-- QR Code Image size
+- **QR Code** Image size
+- **Time** Convert
+  - Time Format
+  - Time Zone
+- **UUID** default amounts for clipboard auto-detecting for non-numeric formats
+- **Lorem Ipsum** default amounts for clipboard auto-detecting for non-numeric formats
 
 ## Encode
 use `encode` keyword to Encode string to `Base64`, `URL` and `HTML`
@@ -83,12 +88,16 @@ use `uuid` keyword to generate `UUID`
 <img src="/screenshots/uuid.gif?raw=true">
 </p>
 
+- You could config default amounts for clipboard auto-detecting for non-numeric formats
+
 ## Lorem Ipsum
 use `li` keyword to generate `Lorem Ipsum` text (words, sentences, paragraphs)
 
 <p align="center">
 <img src="/screenshots/li.gif?raw=true">
 </p>
+
+- You could config default amounts for clipboard auto-detecting for non-numeric formats
 
 ## QR Code
 use `qrcode` keyword to generate QR code
@@ -182,39 +191,7 @@ use `time` to convert unix time / natural date string to time format
 
 ## Change Log
 
-### 1.5.1
-- fix clipboard issue for Apple M1
-- fix typo error
-
-### 1.5.0
-- add time convert (unix time / natural date)
-
-### 1.4.1
-- update item name and subtitle display for better experience
-
-### 1.4.0
-- Add image Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML <img> code` and `CSS Background Source`
-- CheckSum add File Filter and File Action
-- QRCode Generator add Quicklook
-- JWT decode add Universal Action
-- increase test coverage
-
-### 1.3.0
-- Add `amd64` & `arm64` support
-
-### 1.2.0
-- Add JSON format as `tab`,  `2 spaces`, `4 spaces` indents and `minify` functions
-- Revised `info.plist` items
-
-### 1.1.0
-- Revised `qrcode` keyword default action as Browse in Alfred
-
-### 1.0.1
-- Fix `qrcode` hit enter does not copy file to clipboard
-- Revised workflow description
-
-### 1.0.0
-- Initial release
+Vist [CHANGELOG.md](CHANGELOG.md) to check detail information
 
 ## License
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
