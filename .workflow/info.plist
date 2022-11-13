@@ -2982,9 +2982,18 @@ A Swiss Army knife for developers for Alfred
 - Preferably Alfred 5
 
 ## Configuration
-- QR Code image size
+- **QR Code** Image size
+- **Time** Convert
+    - Time Format
+    - Time Zone
+- **UUID** default amounts for clipboard auto-detecting for non-numeric formats
+- **Lorem Ipsum** default amounts for clipboard auto-detecting for non-numeric formats
 
 ## Change Log
+
+## 1.6.0
+- add default amounts for clipboard auto-detecting for non-numeric formats to `UUID` and `Lorem Ipsum`
+- rearrange workflow structure for new features releases
 
 ### 1.5.1
 - fix clipboard issue for Apple M1
@@ -3490,9 +3499,51 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<key>variable</key>
 			<string>TIME_ZONE</string>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>3</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Default amounts for clipboard auto-detecting for non-numeric formats</string>
+			<key>label</key>
+			<string>UUID</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>UUID_DEFAULT</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string>3</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Default amounts for clipboard auto-detecting for non-numeric formats</string>
+			<key>label</key>
+			<string>Lorem ipsum</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>LI_DEFAULT</string>
+		</dict>
 	</array>
 	<key>version</key>
-	<string>1.5.1</string>
+	<string>1.6.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/cage1016/alfred-devtoys</string>
 </dict>

@@ -13,6 +13,8 @@ import (
 	"github.com/atotto/clipboard"
 	"github.com/spf13/cobra"
 	"gopkg.in/loremipsum.v1"
+
+	"github.com/cage1016/alfred-devtoys/alfred"
 )
 
 // loremCmd represents the lorem command
@@ -26,6 +28,10 @@ func runLorem(cmd *cobra.Command, args []string) {
 	query := args[0]
 	if strings.TrimSpace(query) == "" {
 		query, _ = clipboard.ReadAll()
+		_, err := strconv.ParseUint(query, 10, 64)
+		if err != nil {
+			query = alfred.GetLiDefault(wf)
+		}
 	}
 	log.Println(query)
 
