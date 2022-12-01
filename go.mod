@@ -3,6 +3,7 @@ module github.com/cage1016/alfred-devtoys
 go 1.16
 
 require (
+	github.com/araddon/dateparse v0.0.0-20210429162001-6b43995a97de // indirect
 	github.com/atotto/clipboard v0.1.4
 	github.com/boombuler/barcode v1.0.1
 	github.com/deanishe/awgo v0.29.1
@@ -17,4 +18,5 @@ require (
 	github.com/tj/go-naturaldate v1.3.0
 	golang.org/x/image v0.0.0-20211028202545-6944b10bf410
 	gopkg.in/loremipsum.v1 v1.1.0
+	howett.net/plist v1.0.0 // indirect
 )

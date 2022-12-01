@@ -10,6 +10,16 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
+				<string>82600477-7769-494F-9842-86DF622A37D2</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>61B1FA13-B683-4735-B8B8-84AA6C92277C</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -310,6 +320,19 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>B80835B5-8F9A-4BD5-A529-41640226ECCB</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>82600477-7769-494F-9842-86DF622A37D2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>61B1FA13-B683-4735-B8B8-84AA6C92277C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -2601,6 +2624,53 @@
 				<key>argumenttrimmode</key>
 				<integer>0</integer>
 				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>./exe timeCopy "$1" -t "${timezone}"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>5</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>82600477-7769-494F-9842-86DF622A37D2</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
 				<integer>1</integer>
 				<key>escaping</key>
 				<integer>102</integer>
@@ -3175,7 +3245,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 		<key>61B1FA13-B683-4735-B8B8-84AA6C92277C</key>
 		<dict>
 			<key>xpos</key>
-			<real>1295</real>
+			<real>1465</real>
 			<key>ypos</key>
 			<real>1620</real>
 		</dict>
@@ -3206,6 +3276,13 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<real>225</real>
 			<key>ypos</key>
 			<real>155</real>
+		</dict>
+		<key>82600477-7769-494F-9842-86DF622A37D2</key>
+		<dict>
+			<key>xpos</key>
+			<real>1260</real>
+			<key>ypos</key>
+			<real>1490</real>
 		</dict>
 		<key>86AAE907-0D68-432A-9A75-B3B25FEB564A</key>
 		<dict>
@@ -3462,19 +3539,52 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<dict>
 				<key>default</key>
 				<string>Mon, 02 Jan 2006 15:04:05 -0700</string>
-				<key>placeholder</key>
-				<string></string>
-				<key>required</key>
-				<false/>
-				<key>trim</key>
-				<true/>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Mon Jan _2 15:04:05 2006</string>
+						<string>Mon Jan _2 15:04:05 2006</string>
+					</array>
+					<array>
+						<string>Mon Jan _2 15:04:05 MST 2006</string>
+						<string>Mon Jan _2 15:04:05 MST 2006</string>
+					</array>
+					<array>
+						<string>Mon Jan 02 15:04:05 -0700 2006</string>
+						<string>Mon Jan 02 15:04:05 -0700 2006</string>
+					</array>
+					<array>
+						<string>02 Jan 06 15:04 MST</string>
+						<string>02 Jan 06 15:04 MST</string>
+					</array>
+					<array>
+						<string>02 Jan 06 15:04 -0700</string>
+						<string>02 Jan 06 15:04 -0700</string>
+					</array>
+					<array>
+						<string>Monday, 02-Jan-06 15:04:05 MST</string>
+						<string>Monday, 02-Jan-06 15:04:05 MST</string>
+					</array>
+					<array>
+						<string>Mon, 02 Jan 2006 15:04:05 MST</string>
+						<string>Mon, 02 Jan 2006 15:04:05 MST</string>
+					</array>
+					<array>
+						<string>Mon, 02 Jan 2006 15:04:05 -0700</string>
+						<string>Mon, 02 Jan 2006 15:04:05 -0700</string>
+					</array>
+					<array>
+						<string>2006-01-02T15:04:05Z07:00</string>
+						<string>2006-01-02T15:04:05Z07:00</string>
+					</array>
+				</array>
 			</dict>
 			<key>description</key>
-			<string>visit https://pkg.go.dev/time#pkg-constants to check more time fomrat</string>
+			<string>Format</string>
 			<key>label</key>
-			<string>Time Format</string>
+			<string>Time</string>
 			<key>type</key>
-			<string>textfield</string>
+			<string>popupbutton</string>
 			<key>variable</key>
 			<string>TIME_FORMAT</string>
 		</dict>
@@ -3482,20 +3592,429 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string></string>
-				<key>placeholder</key>
-				<string></string>
-				<key>required</key>
-				<false/>
-				<key>trim</key>
-				<true/>
+				<string>UTC</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>(GMT+00:00) Default</string>
+						<string>UTC</string>
+					</array>
+					<array>
+						<string>(GMT-12:00) International Date Line West</string>
+						<string>Etc/GMT+12</string>
+					</array>
+					<array>
+						<string>(GMT-11:00) Coordinated Universal Time-11</string>
+						<string>Etc/GMT+11</string>
+					</array>
+					<array>
+						<string>(GMT-11:00) Samoa</string>
+						<string>Pacific/Samoa</string>
+					</array>
+					<array>
+						<string>(GMT-10:00) Hawaii</string>
+						<string>Pacific/Honolulu</string>
+					</array>
+					<array>
+						<string>(GMT-09:30) Marquesas Islands</string>
+						<string>Pacific/Marquesas</string>
+					</array>
+					<array>
+						<string>(GMT-09:00) Alaska</string>
+						<string>America/Anchorage</string>
+					</array>
+					<array>
+						<string>(GMT-08:00) Baja California</string>
+						<string>America/Tijuana</string>
+					</array>
+					<array>
+						<string>(GMT-08:00) Pacific Time (US &amp; Canada)</string>
+						<string>America/Los_Angeles</string>
+					</array>
+					<array>
+						<string>(GMT-07:00) Chihuahua,Mazatlan</string>
+						<string>America/Chihuahua</string>
+					</array>
+					<array>
+						<string>(GMT-07:00) Arizona</string>
+						<string>America/Phoenix</string>
+					</array>
+					<array>
+						<string>(GMT-07:00) Mountain Time (US &amp; Canada)</string>
+						<string>America/Denver</string>
+					</array>
+					<array>
+						<string>(GMT-06:00) Central Time (US &amp; Canada)</string>
+						<string>America/Chicago</string>
+					</array>
+					<array>
+						<string>(GMT-06:00) Central America</string>
+						<string>America/Guatemala</string>
+					</array>
+					<array>
+						<string>(GMT-06:00) Guadalajara,Mexico City, Monterrey</string>
+						<string>America/Mexico_City</string>
+					</array>
+					<array>
+						<string>(GMT-06:00) Saskatchewan</string>
+						<string>America/Regina</string>
+					</array>
+					<array>
+						<string>(GMT-05:00) Bogota, Lima, Quito</string>
+						<string>America/Bogota</string>
+					</array>
+					<array>
+						<string>(GMT-05:00) Eastern Time (US &amp; Canada)</string>
+						<string>America/New_York</string>
+					</array>
+					<array>
+						<string>(GMT-05:00) Indiana (East)</string>
+						<string>America/Indianapolis</string>
+					</array>
+					<array>
+						<string>(GMT-04:30) Caracas</string>
+						<string>America/Caracas</string>
+					</array>
+					<array>
+						<string>(GMT-04:00) Atlantic Time (Canada)</string>
+						<string>America/Halifax</string>
+					</array>
+					<array>
+						<string>(GMT-04:00) Asuncion</string>
+						<string>America/Asuncion</string>
+					</array>
+					<array>
+						<string>(GMT-04:00) Cuiaba</string>
+						<string>America/Cuiaba</string>
+					</array>
+					<array>
+						<string>(GMT-04:00) Santiago</string>
+						<string>America/Santiago</string>
+					</array>
+					<array>
+						<string>(GMT-04:00) Georgetown, La Paz, Manaus, San Juan</string>
+						<string>America/La_Paz</string>
+					</array>
+					<array>
+						<string>(GMT-03:30) Newfoundland</string>
+						<string>America/St_Johns</string>
+					</array>
+					<array>
+						<string>(GMT-03:00) Buenos Aires</string>
+						<string>America/Buenos_Aires</string>
+					</array>
+					<array>
+						<string>(GMT-03:00) Brasilia</string>
+						<string>America/Sao_Paul</string>
+					</array>
+					<array>
+						<string>(GMT-03:00) Cayenne, Fortaleza</string>
+						<string>America/Cayenne</string>
+					</array>
+					<array>
+						<string>(GMT-03:00) Montevideo</string>
+						<string>America/Montevideo</string>
+					</array>
+					<array>
+						<string>(GMT-03:00) Greenland</string>
+						<string>America/Godthab</string>
+					</array>
+					<array>
+						<string>(GMT-02:00) Coordinated Universal Time-02</string>
+						<string>Etc/GMT+2</string>
+					</array>
+					<array>
+						<string>(GMT-02:00) Mid-Atlantic</string>
+						<string>Etc/GMT+2</string>
+					</array>
+					<array>
+						<string>(GMT-01:00) Azores</string>
+						<string>Atlantic/Azores</string>
+					</array>
+					<array>
+						<string>(GMT-01:00) Cape Verde Is.</string>
+						<string>Atlantic/Cape_Verde</string>
+					</array>
+					<array>
+						<string>(GMT+00:00) Casablanca</string>
+						<string>Africa/Casablanca</string>
+					</array>
+					<array>
+						<string>(GMT+00:00) Monrovia,Reykjavik</string>
+						<string>Atlantic/Reykjavik</string>
+					</array>
+					<array>
+						<string>(GMT+00:00) Greenwich Mean Time : Dublin,Edinburgh,Lisbon, London</string>
+						<string>Europe/London</string>
+					</array>
+					<array>
+						<string>(GMT+01:00) Sarajevo,Skopje, Warsaw, Zagreb</string>
+						<string>Europe/Warsaw</string>
+					</array>
+					<array>
+						<string>(GMT+01:00) West Central Africa</string>
+						<string>Africa/Lagos</string>
+					</array>
+					<array>
+						<string>(GMT+01:00) Belgrade,Bratislava, Budapest, Ljubljana, Prague</string>
+						<string>Europe/Budapest</string>
+					</array>
+					<array>
+						<string>(GMT+01:00) Brussels, Copenhagen,Madrid, Paris</string>
+						<string>Europe/Paris</string>
+					</array>
+					<array>
+						<string>(GMT+01:00) Amsterdam,Berlin, Bern, Rome,Stockholm, Vienna</string>
+						<string>Europe/Berlin</string>
+					</array>
+					<array>
+						<string>(GMT+02:00) Harare, Pretoria</string>
+						<string>Africa/Johannesburg</string>
+					</array>
+					<array>
+						<string>(GMT+02:00) Damascus</string>
+						<string>Asia/Damascus</string>
+					</array>
+					<array>
+						<string>(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</string>
+						<string>Europe/Kiev</string>
+					</array>
+					<array>
+						<string>(GMT+02:00) Windhoek</string>
+						<string>Africa/Windhoek</string>
+					</array>
+					<array>
+						<string>(GMT+02:00) Minsk</string>
+						<string>Europe/Minsk</string>
+					</array>
+					<array>
+						<string>(GMT+02:00) Athens,Bucharest, Istanbul</string>
+						<string>Europe/Istanbu</string>
+					</array>
+					<array>
+						<string>(GMT+02:00) Amman</string>
+						<string>Asia/Amman</string>
+					</array>
+					<array>
+						<string>(GMT+02:00) Beirut</string>
+						<string>Asia/Beirut</string>
+					</array>
+					<array>
+						<string>(GMT+02:00) Jerusalem</string>
+						<string>Asia/Jerusalem</string>
+					</array>
+					<array>
+						<string>(GMT+02:00) Cairo</string>
+						<string>Africa/Cairo</string>
+					</array>
+					<array>
+						<string>(GMT+03:00) Kuwait, Riyadh</string>
+						<string>Asia/Riyadh</string>
+					</array>
+					<array>
+						<string>(GMT+03:00) Moscow, St. Petersburg, Volgograd</string>
+						<string>Europe/Moscow</string>
+					</array>
+					<array>
+						<string>(GMT+03:00) Baghdad</string>
+						<string>Asia/Baghdad</string>
+					</array>
+					<array>
+						<string>(GMT+03:00) Nairobi</string>
+						<string>Africa/Nairobi</string>
+					</array>
+					<array>
+						<string>(GMT+03:30) Tehran</string>
+						<string>Asia/Tehran</string>
+					</array>
+					<array>
+						<string>(GMT+04:00) Port Louis</string>
+						<string>Indian/Mauritius</string>
+					</array>
+					<array>
+						<string>(GMT+04:00) Tbilisi</string>
+						<string>Asia/Tbilisi</string>
+					</array>
+					<array>
+						<string>(GMT+04:00) Baku</string>
+						<string>Asia/Baku</string>
+					</array>
+					<array>
+						<string>(GMT+04:00) Yerevan</string>
+						<string>Asia/Yerevan</string>
+					</array>
+					<array>
+						<string>(GMT+04:00) Abu Dhabi, Muscat</string>
+						<string>Asia/Dubai</string>
+					</array>
+					<array>
+						<string>(GMT+04:30) Kabul</string>
+						<string>Asia/Kabul</string>
+					</array>
+					<array>
+						<string>(GMT+05:00) Yekaterinburg</string>
+						<string>Asia/Yekaterinburg</string>
+					</array>
+					<array>
+						<string>(GMT+05:00) Islamabad,Karachi</string>
+						<string>Asia/Karachi</string>
+					</array>
+					<array>
+						<string>(GMT+05:00) Tashkent</string>
+						<string>Asia/Tashkent</string>
+					</array>
+					<array>
+						<string>(GMT+05:30) Chennai, Kolkata, Mumbai,New Delhi</string>
+						<string>Asia/Calcutta</string>
+					</array>
+					<array>
+						<string>(GMT+05:30) Sri Jayawardenepura</string>
+						<string>Asia/Colombo</string>
+					</array>
+					<array>
+						<string>(GMT+05:45) Kathmandu</string>
+						<string>Asia/Katmandu</string>
+					</array>
+					<array>
+						<string>(GMT+06:00) Dhaka</string>
+						<string>Asia/Dhaka</string>
+					</array>
+					<array>
+						<string>(GMT+06:00) Novosibirsk</string>
+						<string>Asia/Novosibirsk</string>
+					</array>
+					<array>
+						<string>(GMT+06:00) Astana</string>
+						<string>Asia/Almaty</string>
+					</array>
+					<array>
+						<string>(GMT+06:30) Yangon (Rangoon)</string>
+						<string>Asia/Rangoon</string>
+					</array>
+					<array>
+						<string>(GMT+07:00) Krasnoyarsk</string>
+						<string>Asia/Krasnoyarsk</string>
+					</array>
+					<array>
+						<string>(GMT+07:00) Bangkok, Hanoi,Jakarta</string>
+						<string>Asia/Bangkok</string>
+					</array>
+					<array>
+						<string>(GMT+08:00) Ulaanbaatar</string>
+						<string>Asia/Ulaanbaatar</string>
+					</array>
+					<array>
+						<string>(GMT+08:00) Perth</string>
+						<string>Australia/Perth</string>
+					</array>
+					<array>
+						<string>(GMT+08:00) Taipei</string>
+						<string>Asia/Taipei</string>
+					</array>
+					<array>
+						<string>(GMT+08:00) Kuala Lumpur,Singapore</string>
+						<string>Asia/Singapore</string>
+					</array>
+					<array>
+						<string>(GMT+08:00) Beijing,Chongqing,Hong Kong, Urumqi</string>
+						<string>Asia/Shanghai</string>
+					</array>
+					<array>
+						<string>(GMT+08:00) Irkutsk</string>
+						<string>Asia/Irkutsk</string>
+					</array>
+					<array>
+						<string>(GMT+08:30) Pyongyang</string>
+						<string>Asia/Pyongyang</string>
+					</array>
+					<array>
+						<string>(GMT+08:30) Eucla</string>
+						<string>Australia/Eucla</string>
+					</array>
+					<array>
+						<string>(GMT+09:00) Seoul</string>
+						<string>Asia/Seoul</string>
+					</array>
+					<array>
+						<string>(GMT+09:00) Osaka,Sapporo, Tokyo</string>
+						<string>Asia/Tokyo</string>
+					</array>
+					<array>
+						<string>(GMT+09:00) Yakutsk</string>
+						<string>Asia/Yakutsk</string>
+					</array>
+					<array>
+						<string>(GMT+09:30) Darwin</string>
+						<string>Australia/Darwin</string>
+					</array>
+					<array>
+						<string>(GMT+09:30) Adelaide</string>
+						<string>Australia/Adelaide</string>
+					</array>
+					<array>
+						<string>(GMT+10:00) Hobart</string>
+						<string>Australia/Hobart</string>
+					</array>
+					<array>
+						<string>(GMT+10:00) Vladivostok</string>
+						<string>Asia/Vladivostok</string>
+					</array>
+					<array>
+						<string>(GMT+10:00) Guam, Port Moresby</string>
+						<string>Pacific/Port_Moresby</string>
+					</array>
+					<array>
+						<string>(GMT+10:00) Brisbane</string>
+						<string>Australia/Brisbane</string>
+					</array>
+					<array>
+						<string>(GMT+10:00) Canberra,Melbourne, Sydney</string>
+						<string>Australia/Sydney</string>
+					</array>
+					<array>
+						<string>(GMT+10:30) Lord Howe Island</string>
+						<string>Australia/LHI</string>
+					</array>
+					<array>
+						<string>(GMT+11:00) Magadan, Solomon Is.,New Caledonia</string>
+						<string>Asia/Magadan</string>
+					</array>
+					<array>
+						<string>(GMT+12:00) Fiji</string>
+						<string>Pacific/Fiji</string>
+					</array>
+					<array>
+						<string>(GMT+12:00) Petropavlovsk-Kamchatsky</string>
+						<string>Asia/Kamchatka</string>
+					</array>
+					<array>
+						<string>(GMT+12:00) Auckland, Wellington</string>
+						<string>Pacific/Auckland</string>
+					</array>
+					<array>
+						<string>(GMT+12:00) Coordinated Universal Time+12</string>
+						<string>Etc/GMT-12</string>
+					</array>
+					<array>
+						<string>(GMT+12:45) Chatham Islands</string>
+						<string>Pacific/Chatham</string>
+					</array>
+					<array>
+						<string>(GMT+13:00) Phoenix Islands, Tokelau, Tonga</string>
+						<string>Pacific/Enderbury</string>
+					</array>
+					<array>
+						<string>(GMT+14:00) Line Islands</string>
+						<string>Pacific/Kiritimati</string>
+					</array>
+				</array>
 			</dict>
 			<key>description</key>
-			<string></string>
-			<key>label</key>
 			<string>Time Zone</string>
+			<key>label</key>
+			<string></string>
 			<key>type</key>
-			<string>textfield</string>
+			<string>popupbutton</string>
 			<key>variable</key>
 			<string>TIME_ZONE</string>
 		</dict>

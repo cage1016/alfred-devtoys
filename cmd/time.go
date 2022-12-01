@@ -10,6 +10,7 @@ import (
 	"strings"
 	"time"
 
+	"github.com/araddon/dateparse"
 	"github.com/spf13/cobra"
 	"github.com/tj/go-naturaldate"
 
@@ -26,8 +27,12 @@ var timeCmd = &cobra.Command{
 	Run:   runTimeCmd,
 }
 
+type TimeFormatItem struct {
+	Name  string
+	Value string
+}
+
 func runTimeCmd(cmd *cobra.Command, args []string) {
-	// log.Println(query)
 	CheckForUpdate()
 
 	var query int64
@@ -36,67 +41,62 @@ func runTimeCmd(cmd *cobra.Command, args []string) {
 
 	if query, err = strconv.ParseInt(args[0], 10, 64); err == nil {
 		tm = time.Unix(query, 0).UTC()
-	} else {
+	} else if tm, err = dateparse.ParseAny(args[0]); err != nil {
 		tm, err = naturaldate.Parse(strings.ToLower(args[0]), time.Now(), naturaldate.WithDirection(naturaldate.Future))
 	}
 
 	if err != nil {
-		wf.NewItem(fmt.Sprintf("`%d` is invalid", query)).Subtitle("Try a different query?").Icon(TimeConverterGrayIcon)
+		wf.NewItem(fmt.Sprintf("`%s` is invalid", args[0])).Subtitle("Try a different query?").Icon(TimeConverterGrayIcon)
 	} else {
 		timeFormat := alfred.GetTimeFormat(wf)
-		if timeFormat == "" {
-			timeFormat = defaultTimeFormat
-		}
-
 		timeZone := alfred.GetTimeZone(wf)
-		if timeZone != "" {
-			tl, err := time.LoadLocation(timeZone)
-			if err != nil {
-				wf.NewItem(fmt.Sprintf("Invalid time zone: %s", timeZone)).Subtitle("Try a different time zone?").Icon(TimeConverterGrayIcon)
-			} else {
-				l := tm.In(tl).Format(timeFormat)
-				wi := wf.NewItem(l).
-					Subtitle(fmt.Sprintf("⌘+L ⌥ ^, ↩ Copy Local (%s), Format: %s", timeZone, timeFormat)).
-					Arg(l).
-					Valid(true).
-					Largetype(l).
-					Icon(TimeConverterIcon).
-					Var("action", "copy")
+		tl, _ := time.LoadLocation(timeZone)
 
-				wi.Ctrl().
-					Subtitle("↩ Visit go-naturaldate to check more natural date example").
-					Arg("https://github.com/tj/go-naturaldate/blob/v1.3.0/naturaldate_test.go").
-					Valid(true).
-					Var("action", "browse")
+		// Local
+		{
+			l := tm.In(tl).Format(timeFormat)
+			wi := wf.NewItem(l).
+				Subtitle(fmt.Sprintf("⌘+L ^ ⌥, ↩ Copy Local (%s), Format: %s", timeZone, timeFormat)).
+				Arg(l).
+				Valid(true).
+				Largetype(l).
+				Icon(TimeConverterIcon).
+				Var("action", "copy")
 
-				wi.Opt().
-					Subtitle("↩ Visit https://golang.org/pkg/time/#pkg-constants to check more time format").
-					Arg("https://golang.org/pkg/time/#pkg-constants").
-					Valid(true).
-					Var("action", "browse")
-			}
+			wi.Opt().
+				Subtitle(fmt.Sprintf("↩ Copy Local (%s) with more formats", timeZone)).
+				Valid(true).
+				Arg(fmt.Sprintf("%d", tm.Unix())).
+				Var("timezone", timeZone)
+
+			wi.Ctrl().
+				Subtitle("↩ Visit go-naturaldate to check more natural date example").
+				Arg("https://github.com/tj/go-naturaldate/blob/v1.3.0/naturaldate_test.go").
+				Valid(true).
+				Var("action", "browse")
 		}
 
+		// UTC
 		{
 			u := tm.UTC().Format(timeFormat)
 			wi := wf.NewItem(u).
-				Subtitle(fmt.Sprintf("⌘+L ⌥ ^, ↩ Copy UTC (ISO 8601), Format: %s", timeFormat)).
+				Subtitle(fmt.Sprintf("⌘+L ^ ⌥, ↩ Copy UTC, Format: %s", timeFormat)).
 				Arg(u).
 				Valid(true).
 				Largetype(u).
 				Icon(TimeConverterIcon).
 				Var("action", "copy")
 
+			wi.Opt().
+				Subtitle("↩ Copy UTC with more formats").
+				Valid(true).
+				Arg(fmt.Sprintf("%d", tm.Unix())).
+				Var("timezone", "UTC")
+
 			wi.Ctrl().
 				Subtitle("↩ Visit go-naturaldate to check more natural date example").
 				Valid(true).
 				Arg("https://github.com/tj/go-naturaldate/blob/v1.3.0/naturaldate_test.go").
-				Var("action", "browse")
-
-			wi.Opt().
-				Subtitle("↩ Visit https://golang.org/pkg/time/#pkg-constants to check more time format").
-				Valid(true).
-				Arg("https://golang.org/pkg/time/#pkg-constants").
 				Var("action", "browse")
 		}
 
