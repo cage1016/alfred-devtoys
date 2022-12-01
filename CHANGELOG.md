@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.7.0
+- code sign and notarize support
+- refactor time convert
+
 ## 1.6.0
 - add default amounts for clipboard auto-detecting for non-numeric formats to `UUID` and `Lorem Ipsum`
 - rearrange workflow structure for new features releases

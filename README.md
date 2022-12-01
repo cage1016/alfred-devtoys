@@ -32,8 +32,8 @@ A Swiss Army knife for developers for Alfred
 ## Download
 Make sure to download the latest released directly from the releases page. [Download here](https://github.com/cage1016/alfred-devtoys/releases).
 
-## Requires
-- Preferably Alfred 5
+## Prerequisite
+- Alfred 5
 
 ## Configuration
 - **QR Code** Image size

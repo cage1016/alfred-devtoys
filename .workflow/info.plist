@@ -3048,8 +3048,8 @@ A Swiss Army knife for developers for Alfred
 - **Base64 Image** - Imgage Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML &lt;img&gt; code` and `CSS Background Source`
 - **time** - Convert unix time / natural date
 
-## Requires
-- Preferably Alfred 5
+## Prerequisite
+- Alfred 5
 
 ## Configuration
 - **QR Code** Image size
@@ -3060,6 +3060,10 @@ A Swiss Army knife for developers for Alfred
 - **Lorem Ipsum** default amounts for clipboard auto-detecting for non-numeric formats
 
 ## Change Log
+
+## 1.7.0
+- code sign and notarize support
+- refactor time convert
 
 ## 1.6.0
 - add default amounts for clipboard auto-detecting for non-numeric formats to `UUID` and `Lorem Ipsum`
