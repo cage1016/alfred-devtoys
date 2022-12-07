@@ -4026,11 +4026,11 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string></string>
-				<key>placeholder</key>
 				<string>3</string>
+				<key>placeholder</key>
+				<string></string>
 				<key>required</key>
-				<true/>
+				<false/>
 				<key>trim</key>
 				<true/>
 			</dict>
@@ -4047,11 +4047,11 @@ https://github.com/cage1016/alfred-devtoys</string>
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string></string>
-				<key>placeholder</key>
 				<string>3</string>
+				<key>placeholder</key>
+				<string></string>
 				<key>required</key>
-				<true/>
+				<false/>
 				<key>trim</key>
 				<true/>
 			</dict>
