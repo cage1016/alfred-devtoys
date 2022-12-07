@@ -6,10 +6,10 @@ package cmd
 
 import (
 	"fmt"
-	"log"
 	"strings"
 
 	"github.com/atotto/clipboard"
+	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
 	"github.com/cage1016/alfred-devtoys/lib"
@@ -27,7 +27,7 @@ func runJSON(cmd *cobra.Command, args []string) {
 	if strings.TrimSpace(query) == "" {
 		query, _ = clipboard.ReadAll()
 	}
-	log.Println(query)
+	logrus.Debugf("query: %s", query)
 
 	CheckForUpdate()
 

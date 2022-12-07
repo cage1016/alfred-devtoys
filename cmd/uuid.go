@@ -6,12 +6,12 @@ package cmd
 
 import (
 	"fmt"
-	"log"
 	"strconv"
 	"strings"
 
 	"github.com/atotto/clipboard"
 	"github.com/google/uuid"
+	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
 	"github.com/cage1016/alfred-devtoys/alfred"
@@ -33,7 +33,7 @@ func runUuid(cmd *cobra.Command, args []string) {
 			query = alfred.GetUuidDefault(wf)
 		}
 	}
-	log.Println(query)
+	logrus.Debugf("query: %s", query)
 
 	CheckForUpdate()
 

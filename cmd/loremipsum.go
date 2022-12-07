@@ -6,11 +6,11 @@ package cmd
 
 import (
 	"fmt"
-	"log"
 	"strconv"
 	"strings"
 
 	"github.com/atotto/clipboard"
+	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"gopkg.in/loremipsum.v1"
 
@@ -33,7 +33,7 @@ func runLorem(cmd *cobra.Command, args []string) {
 			query = alfred.GetLiDefault(wf)
 		}
 	}
-	log.Println(query)
+	logrus.Debugf("query: %s", query)
 
 	CheckForUpdate()
 

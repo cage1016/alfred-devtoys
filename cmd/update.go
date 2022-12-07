@@ -5,9 +5,8 @@ Copyright © 2022 KAI CHU CHUNG <cage.chung@gmail.com>
 package cmd
 
 import (
-	"log"
-
 	aw "github.com/deanishe/awgo"
+	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )
 
@@ -17,7 +16,7 @@ var updateCmd = &cobra.Command{
 	Short: "Update alfred-devtoys",
 	Run: func(cmd *cobra.Command, args []string) {
 		wf.Configure(aw.TextErrors(true))
-		log.Println("Checking for updates...")
+		logrus.Info("Checking for updates...")
 		if err := wf.CheckForUpdate(); err != nil {
 			wf.FatalError(err)
 		}

@@ -10,6 +10,7 @@ const (
 	TimeZone    = "TIME_ZONE"
 	LiDefault   = "LI_DEFAULT"
 	UuidDefault = "UUID_DEFAULT"
+	Debug       = "DEBUG"
 )
 
 func GetQrcodeSize(wf *aw.Workflow) string {
@@ -30,4 +31,8 @@ func GetLiDefault(wf *aw.Workflow) string {
 
 func GetUuidDefault(wf *aw.Workflow) string {
 	return wf.Config.Get(UuidDefault)
+}
+
+func GetDebug(wf *aw.Workflow) bool {
+	return wf.Config.GetBool(Debug)
 }

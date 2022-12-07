@@ -6,13 +6,13 @@ package cmd
 
 import (
 	"fmt"
-	"log"
 	"regexp"
 	"sort"
 	"strings"
 
 	"github.com/atotto/clipboard"
 	changecase "github.com/ku/go-change-case"
+	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 )
 
@@ -58,7 +58,7 @@ func runCase(cmd *cobra.Command, args []string) {
 	if strings.TrimSpace(query) == "" {
 		query, _ = clipboard.ReadAll()
 	}
-	log.Println(query)
+	logrus.Debugf("query: %s", query)
 
 	CheckForUpdate()
 

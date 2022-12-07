@@ -2,8 +2,8 @@ package alfred
 
 import (
 	"io/ioutil"
-	"log"
 
+	"github.com/sirupsen/logrus"
 	"howett.net/plist"
 )
 
@@ -15,11 +15,11 @@ func LoadPlist(filename string) (p Plist) {
 	var err error
 	var xmlData []byte
 	if xmlData, err = ioutil.ReadFile(filename); err != nil {
-		log.Fatalf("error reading plist file: %s", err)
+		logrus.Fatalf("error reading plist file: %s", err)
 	}
 
 	if _, err = plist.Unmarshal(xmlData, &p); err != nil {
-		log.Fatalf("error deserializing plist data: %s", err)
+		logrus.Fatalf("error deserializing plist data: %s", err)
 	}
 
 	return
