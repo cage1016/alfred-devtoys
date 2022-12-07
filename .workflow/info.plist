@@ -3061,6 +3061,10 @@ A Swiss Army knife for developers for Alfred
 
 ## Change Log
 
+## 1.7.1
+- remove placeholder with default value to makes the workflow considerably easier to set up on first run.
+- use logrus instead of log to support log level for better debug experience
+
 ## 1.7.0
 - code sign and notarize support
 - refactor time convert
