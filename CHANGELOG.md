@@ -1,5 +1,8 @@
 # Change Log
 
+## 1.7.2
+- remove auto update for Alfred Gallery
+
 ## 1.7.1
 - remove placeholder with default value to makes the workflow considerably easier to set up on first run.
 - use logrus instead of log to support log level for better debug experience

@@ -3061,6 +3061,9 @@ A Swiss Army knife for developers for Alfred
 
 ## Change Log
 
+## 1.7.2
+- remove auto update for Alfred Gallery
+
 ## 1.7.1
 - remove placeholder with default value to makes the workflow considerably easier to set up on first run.
 - use logrus instead of log to support log level for better debug experience
@@ -4075,7 +4078,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 		<string>false</string>
 	</dict>
 	<key>version</key>
-	<string>1.7.1</string>
+	<string>1.7.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/cage1016/alfred-devtoys</string>
 </dict>
