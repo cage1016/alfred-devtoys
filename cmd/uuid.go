@@ -35,8 +35,6 @@ func runUuid(cmd *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	CheckForUpdate()
-
 	c, err := strconv.ParseInt(query, 10, 64)
 	if err != nil {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid integer", query)).Subtitle("Try a different query?").Icon(UuidGrayIcon)

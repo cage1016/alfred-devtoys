@@ -41,8 +41,6 @@ func runImageB64(cmd *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	CheckForUpdate()
-
 	var err error
 	if reUrl.Match([]byte(query)) {
 		query, err = lib.Download(query, wf.DataDir())

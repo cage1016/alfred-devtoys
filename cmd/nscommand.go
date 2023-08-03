@@ -16,7 +16,6 @@ var nscommandCmd = &cobra.Command{
 }
 
 func runNsCommand(cmd *cobra.Command, args []string) {
-	CheckForUpdate()
 
 	wf.NewItem("Binary To ➜").Subtitle("↩ Launch Decimal, Octal, Hexadecimal").Valid(true).UID("1").Icon(NumberIcon).Var("type", "binary")
 	wf.NewItem("Decimal To ➜").Subtitle("↩ Launch Binary, Octal, Hexadecimal").Valid(true).UID("2").Icon(NumberIcon).Var("type", "decimal")

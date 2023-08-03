@@ -28,8 +28,6 @@ func encodeRun(cmd *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	CheckForUpdate()
-
 	coder := lib.NewEncoder()
 	b64EncodeStr := coder.Base64(query)
 	wf.NewItem(b64EncodeStr).

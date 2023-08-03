@@ -29,8 +29,6 @@ func runJSON(cmd *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	CheckForUpdate()
-
 	j := lib.NewJSONFormat()
 	if j.IsJSON(query) {
 		wf.NewItem(query).

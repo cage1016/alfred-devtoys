@@ -30,8 +30,6 @@ func runOctal(cmd *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	CheckForUpdate()
-
 	_, err := strconv.ParseUint(query, 8, 64)
 	if err != nil {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid octal", query)).Subtitle("Try a different query?").Icon(NumberGrayIcon)

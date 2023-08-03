@@ -33,7 +33,6 @@ type TimeFormatItem struct {
 }
 
 func runTimeCmd(cmd *cobra.Command, args []string) {
-	CheckForUpdate()
 
 	var query int64
 	var err error

@@ -60,8 +60,6 @@ func runCase(cmd *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	CheckForUpdate()
-
 	t, _ := cmd.Flags().GetString("type")
 	if t == "command" {
 		keys := make([]string, 0, len(M))

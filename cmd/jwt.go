@@ -30,8 +30,6 @@ func runJwt(c *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	CheckForUpdate()
-
 	token, err := lib.JWTdecode(query)
 	if err == nil {
 		a, _ := json.Marshal(token.Header)

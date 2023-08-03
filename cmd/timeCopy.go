@@ -23,7 +23,6 @@ var timeCopyCmd = &cobra.Command{
 }
 
 func runTimeCopyCmd(cmd *cobra.Command, args []string) {
-	CheckForUpdate()
 
 	prefFile := path.Join(wf.Dir(), "info.plist")
 	if dpf := os.Getenv("DEBUG_PLIST_FOLDER"); dpf != "" {

@@ -28,8 +28,6 @@ func runHash(cmd *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	CheckForUpdate()
-
 	md5Str := lib.MD5(query)
 	wf.NewItem(md5Str).
 		Subtitle("⌘+L, ↩ Copy MD5").

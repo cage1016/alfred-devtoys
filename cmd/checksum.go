@@ -29,8 +29,6 @@ func runChecksum(cmd *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	CheckForUpdate()
-
 	s, err := lib.NewCheckSum(query)
 	if err != nil {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid file", query)).Subtitle("Try a different query?").Icon(HashGrayIcon)

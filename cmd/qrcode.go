@@ -60,8 +60,6 @@ func runQrcode(cmd *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	CheckForUpdate()
-
 	path := fmt.Sprintf("%s/qr.png", wf.DataDir())
 	s, err := strconv.Atoi(alfred.GetQrcodeSize(wf))
 	if err != nil {
