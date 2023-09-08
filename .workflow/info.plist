@@ -3061,54 +3061,15 @@ A Swiss Army knife for developers for Alfred
 
 ## Change Log
 
-## 1.7.2
-- remove auto update for Alfred Gallery
+#### v1.7.3
 
-## 1.7.1
-- remove placeholder with default value to makes the workflow considerably easier to set up on first run.
-- use logrus instead of log to support log level for better debug experience
+- refactor(case): rewrite [`#15`](https://github.com/cage1016/alfred-devtoys/pull/15)
+- prepare CHANGELOG for next releae [`278805f`](https://github.com/cage1016/alfred-devtoys/commit/278805f394423806b0b680caa3413b9bf38c1069)
+- refactor: remove update feature from root command [`29425bd`](https://github.com/cage1016/alfred-devtoys/commit/29425bdac7f4f49156a1dcf34c80f19f12e995f4)
+- refactor(GithubAction): Add Gallery version [`b582827`](https://github.com/cage1016/alfred-devtoys/commit/b582827b7cc1852e98464b89f7f19d59ea55821e)
 
-## 1.7.0
-- code sign and notarize support
-- refactor time convert
+Vist [CHANGELOG.md](https://github.com/cage1016/alfred-devtoys/blob/master/CHANGELOG.md) to check detail information
 
-## 1.6.0
-- add default amounts for clipboard auto-detecting for non-numeric formats to `UUID` and `Lorem Ipsum`
-- rearrange workflow structure for new features releases
-
-### 1.5.1
-- fix clipboard issue for Apple M1
-- fix typo error
-
-### 1.5.0
-- add time convert (unix time / natural date)
-
-### 1.4.1
-- update item name and subtitle display for better experience
-
-### 1.4.0
-- Add image Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML &lt;img&gt; code` and `CSS Background Source`
-- CheckSum add File Filter and File Action
-- QRCode Generator add Quicklook
-- JWT decode add Universal Action
-- increase test coverage
-
-### 1.3.0
-- Add `amd64` &amp; `arm64` support
-
-### 1.2.0
-- Add JSON format as `tab`,  `2 spaces`, `4 spaces` indents and `minify` functions
-- Revised `info.plist` items
-
-### 1.1.0
-- Revised `qrcode` keyword default action as Browse in Alfred
-
-### 1.0.1
-- Fix `qrcode` hit enter does not copy file to clipboard
-- Revised workflow description
-
-### 1.0.0
-- Initial release
 
 https://github.com/cage1016/alfred-devtoys</string>
 	<key>uidata</key>
@@ -4078,7 +4039,7 @@ https://github.com/cage1016/alfred-devtoys</string>
 		<string>false</string>
 	</dict>
 	<key>version</key>
-	<string>1.7.2</string>
+	<string>1.7.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/cage1016/alfred-devtoys</string>
 </dict>
