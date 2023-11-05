@@ -1,6 +1,5 @@
 /*
 Copyright © 2022 KAI CHU CHUNG <cage.chung@gmail.com>
-
 */
 package cmd
 
@@ -99,13 +98,17 @@ func runTimeCmd(cmd *cobra.Command, args []string) {
 				Var("action", "browse")
 		}
 
-		u2 := fmt.Sprintf("%d", tm.Unix())
-		wf.NewItem(u2).
-			Subtitle("⌘+L, ↩ Copy Unix Timestamp").
-			Arg(u2).
-			Valid(true).
-			Largetype(u2).
-			Icon(TimeConverterIcon)
+		// Unix
+		{
+			u2 := fmt.Sprintf("%d", tm.Unix())
+			wf.NewItem(u2).
+				Subtitle("⌘+L, ↩ Copy Unix Timestamp").
+				Arg(u2).
+				Valid(true).
+				Largetype(u2).
+				Icon(TimeConverterIcon).
+				Var("action", "copy")
+		}
 
 		d := lib.TimeDuration(time.Since(tm))
 		wf.NewItem(d).
