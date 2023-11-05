@@ -29,8 +29,10 @@ A Swiss Army knife for developers for Alfred
 - **JSON** - JSON formatting as `tab`,  `2 spaces`, `4 spaces` indents and `minify`
 - **Base64 Image** - **Imgage** Base64 Encode as `Base64 string`,`Base64 Data URI`, `HTML <img> code` and `CSS Background Source`
 - **time** - Convert unix time / natural date string to time format
+
 ## Download
-Make sure to download the latest released directly from the releases page. [Download here](https://github.com/cage1016/alfred-devtoys/releases).
+
+Visit [Alfred Gallery • Workflows • DevToys](https://alfred.app/workflows/cagechung/devtoys/) to download latest version
 
 ## Prerequisite
 - Alfred 5
