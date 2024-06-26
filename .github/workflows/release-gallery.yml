@@ -25,7 +25,7 @@ jobs:
         run: go test -v -race -cover -coverprofile coverage.txt -covermode=atomic ./...
       - name: update codecov
         run: |
-          CODECOV_TOKEN="${{ secrets.CODECOV_TOKEN }}" bash <(curl -s https://codecov.io/bash)           
+          CODECOV_TOKEN="${{ secrets.CODECOV_TOKEN }}" bash <(curl -s https://codecov.io/bash) 
       - name:  Build and pack
         run: |
           # build package
@@ -34,41 +34,31 @@ jobs:
           lipo -create -output .workflow/exe exe_amd64 exe_arm64
           rm  exe_amd64
           rm  exe_arm64
-          
-          # pack
-          cd .workflow
-          plutil -replace version -string "${{ env.tag }}" info.plist
-          zip -r ../"DevToys_GALLERY-${{ env.tag }}.alfredworkflow" .
-          cd ..
-
-          echo "artifact=$(echo "DevToys_GALLERY-${{ env.tag }}.alfredworkflow")" >> $GITHUB_ENV
-      - name: Import Code-Signing Certificates
-        uses: Apple-Actions/import-codesign-certs@v1
-        with:
-          # The certificates in a PKCS12 file encoded as a base64 string
-          p12-file-base64: "${{ secrets.APPLE_DEVELOPER_CERTIFICATE_P12_BASE64 }}"
-          # The password used to import the PKCS12 file.
-          p12-password: "${{ secrets.APPLE_DEVELOPER_CERTIFICATE_PASSWORD }}"
-      - name: Install gon via HomeBrew for code signing and app notarization
-        run: |
-          brew tap mitchellh/gon
-          brew install mitchellh/gon/gon
-      - name: code sign and notarize
+      - name: Configure macOS signing
         env:
-          AC_USERNAME: "${{ secrets.AC_USERNAME }}"
-          AC_PASSWORD: "${{ secrets.AC_PASSWORD }}"
+          APPLE_DEVELOPER_ID: ${{ vars.APPLE_DEVELOPER_ID }}
+          APPLE_APPLICATION_CERT: ${{ secrets.APPLE_APPLICATION_CERT }}
+          APPLE_APPLICATION_CERT_PASSWORD: ${{ secrets.APPLE_APPLICATION_CERT_PASSWORD }}
         run: |
-          # gon code sign
-          cat <<EOF >> gon.json
-          {
-              "source" : [".workflow/exe"],
-              "bundle_id" : "com.kaichu.devtoys",
-              "sign" :{
-                  "application_identity" : "Developer ID Application: KAI CHU CHUNG"
-              }
-          }
-          EOF
-          gon -log-level=debug -log-json ./gon.json
+          keychain="$RUNNER_TEMP/buildagent.keychain"
+          keychain_password="password1"
+
+          security create-keychain -p "$keychain_password" "$keychain"
+          security default-keychain -s "$keychain"
+          security unlock-keychain -p "$keychain_password" "$keychain"
+
+          base64 -D <<<"$APPLE_APPLICATION_CERT" > "$RUNNER_TEMP/cert.p12"
+          security import "$RUNNER_TEMP/cert.p12" -k "$keychain" -P "$APPLE_APPLICATION_CERT_PASSWORD" -T /usr/bin/codesign
+          security set-key-partition-list -S "apple-tool:,apple:,codesign:" -s -k "$keychain_password" "$keychain"
+          rm "$RUNNER_TEMP/cert.p12"
+      - name: codesign and notarize
+        env:
+          APPLE_ID: ${{ vars.APPLE_ID }}
+          APPLE_ID_PASSWORD: ${{ secrets.APPLE_ID_PASSWORD }}
+          APPLE_DEVELOPER_ID: ${{ vars.APPLE_DEVELOPER_ID }}
+        run: |
+          # codesign
+          codesign --timestamp --options=runtime -s "$APPLE_DEVELOPER_ID" -v .workflow/exe
           
           # pack alfredworkflow
           cd .workflow
@@ -78,19 +68,9 @@ jobs:
           
           # zip alfredworkflow as zip archive for notarize
           zip -r "DevToys_GALLERY-${{ env.tag }}.alfredworkflow.zip" "DevToys_GALLERY-${{ env.tag }}.alfredworkflow"
-        
-          # gon notarize
-          cat <<EOF >> notarize.json
-          {
-              "notarize": [{
-                  "path": "${PWD}/DevToys_GALLERY-${{ env.tag }}.alfredworkflow.zip",
-                  "bundle_id": "com.kaichu.devtoys",
-                  "staple": false
-              }]
-          }
-          EOF
-          gon -log-level=debug -log-json ./notarize.json
-          
+
+          xcrun notarytool submit "DevToys_GALLERY-${{ env.tag }}.alfredworkflow.zip" --apple-id "$APPLE_ID" --team-id "$APPLE_DEVELOPER_ID" --password "$APPLE_ID_PASSWORD"
+
           echo "artifact=$(echo "DevToys_GALLERY-${{ env.tag }}.alfredworkflow")" >> $GITHUB_ENV  
       - uses: shogo82148/actions-upload-release-asset@v1
         with:
