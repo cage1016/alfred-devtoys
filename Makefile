@@ -10,6 +10,10 @@ else
 	go generate ./...
 endif
 
+.PHONY: auto-changelog
+auto-changelog: ## generate CHANGELOG.md
+	auto-changelog
+
 .PHONY: test
 test: ## run tests
 	go test -v -race -cover -coverprofile coverage.txt -covermode=atomic ./...
