@@ -104,3 +104,34 @@ func TestDecode_HTML(t *testing.T) {
 		})
 	}
 }
+
+func TestDecode_Unicode(t *testing.T) {
+	type args struct {
+		input map[string]string
+	}
+	tests := []struct {
+		name string
+		e    *lib.Decode
+		args args
+	}{
+		{
+			name: "Unicode BMP and emoji",
+			e:    &lib.Decode{},
+			args: args{
+				input: map[string]string{
+					"hello\\u4E16\\u754C":  "hello世界",
+					"emoji \\uD83D\\uDE00": "emoji 😀",
+				},
+			},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			for k, v := range tt.args.input {
+				if got := lib.NewDecoder().Unicode(k); got != v {
+					t.Errorf("Decode.Unicode() = %v, want %v", got, k)
+				}
+			}
+		})
+	}
+}
