@@ -95,3 +95,34 @@ func TestEncode_HTML(t *testing.T) {
 		})
 	}
 }
+
+func TestEncode_Unicode(t *testing.T) {
+	type args struct {
+		input map[string]string
+	}
+	tests := []struct {
+		name string
+		e    *lib.Encode
+		args args
+	}{
+		{
+			name: "Unicode non-ASCII only",
+			e:    &lib.Encode{},
+			args: args{
+				input: map[string]string{
+					"hello世界": "hello\\u4E16\\u754C",
+					"emoji 😀": "emoji \\uD83D\\uDE00",
+				},
+			},
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			for k, v := range tt.args.input {
+				if got := lib.NewEncoder().Unicode(k); got != v {
+					t.Errorf("Encode.Unicode() = %v, want %v", got, v)
+				}
+			}
+		})
+	}
+}

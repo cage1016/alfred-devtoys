@@ -1,6 +1,5 @@
 /*
 Copyright © 2022 KAI CHU CHUNG <cage.chung@gmail.com>
-
 */
 package cmd
 
@@ -54,6 +53,15 @@ func decodeRun(cmd *cobra.Command, args []string) {
 		Arg(htmlDecodeStr).
 		Largetype(htmlDecodeStr).
 		Icon(HtmlIcon).
+		Var("action", "copy")
+
+	unicodeDecodeStr := coder.Unicode(query)
+	wf.NewItem(unicodeDecodeStr).
+		Subtitle("⌘+L, ↩ Copy Unicode Decode").
+		Valid(true).
+		Arg(unicodeDecodeStr).
+		Largetype(unicodeDecodeStr).
+		Icon(EncodeDecodeIcon).
 		Var("action", "copy")
 
 	wf.SendFeedback()
