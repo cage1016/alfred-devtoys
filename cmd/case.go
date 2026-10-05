@@ -28,6 +28,9 @@ func runCase(cmd *cobra.Command, args []string) {
 		query, _ = clipboard.ReadAll()
 	}
 	logrus.Debugf("query: %s", query)
+	if inputTooLarge(query, TextChangeCaseGrayIcon) {
+		return
+	}
 
 	cases := lib.NewChangeCase()
 	t, _ := cmd.Flags().GetString("type")

@@ -59,6 +59,9 @@ func runQrcode(cmd *cobra.Command, args []string) {
 		query, _ = clipboard.ReadAll()
 	}
 	logrus.Debugf("query: %s", query)
+	if inputTooLarge(query, aw.IconError) {
+		return
+	}
 
 	path := fmt.Sprintf("%s/qr.png", wf.DataDir())
 	s, err := strconv.Atoi(alfred.GetQrcodeSize(wf))

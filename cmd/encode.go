@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"github.com/atotto/clipboard"
+	aw "github.com/deanishe/awgo"
 	"github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 
@@ -27,6 +28,9 @@ func encodeRun(cmd *cobra.Command, args []string) {
 		query, _ = clipboard.ReadAll()
 	}
 	logrus.Debugf("query: %s", query)
+	if inputTooLarge(query, aw.IconError) {
+		return
+	}
 
 	coder := lib.NewEncoder()
 	b64EncodeStr := coder.Base64(query)

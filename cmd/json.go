@@ -28,6 +28,9 @@ func runJSON(cmd *cobra.Command, args []string) {
 		query, _ = clipboard.ReadAll()
 	}
 	logrus.Debugf("query: %s", query)
+	if inputTooLarge(query, JsonGrayIcon) {
+		return
+	}
 
 	j := lib.NewJSONFormat()
 	if j.IsJSON(query) {
