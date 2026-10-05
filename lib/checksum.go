@@ -7,6 +7,7 @@ import (
 	"crypto/sha256"
 	"crypto/sha512"
 	"encoding/hex"
+	"fmt"
 	"io"
 	"os"
 )
@@ -41,7 +42,22 @@ func (cm *CheckSum) SHA512() string {
 	return cm.Sha512
 }
 
+func statRegular(path string) (os.FileInfo, error) {
+	fi, err := os.Stat(path)
+	if err != nil {
+		return nil, err
+	}
+	if !fi.Mode().IsRegular() {
+		return nil, fmt.Errorf("%s is not a regular file", path)
+	}
+	return fi, nil
+}
+
 func NewCheckSum(file string) (CheckSumer, error) {
+	if _, err := statRegular(file); err != nil {
+		return nil, err
+	}
+
 	f, err := os.OpenFile(file, os.O_RDONLY, 0)
 	if err != nil {
 		return nil, err

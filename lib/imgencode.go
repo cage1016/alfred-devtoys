@@ -3,6 +3,7 @@ package lib
 import (
 	"bytes"
 	"encoding/base64"
+	"errors"
 	"fmt"
 	"image"
 	_ "image/jpeg"
@@ -11,6 +12,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"time"
 
 	_ "golang.org/x/image/bmp"
 	_ "golang.org/x/image/tiff"
@@ -19,7 +21,19 @@ import (
 	"github.com/gabriel-vasile/mimetype"
 )
 
+const MaxImageSize = 2 << 20
+
+var ErrFileTooLarge = errors.New("file is too large")
+
 func ImageEncode(image string) (string, string, error) {
+	fi, err := statRegular(image)
+	if err != nil {
+		return "", "", err
+	}
+	if fi.Size() > MaxImageSize {
+		return "", "", ErrFileTooLarge
+	}
+
 	bytes, err := ioutil.ReadFile(image)
 	if err != nil {
 		return "", "", err
@@ -35,7 +49,7 @@ func Download(url, dataDir string) (string, error) {
 		return "", fmt.Errorf("failed to create request: %s", err)
 	}
 	req.Header.Set("User-Agent", "Mozilla/5.0")
-	resp, err := new(http.Client).Do(req)
+	resp, err := (&http.Client{Timeout: 10 * time.Second}).Do(req)
 	if err != nil {
 		return "", fmt.Errorf("failed to fetch image: %s", err)
 	}
@@ -45,13 +59,15 @@ func Download(url, dataDir string) (string, error) {
 		return "", fmt.Errorf("failed to fetch %s: %s", url, resp.Status)
 	}
 
-	buff := bytes.NewBuffer(nil)
-	bodyBytes, err := ioutil.ReadAll(io.TeeReader(resp.Body, buff))
+	bodyBytes, err := ioutil.ReadAll(io.LimitReader(resp.Body, MaxImageSize+1))
 	if err != nil {
 		return "", fmt.Errorf("failed to read image: %s", err)
 	}
+	if len(bodyBytes) > MaxImageSize {
+		return "", ErrFileTooLarge
+	}
 
-	_, format, err := image.DecodeConfig(buff)
+	_, format, err := image.DecodeConfig(bytes.NewReader(bodyBytes))
 	if err != nil {
 		return "", err
 	}

@@ -5,8 +5,9 @@ Copyright © 2022 KAI CHU CHUNG <cage.chung@gmail.com>
 package cmd
 
 import (
+	"errors"
 	"fmt"
-	"regexp"
+	"net/url"
 	"strings"
 
 	"github.com/atotto/clipboard"
@@ -15,8 +16,6 @@ import (
 
 	"github.com/cage1016/alfred-devtoys/lib"
 )
-
-var reUrl = regexp.MustCompile(`(?m)^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$`)
 
 // imageB64Cmd represents the imageB64 command
 var imageB64Cmd = &cobra.Command{
@@ -34,6 +33,18 @@ func contains(s []string, e string) bool {
 	return false
 }
 
+func isURL(s string) bool {
+	u, err := url.Parse(s)
+	return err == nil && (u.Scheme == "http" || u.Scheme == "https") && u.Host != ""
+}
+
+func preview(s string) string {
+	if len(s) > 100 {
+		return s[:100] + "…"
+	}
+	return s
+}
+
 func runImageB64(cmd *cobra.Command, args []string) {
 	query := strings.Join(args, " ")
 	if strings.TrimSpace(query) == "" {
@@ -41,21 +52,23 @@ func runImageB64(cmd *cobra.Command, args []string) {
 	}
 	logrus.Debugf("query: %s", query)
 
-	var err error
-	if reUrl.Match([]byte(query)) {
-		query, err = lib.Download(query, wf.DataDir())
+	if u := strings.TrimSpace(query); isURL(u) {
+		path, err := lib.Download(u, wf.DataDir())
 		if err != nil {
-			wf.NewItem(fmt.Sprintf("`%s` download fail", query)).Subtitle("Try a different query?").Icon(Base64ImgGrayIcon)
+			wf.NewItem(fmt.Sprintf("`%s` download fail", u)).Subtitle("Try a different query?").Icon(Base64ImgGrayIcon)
 			wf.SendFeedback()
 			return
 		}
+		query = path
 	}
 
 	b64EncodeStr, mtype, err := lib.ImageEncode(query)
-	if err != nil {
+	if errors.Is(err, lib.ErrFileTooLarge) {
+		wf.NewItem(fmt.Sprintf("`%s` is too large", query)).Subtitle(fmt.Sprintf("Try an image up to %d MB", lib.MaxImageSize>>20)).Icon(Base64ImgGrayIcon)
+	} else if err != nil {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid file", query)).Subtitle("Try a different query?").Icon(Base64ImgGrayIcon)
 	} else {
-		wf.NewItem(b64EncodeStr).
+		wf.NewItem(preview(b64EncodeStr)).
 			Subtitle("⌘+L ⇧, ↩ Copy Base64 string").
 			Valid(true).
 			Quicklook(query).
@@ -65,7 +78,7 @@ func runImageB64(cmd *cobra.Command, args []string) {
 			Var("action", "copy")
 
 		dataURI := fmt.Sprintf("data:%s;base64,%s", mtype, b64EncodeStr)
-		wf.NewItem(dataURI).
+		wf.NewItem(preview(dataURI)).
 			Subtitle("⌘+L ⇧, ↩ Copy Base64 Data URI").
 			Valid(true).
 			Quicklook(query).
@@ -75,7 +88,7 @@ func runImageB64(cmd *cobra.Command, args []string) {
 			Var("action", "copy")
 
 		str2 := fmt.Sprintf("<img src=\"%s\">", dataURI)
-		wf.NewItem(str2).
+		wf.NewItem(preview(str2)).
 			Subtitle("⌘+L ⇧, ↩ Copy HTML <img> code").
 			Valid(true).
 			Quicklook(query).
@@ -85,7 +98,7 @@ func runImageB64(cmd *cobra.Command, args []string) {
 			Var("action", "copy")
 
 		str3 := fmt.Sprintf("background-image: url(\"%s\");", dataURI)
-		wf.NewItem(str3).
+		wf.NewItem(preview(str3)).
 			Subtitle("⌘+L ⇧, ↩ Copy CSS Background Source").
 			Valid(true).
 			Quicklook(query).
