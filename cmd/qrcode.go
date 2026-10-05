@@ -21,6 +21,11 @@ import (
 	"github.com/cage1016/alfred-devtoys/alfred"
 )
 
+const (
+	qrcodeMinSize = 64
+	qrcodeMaxSize = 2048
+)
+
 // qrcodeCmd represents the qrcode command
 var qrcodeCmd = &cobra.Command{
 	Use:   "qrcode",
@@ -65,7 +70,8 @@ func runQrcode(cmd *cobra.Command, args []string) {
 	if err != nil {
 		wf.NewItem(err.Error()).Subtitle("QR Code Config Size fail").Valid(false).Icon(aw.IconError)
 	} else {
-		if err != createQRCodeByBoombuler(query, qr.M, s, path) {
+		s = clamp(s, qrcodeMinSize, qrcodeMaxSize)
+		if err := createQRCodeByBoombuler(query, qr.M, s, path); err != nil {
 			wf.NewItem(err.Error()).Subtitle("QR Code").Valid(false).Icon(aw.IconError)
 		} else {
 			wf.NewItem(query).

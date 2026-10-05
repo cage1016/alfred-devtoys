@@ -17,6 +17,8 @@ import (
 	"github.com/cage1016/alfred-devtoys/alfred"
 )
 
+const uuidMaxCount = 10
+
 // uuidCmd represents the uuid command
 var uuidCmd = &cobra.Command{
 	Use:   "uuid",
@@ -39,10 +41,11 @@ func runUuid(cmd *cobra.Command, args []string) {
 	if err != nil {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid integer", query)).Subtitle("Try a different query?").Icon(UuidGrayIcon)
 	} else {
-		buf := make([]string, c)
-		for i := int64(0); i < c; i++ {
+		buf := make([]string, clamp(c, 1, uuidMaxCount))
+		for i := range buf {
 			buf[i] = uuid.New().String()
 		}
+		all := strings.Join(buf, "\n")
 		for _, v := range buf {
 			wf.NewItem(v).
 				Subtitle("⌘+L ⌥, ↩ Copy UUID").
@@ -54,7 +57,7 @@ func runUuid(cmd *cobra.Command, args []string) {
 				Valid(true).
 				Opt().
 				Subtitle("↩ Copy all of UUIDs").
-				Arg(strings.Join(buf, "\n")).
+				Arg(all).
 				Var("action", "copy")
 		}
 	}

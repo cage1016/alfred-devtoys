@@ -8,6 +8,7 @@ import (
 	"fmt"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/atotto/clipboard"
 	"github.com/sirupsen/logrus"
@@ -22,6 +23,25 @@ var loremCmd = &cobra.Command{
 	Use:   "li",
 	Short: "Lorem ipsum is a dummy text generator",
 	Run:   runLorem,
+}
+
+const (
+	loremMaxCount = 100
+	loremAttempts = 5
+)
+
+func generateLorem(c int) (words, sentences, paragraphs string, ok bool) {
+	for i := 0; i < loremAttempts && !ok; i++ {
+		func() {
+			defer func() { recover() }()
+			g := loremipsum.NewWithSeed(time.Now().UnixNano())
+			words = g.Words(c)
+			sentences = g.Sentences(c)
+			paragraphs = strings.Join(strings.Split(g.Paragraphs(c), `\n`), "\n\n")
+			ok = true
+		}()
+	}
+	return
 }
 
 func runLorem(cmd *cobra.Command, args []string) {
@@ -39,8 +59,14 @@ func runLorem(cmd *cobra.Command, args []string) {
 	if err != nil {
 		wf.NewItem(fmt.Sprintf("`%s` is invalid integer", query)).Subtitle("Try a different query?").Icon(LoremIpsumGrayIcon)
 	} else {
-		loremIpsumGeneratoe := loremipsum.New()
-		words := loremIpsumGeneratoe.Words(int(c))
+		c = clamp(c, 1, loremMaxCount)
+		words, sentences, paragraphs, ok := generateLorem(int(c))
+		if !ok {
+			wf.NewItem("Failed to generate lorem ipsum").Subtitle("Try again?").Icon(LoremIpsumGrayIcon)
+			wf.SendFeedback()
+			return
+		}
+
 		wf.NewItem(words).
 			Subtitle(fmt.Sprintf("⌘+L, ↩ Copy %d Words", c)).
 			Valid(true).
@@ -49,7 +75,6 @@ func runLorem(cmd *cobra.Command, args []string) {
 			Var("action", "copy").
 			Valid(true)
 
-		sentences := loremIpsumGeneratoe.Sentences(int(c))
 		wf.NewItem(sentences).
 			Subtitle(fmt.Sprintf("⌘+L, ↩ Copy %d Sentences", c)).
 			Valid(true).
@@ -57,7 +82,6 @@ func runLorem(cmd *cobra.Command, args []string) {
 			Largetype(sentences).Icon(LoremIpsumIcon).
 			Var("action", "copy")
 
-		paragraphs := strings.Join(strings.Split(loremIpsumGeneratoe.Paragraphs(int(c)), `\n`), "\n\n")
 		wf.NewItem(paragraphs).
 			Subtitle(fmt.Sprintf("⌘+L, ↩ Copy %d Paragraphs", c)).
 			Valid(true).
