@@ -71,7 +71,7 @@ func TestDownloadImage(t *testing.T) {
 			},
 			args: args{
 				n: map[string]error{
-					"https://globalgrasshopper.com/wp-content/uploads/2015/04/Queenstown-views.jpg": nil,
+					"https://raw.githubusercontent.com/cage1016/alfred-devtoys/a7f9441fe6a847280598cc0146110f81c5ad53ff/testdata/demo.jpeg": nil,
 				},
 			},
 		},
@@ -84,7 +84,7 @@ func TestDownloadImage(t *testing.T) {
 			}
 
 			for k, v := range tt.args.n {
-				_, got := f.fn(k, testdata.Path("."))
+				_, got := f.fn(k, t.TempDir())
 				assert.Equal(t, v, got)
 			}
 		})
